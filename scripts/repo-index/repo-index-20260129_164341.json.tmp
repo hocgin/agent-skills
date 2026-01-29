@@ -1,0 +1,1842 @@
+[
+  {
+    "nameWithOwner": "hocgin/WorldClock",
+    "description": "",
+    "url": "https://github.com/hocgin/WorldClock",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2026-01-10T09:18:03Z",
+    "updatedAt": "2026-01-29T06:47:53Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/agent-skills",
+    "description": "",
+    "url": "https://github.com/hocgin/agent-skills",
+    "primaryLanguage": {
+      "name": "Shell"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2026-01-29T04:16:20Z",
+    "updatedAt": "2026-01-29T06:45:24Z",
+    "isPrivate": false,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/CodeSnippets",
+    "description": "CodeSnippets for XCode",
+    "url": "https://github.com/hocgin/CodeSnippets",
+    "primaryLanguage": null,
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-03-08T11:03:09Z",
+    "updatedAt": "2026-01-26T15:53:27Z",
+    "isPrivate": false,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftUIS",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftUIS",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-22T13:57:32Z",
+    "updatedAt": "2026-01-25T17:55:07Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftGuideKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftGuideKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-23T18:00:20Z",
+    "updatedAt": "2026-01-25T14:41:13Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftExtensionsKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftExtensionsKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-25T10:53:03Z",
+    "updatedAt": "2026-01-25T08:26:38Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftPermissionKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftPermissionKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-24T14:37:06Z",
+    "updatedAt": "2026-01-25T07:33:51Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/swift6-template",
+    "description": "",
+    "url": "https://github.com/hocgin/swift6-template",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-29T08:09:50Z",
+    "updatedAt": "2026-01-22T03:04:15Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/bun-api",
+    "description": "",
+    "url": "https://github.com/hocgin/bun-api",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-12-18T18:26:41Z",
+    "updatedAt": "2026-01-21T13:23:50Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/CacheKit",
+    "description": "",
+    "url": "https://github.com/hocgin/CacheKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-08T17:51:11Z",
+    "updatedAt": "2026-01-20T10:10:27Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftExamples",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftExamples",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-10-10T08:08:15Z",
+    "updatedAt": "2026-01-20T03:45:30Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftStore",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftStore",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-28T13:27:41Z",
+    "updatedAt": "2026-01-18T07:43:33Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://github.com/danielsaidi/StoreKitPlus",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftGRDB",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftGRDB",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-08-10T11:12:34Z",
+    "updatedAt": "2026-01-17T19:46:15Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/AWeather",
+    "description": "天气 for iOS",
+    "url": "https://github.com/hocgin/AWeather",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-01-23T07:47:13Z",
+    "updatedAt": "2026-01-10T12:04:25Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftICONS",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftICONS",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-08-31T15:58:10Z",
+    "updatedAt": "2026-01-12T22:07:36Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftAPI",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftAPI",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-11-11T06:44:17Z",
+    "updatedAt": "2026-01-12T12:09:48Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/logspot",
+    "description": "✈️ 新应用～",
+    "url": "https://github.com/hocgin/logspot",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-03-20T10:48:50Z",
+    "updatedAt": "2026-01-12T04:50:29Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://logspot.hocgin.top/",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/cloudflare-apis",
+    "description": "",
+    "url": "https://github.com/hocgin/cloudflare-apis",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2026-01-12T03:10:45Z",
+    "updatedAt": "2026-01-12T03:10:53Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftSprite",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftSprite",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2026-01-06T23:56:47Z",
+    "updatedAt": "2026-01-10T09:16:39Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/ai",
+    "description": "AI, 提示词, 规则, 文档",
+    "url": "https://github.com/hocgin/ai",
+    "primaryLanguage": null,
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-12-29T01:15:18Z",
+    "updatedAt": "2026-01-08T20:07:29Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/desktop-speak-text",
+    "description": "",
+    "url": "https://github.com/hocgin/desktop-speak-text",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2026-01-07T01:16:51Z",
+    "updatedAt": "2026-01-07T04:28:19Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftProductKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftProductKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-20T12:47:47Z",
+    "updatedAt": "2026-01-07T00:27:43Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftToast",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftToast",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-19T14:10:38Z",
+    "updatedAt": "2026-01-06T12:18:38Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftTraceKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftTraceKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-07-06T00:37:19Z",
+    "updatedAt": "2026-01-06T10:01:43Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftTCA",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftTCA",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-28T09:14:41Z",
+    "updatedAt": "2026-01-03T22:10:49Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/FloatingClock",
+    "description": "悬浮时钟",
+    "url": "https://github.com/hocgin/FloatingClock",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-11-29T12:47:09Z",
+    "updatedAt": "2026-01-03T20:47:41Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftPopup",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftPopup",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-10-06T08:29:06Z",
+    "updatedAt": "2026-01-03T18:15:50Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftContext",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftContext",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-10-05T06:58:20Z",
+    "updatedAt": "2026-01-02T15:17:06Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/PopupView",
+    "description": "Toasts and popups library written with SwiftUI",
+    "url": "https://github.com/hocgin/PopupView",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2026-01-02T08:28:26Z",
+    "updatedAt": "2026-01-02T09:17:44Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/rabbit-www",
+    "description": "3W兔 ❤️ 官网",
+    "url": "https://github.com/hocgin/rabbit-www",
+    "primaryLanguage": {
+      "name": "Less"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2021-02-27T03:49:47Z",
+    "updatedAt": "2025-12-30T07:46:22Z",
+    "isPrivate": false,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://www.hocgin.top/",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/sublink-worker",
+    "description": "无需服务器，一键部署，快速使用自建节点分享URL进行订阅转换，提供灵活的自定义选项，支持SingBox/Clash/V2Ray/Xray",
+    "url": "https://github.com/hocgin/sublink-worker",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-10-19T08:59:26Z",
+    "updatedAt": "2025-12-30T07:09:30Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://sublink-worker.sageer.me/",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/addone-calendar",
+    "description": "📅 浏览器插件 - 日历",
+    "url": "https://github.com/hocgin/addone-calendar",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-02-04T18:44:28Z",
+    "updatedAt": "2025-12-19T00:49:25Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/taro-dub",
+    "description": "🎵 配音大师",
+    "url": "https://github.com/hocgin/taro-dub",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 1,
+    "forkCount": 1,
+    "createdAt": "2023-03-11T07:33:28Z",
+    "updatedAt": "2025-12-18T23:54:01Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/addone-speak-text",
+    "description": "📢 文字转语音",
+    "url": "https://github.com/hocgin/addone-speak-text",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-02-17T15:16:56Z",
+    "updatedAt": "2025-12-18T22:45:43Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/edge-tts",
+    "description": "Browser / NodeJS",
+    "url": "https://github.com/hocgin/edge-tts",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-06-02T11:39:52Z",
+    "updatedAt": "2025-12-18T21:24:24Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/PIPKit",
+    "description": "Picture in Picture for iOS, Support SwiftUI",
+    "url": "https://github.com/hocgin/PIPKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-11-29T20:02:59Z",
+    "updatedAt": "2025-12-01T17:28:22Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/CalendarView",
+    "description": "Calendars made simple (SwiftUI), support horizontal",
+    "url": "https://github.com/hocgin/CalendarView",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-11-24T15:08:16Z",
+    "updatedAt": "2025-11-25T06:38:54Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftError",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftError",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-19T16:41:23Z",
+    "updatedAt": "2025-11-15T18:01:29Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftJSON",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftJSON",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-11-11T07:11:45Z",
+    "updatedAt": "2025-11-14T05:25:26Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/n8n-project",
+    "description": "",
+    "url": "https://github.com/hocgin/n8n-project",
+    "primaryLanguage": null,
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-10-24T16:07:23Z",
+    "updatedAt": "2025-10-24T16:09:32Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftLocation",
+    "description": "⚓️ Async/Await CLLocationManager Wrapper for Apple Platforms",
+    "url": "https://github.com/hocgin/SwiftLocation",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-10-23T14:07:58Z",
+    "updatedAt": "2025-10-23T14:40:02Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/my-patreon",
+    "description": "",
+    "url": "https://github.com/hocgin/my-patreon",
+    "primaryLanguage": null,
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-10-16T12:58:44Z",
+    "updatedAt": "2025-10-21T10:39:29Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftLogKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftLogKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-21T10:31:21Z",
+    "updatedAt": "2025-10-08T02:17:19Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/OSLogViewer",
+    "description": "",
+    "url": "https://github.com/hocgin/OSLogViewer",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-09-22T11:45:48Z",
+    "updatedAt": "2025-10-07T04:14:42Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "nickname": "Modified BSD License"
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftTheme",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftTheme",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-07-02T10:04:54Z",
+    "updatedAt": "2025-09-16T05:49:27Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftChangeIconKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftChangeIconKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-07-02T19:52:46Z",
+    "updatedAt": "2025-10-06T03:15:04Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/apple-certificates",
+    "description": "Apple 证书",
+    "url": "https://github.com/hocgin/apple-certificates",
+    "primaryLanguage": null,
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2024-05-17T01:45:03Z",
+    "updatedAt": "2024-06-01T06:50:18Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "240524-master"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftChangeKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftChangeKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-22T09:13:15Z",
+    "updatedAt": "2025-10-05T01:03:23Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/XCodeGenDemo",
+    "description": "",
+    "url": "https://github.com/hocgin/XCodeGenDemo",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-10-03T19:07:45Z",
+    "updatedAt": "2025-10-04T03:43:00Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftWebKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftWebKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-21T06:37:19Z",
+    "updatedAt": "2025-10-03T08:43:39Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/WhiteNoise",
+    "description": "",
+    "url": "https://github.com/hocgin/WhiteNoise",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-09-20T04:22:35Z",
+    "updatedAt": "2025-10-03T07:01:13Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/WhiteNoiseV1",
+    "description": "",
+    "url": "https://github.com/hocgin/WhiteNoiseV1",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-08-10T09:14:53Z",
+    "updatedAt": "2025-09-20T04:22:08Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://moodist.mvze.net/",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftUIMessage",
+    "description": "SwiftUI wrapper of MessageUI framework.",
+    "url": "https://github.com/hocgin/SwiftUIMessage",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-19T07:25:56Z",
+    "updatedAt": "2025-06-19T16:05:40Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://swiftpackageindex.com/edonv/SwiftUIMessage/documentation/swiftuimessage",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/ErrorKit",
+    "description": "Simplified error handling with built-in user-friendly messages for common errors. Fully localized. Community-driven.",
+    "url": "https://github.com/hocgin/ErrorKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-09-16T17:57:28Z",
+    "updatedAt": "2025-09-16T17:58:06Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://swiftpackageindex.com/FlineDev/ErrorKit/documentation/errorkit",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/Harmony",
+    "description": "Harmony provides CloudKit sync for GRDB and only GRDB.",
+    "url": "https://github.com/hocgin/Harmony",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-30T13:30:10Z",
+    "updatedAt": "2025-09-03T12:34:42Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "other",
+      "name": "Other",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/addone-starter",
+    "description": "addone-starter",
+    "url": "https://github.com/hocgin/addone-starter",
+    "primaryLanguage": null,
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-04-13T02:15:11Z",
+    "updatedAt": "2025-04-14T02:36:47Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/addone-color-picker",
+    "description": "",
+    "url": "https://github.com/hocgin/addone-color-picker",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-08-21T05:44:26Z",
+    "updatedAt": "2025-08-22T02:00:54Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/FittedSheets-SwiftUI",
+    "description": "Fitted Sheets for SwiftUI",
+    "url": "https://github.com/hocgin/FittedSheets-SwiftUI",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-08-13T00:50:23Z",
+    "updatedAt": "2025-08-13T00:50:23Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftEvents",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftEvents",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-08-10T09:20:35Z",
+    "updatedAt": "2025-08-10T09:49:02Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/swift-theme-kit",
+    "description": "SwiftThemeKit is a powerful and flexible design system framework for SwiftUI that enables you to create consistent, themeable user interfaces with ease. It provides a comprehensive set of components and utilities that follow modern design principles while maintaining full customizability.",
+    "url": "https://github.com/hocgin/swift-theme-kit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-07-29T11:23:04Z",
+    "updatedAt": "2025-07-29T11:23:04Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/HTTPRequestKit",
+    "description": "",
+    "url": "https://github.com/hocgin/HTTPRequestKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 1,
+    "createdAt": "2025-06-08T08:17:01Z",
+    "updatedAt": "2025-07-24T07:48:00Z",
+    "isPrivate": false,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/CodeLab",
+    "description": "",
+    "url": "https://github.com/hocgin/CodeLab",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-07-16T08:05:34Z",
+    "updatedAt": "2025-07-18T18:02:18Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftHit",
+    "description": "hocgin`s Swift Kit",
+    "url": "https://github.com/hocgin/SwiftHit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2022-07-09T14:36:53Z",
+    "updatedAt": "2025-07-14T17:24:07Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftSharedKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftSharedKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-22T04:53:11Z",
+    "updatedAt": "2025-07-14T17:23:44Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/SwiftNetworkKit",
+    "description": "",
+    "url": "https://github.com/hocgin/SwiftNetworkKit",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-06-25T09:57:21Z",
+    "updatedAt": "2025-07-14T17:23:39Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/test-ipa",
+    "description": "",
+    "url": "https://github.com/hocgin/test-ipa",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-07-11T16:09:37Z",
+    "updatedAt": "2025-07-11T16:30:05Z",
+    "isPrivate": true,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/fastlane",
+    "description": "",
+    "url": "https://github.com/hocgin/fastlane",
+    "primaryLanguage": {
+      "name": "Ruby"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-07-11T14:43:15Z",
+    "updatedAt": "2025-07-11T15:20:56Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/cursor-prototype",
+    "description": "",
+    "url": "https://github.com/hocgin/cursor-prototype",
+    "primaryLanguage": {
+      "name": "HTML"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-07-05T15:30:49Z",
+    "updatedAt": "2025-07-05T15:35:38Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/crash-app",
+    "description": "逆向",
+    "url": "https://github.com/hocgin/crash-app",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-04-18T07:20:06Z",
+    "updatedAt": "2025-07-01T23:11:57Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/swift6-module-template",
+    "description": "An opinionated starting point for awesome, reusable Swift 6 modules",
+    "url": "https://github.com/hocgin/swift6-module-template",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 1,
+    "createdAt": "2025-01-23T05:23:28Z",
+    "updatedAt": "2025-06-29T08:15:24Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/StoreKitHelper",
+    "description": "A lightweight StoreKit2 wrapper designed specifically for SwiftUI, making it easier to implement in-app purchases.",
+    "url": "https://github.com/hocgin/StoreKitHelper",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-04-18T03:06:37Z",
+    "updatedAt": "2025-06-18T11:03:01Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/patreon-dl",
+    "description": "Patreon Downloader",
+    "url": "https://github.com/hocgin/patreon-dl",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-07-02T00:11:28Z",
+    "updatedAt": "2025-07-02T00:11:28Z",
+    "isPrivate": false,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/PermissionSheets",
+    "description": "A SwiftUI package for elegant, customizable permission request sheets with animated previews for notifications and location services.",
+    "url": "https://github.com/hocgin/PermissionSheets",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-03-10T15:43:46Z",
+    "updatedAt": "2025-06-21T17:58:00Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/dove-sso",
+    "description": "🐦 SSO with nodejs",
+    "url": "https://github.com/hocgin/dove-sso",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-08-06T07:40:36Z",
+    "updatedAt": "2025-06-05T04:21:40Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://sso.hocgin.com/",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/dove-license",
+    "description": "许可证",
+    "url": "https://github.com/hocgin/dove-license",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-08-07T16:31:52Z",
+    "updatedAt": "2025-06-05T04:18:31Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://license.hocgin.com/",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/Voyager",
+    "description": "Framework for navigation & routing in SwiftUI",
+    "url": "https://github.com/hocgin/Voyager",
+    "primaryLanguage": {
+      "name": "Swift"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-02-05T06:13:42Z",
+    "updatedAt": "2025-05-24T11:37:13Z",
+    "isPrivate": false,
+    "licenseInfo": {
+      "key": "mit",
+      "name": "MIT License",
+      "nickname": ""
+    },
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/electron-starter",
+    "description": "Electron",
+    "url": "https://github.com/hocgin/electron-starter",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-05-13T03:02:25Z",
+    "updatedAt": "2026-01-07T01:16:23Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/dove-feed",
+    "description": "Feed",
+    "url": "https://github.com/hocgin/dove-feed",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-08-18T02:57:31Z",
+    "updatedAt": "2025-05-20T08:32:49Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://feed.hocgin.com/",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/cloudflare-starter",
+    "description": "NextJS + Drizzle + D1 ",
+    "url": "https://github.com/hocgin/cloudflare-starter",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2024-05-08T07:33:51Z",
+    "updatedAt": "2025-05-20T05:43:54Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://cloudflare-starter.vercel.app",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/dove-game",
+    "description": "Game",
+    "url": "https://github.com/hocgin/dove-game",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2024-03-14T16:53:24Z",
+    "updatedAt": "2025-05-09T07:33:46Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://dove-game.vercel.app",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/rabbit-gscreen",
+    "description": "",
+    "url": "https://github.com/hocgin/rabbit-gscreen",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-05-05T16:35:03Z",
+    "updatedAt": "2025-05-09T07:26:58Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://rabbit-gscreen.vercel.app",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/node-package",
+    "description": "🦑 node 通用工具包",
+    "url": "https://github.com/hocgin/node-package",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2022-06-22T01:56:03Z",
+    "updatedAt": "2025-05-09T03:31:40Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "https://hnp.hocg.in/",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/addone-cancopy",
+    "description": "",
+    "url": "https://github.com/hocgin/addone-cancopy",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2025-04-17T08:42:37Z",
+    "updatedAt": "2025-04-17T08:48:01Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  },
+  {
+    "nameWithOwner": "hocgin/addone-rss-reader",
+    "description": "🪗 RSS Reader",
+    "url": "https://github.com/hocgin/addone-rss-reader",
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "createdAt": "2023-03-01T10:58:50Z",
+    "updatedAt": "2025-04-14T03:49:21Z",
+    "isPrivate": true,
+    "licenseInfo": null,
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "repositoryTopics": null,
+    "homepageUrl": "",
+    "readmePreview": null
+  }
+]

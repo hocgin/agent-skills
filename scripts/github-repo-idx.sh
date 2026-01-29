@@ -183,7 +183,7 @@ EOF
 
     # 添加到 JSON
     TMP=$(mktemp)
-    jq --argjson newobj "$(echo "$repo" | jq -c '{
+    REPO_JSON=$(echo "$repo" | jq -c '{
         nameWithOwner,
         description,
         url,
@@ -198,8 +198,11 @@ EOF
         repositoryTopics,
         homepageUrl,
         readmePreview: (if .readme then .readme[0:500] else null end)
-    }')" '. += [$newobj]' "$JSON_FILE.tmp" > "$TMP"
-    mv "$TMP" "$JSON_FILE.tmp"
+    }')
+    if [ -n "$REPO_JSON" ]; then
+        jq --argjson newobj "$REPO_JSON" '. += [$newobj]' "$JSON_FILE.tmp" > "$TMP"
+        mv "$TMP" "$JSON_FILE.tmp"
+    fi
 done
 
 echo ""
