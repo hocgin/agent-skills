@@ -43,6 +43,66 @@
         "./skills/browser-extension-builder",
         "./skills/frontend-design"
       ]
+    },
+    {
+      "name": "create-video-skills",
+      "description": "",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/remotion-best-practices"
+      ]
+    },
+    {
+      "name": "fullstack-website-skills",
+      "description": "",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/cloudflare",
+        "./skills/wrangler"
+      ]
+    },
+    {
+      "name": "static-website-skills",
+      "description": "",
+      "source": "./",
+      "strict": false,
+      "skills": [
+      ]
+    },
+    {
+      "name": "article-skills",
+      "description": "",
+      "source": "./",
+      "strict": false,
+      "skills": [
+      ]
+    },
+    {
+      "name": "rss-data-skills",
+      "description": "",
+      "source": "./",
+      "strict": false,
+      "skills": [
+      ]
+    },
+    {
+      "name": "game-dev-skills",
+      "description": "",
+      "source": "./",
+      "strict": false,
+      "skills": [
+      ]
+    },
+    {
+      "name": "template-skills",
+      "description": "",
+      "source": "./",
+      "strict": false,
+      "skills": [
+
+      ]
     }
   ]
 }
