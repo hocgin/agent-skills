@@ -1,6 +1,8 @@
 ---
 name: swift-private-bundle
 description: Use when you need to search, discover, and integrate private GitHub repositories as Swift package dependencies in iOS/macOS projects.
+metadata:
+  internal: true
 tools: Bash, Grep, Read, Write, Edit, Glob
 license: MIT
 metadata:
