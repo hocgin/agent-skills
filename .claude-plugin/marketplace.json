@@ -23,7 +23,7 @@
     },
     {
       "name": "swift-skills",
-      "description": "",
+      "description": "Collection of Swift development resources including TCA, SQLite, SwiftUI animations, and style guides",
       "source": "./",
       "strict": false,
       "skills": [
