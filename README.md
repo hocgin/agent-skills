@@ -4,8 +4,6 @@
 
 ```shell
 npx skills add hocgin/agent-skills
-
-npx skills add hocgin/agent-skills
 ```
 
 
