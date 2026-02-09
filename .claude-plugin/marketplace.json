@@ -1,0 +1,38 @@
+{
+  "name": "agent-skills",
+  "owner": {
+    "name": "hocgin",
+    "email": "hocgin@gmail.com"
+  },
+  "metadata": {
+    "description": "hocgin skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "document-skills",
+      "description": "Collection of document processing suite including Excel, Word, PowerPoint, and PDF capabilities",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/xlsx",
+        "./skills/docx",
+        "./skills/pptx",
+        "./skills/pdf"
+      ]
+    },
+    {
+      "name": "swift-skills",
+      "description": "Collection of example skills demonstrating various capabilities including skill creation, MCP building, visual design, algorithmic art, internal communications, web testing, artifact building, Slack GIFs, and theme styling",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/swift-my-bundle",
+        "./skills/swift-composable-architecture",
+        "./skills/swift-sqlite-data",
+        "./skills/swift-style",
+        "./skills/swiftui-animations"
+      ]
+    }
+  ]
+}
