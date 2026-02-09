@@ -33,6 +33,15 @@
         "./skills/swift-style",
         "./skills/swiftui-animations"
       ]
+    },
+    {
+      "name": "browser-extension-skills",
+      "description": "",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/frontend-design"
+      ]
     }
   ]
 }
