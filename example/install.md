@@ -14,6 +14,7 @@ npx skills add https://github.com/anthropics/skills --skill theme-factory
 npx skills add https://github.com/rknall/claude-skills --skill SVG Logo Designer
 npx skills add https://github.com/jezweb/claude-skills --skill icon-design
 npx skills add https://github.com/0xbigboss/claude-code --skill web-fetch
+npx skills add https://github.com/github/awesome-copilot --skill gh-cli
 
 
 /plugin marketplace add OthmanAdi/planning-with-files
