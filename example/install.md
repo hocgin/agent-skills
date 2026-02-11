@@ -11,7 +11,7 @@ npx skills add https://github.com/github/awesome-copilot --skill gh-cli -y
 
 #### 视频制作
 ```shell
-npx skills add https://github.com/remotion-dev/skills --skill remotion-best-practices
+npx skills add https://github.com/remotion-dev/skills --skill remotion-best-practices -y
 ```
 
 #### 前端
