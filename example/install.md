@@ -72,9 +72,9 @@ npx skills add https://github.com/anthropics/skills --skill canvas-design -y
 
 #### 待整理
 ```shell
-npx skills add https://github.com/vercel-labs/next-skills --skill next-best-practices
-npx skills add https://github.com/cloudflare/skills --skill wrangler
-npx skills add https://github.com/coreyhaines31/marketingskills --skill programmatic-seo
+npx skills add https://github.com/vercel-labs/next-skills --skill next-best-practices -y
+npx skills add https://github.com/cloudflare/skills --skill wrangler -y
+npx skills add https://github.com/coreyhaines31/marketingskills --skill programmatic-seo -y
 
 
 
