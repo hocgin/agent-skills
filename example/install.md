@@ -55,15 +55,15 @@ npx skills add https://github.com/anthropics/skills --skill frontend-design -y
 
 #### Swift 开发
 ```shell
-npx skills add https://github.com/hocgin/agent-skills --skill swift-private-bundle -y
-npx skills add https://github.com/hocgin/agent-skills --skill swift-composable-architecture -y
-npx skills add https://github.com/hocgin/agent-skills --skill swift-sqlite-data -y
-npx skills add https://github.com/johnrogers/claude-swift-engineering --skill swift-style -y
-npx skills add https://github.com/tryhuset/agent-skills --skill swiftui-animations -y
-npx skills add https://github.com/avdlee/swiftui-agent-skill --skill swiftui-expert-skill -y
-npx skills add https://github.com/avdlee/swift-concurrency-agent-skill --skill swift-concurrency -y
-npx skills add https://github.com/tuist/claude-marketplace --skill tuist -y
-npx skills add https://github.com/tuist/agent-skills --skill fix-flaky-tests -y
+npx skills add https://github.com/hocgin/agent-skills --skill swift-private-bundle -a claude-code -y
+npx skills add https://github.com/hocgin/agent-skills --skill swift-composable-architecture -a claude-code -y
+npx skills add https://github.com/hocgin/agent-skills --skill swift-sqlite-data -a claude-code -y
+npx skills add https://github.com/johnrogers/claude-swift-engineering --skill swift-style -a claude-code -y
+npx skills add https://github.com/tryhuset/agent-skills --skill swiftui-animations -a claude-code -y
+npx skills add https://github.com/avdlee/swiftui-agent-skill --skill swiftui-expert-skill -a claude-code -y
+npx skills add https://github.com/avdlee/swift-concurrency-agent-skill --skill swift-concurrency -a claude-code -y
+npx skills add https://github.com/tuist/claude-marketplace --skill tuist -a claude-code -y
+npx skills add https://github.com/tuist/agent-skills --skill fix-flaky-tests -a claude-code -y
 ```
 
 #### 前端
