@@ -23,6 +23,8 @@ npx skills add https://github.com/coreyhaines31/marketingskills --skill copywrit
 #### 视频制作
 ```shell
 npx skills add https://github.com/remotion-dev/skills --skill remotion-best-practices -y
+npx skills add https://github.com/skill-zero/s --skill ai-video-generation
+npx skills add https://github.com/skill-zero/s --skill text-to-speech
 ```
 
 #### 文档处理
