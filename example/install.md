@@ -14,6 +14,21 @@ npx skills add https://github.com/github/awesome-copilot --skill gh-cli -y
 npx skills add https://github.com/remotion-dev/skills --skill remotion-best-practices -y
 ```
 
+#### 浏览器插件
+```shell
+npx skills add https://github.com/sickn33/antigravity-awesome-skills --skill browser-extension-builder -y
+npx skills add https://github.com/anthropics/skills --skill frontend-design -y
+```
+
+#### Swift 开发
+```shell
+npx skills add https://github.com/hocgin/agent-skills --skill swift-private-bundle -y
+npx skills add https://github.com/hocgin/agent-skills --skill swift-composable-architecture -y
+npx skills add https://github.com/hocgin/agent-skills --skill swift-sqlite-data -y
+npx skills add https://github.com/johnrogers/claude-swift-engineering --skill swift-style -y
+npx skills add https://github.com/tryhuset/agent-skills --skill swiftui-animations -y
+```
+
 #### 前端
 ```shell
 npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines -y

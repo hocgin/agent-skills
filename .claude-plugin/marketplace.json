@@ -27,7 +27,7 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/swift-my-bundle",
+        "./skills/swift-private-bundle",
         "./skills/swift-composable-architecture",
         "./skills/swift-sqlite-data",
         "./skills/swift-style",
