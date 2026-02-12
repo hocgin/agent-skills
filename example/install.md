@@ -63,6 +63,7 @@ npx skills add https://github.com/tryhuset/agent-skills --skill swiftui-animatio
 npx skills add https://github.com/avdlee/swiftui-agent-skill --skill swiftui-expert-skill -y
 npx skills add https://github.com/avdlee/swift-concurrency-agent-skill --skill swift-concurrency -y
 npx skills add https://github.com/tuist/claude-marketplace --skill tuist -y
+npx skills add https://github.com/tuist/agent-skills --skill fix-flaky-tests -y
 ```
 
 #### 前端
