@@ -7,7 +7,7 @@
 npx skills add https://github.com/rknall/claude-skills --skill SVG Logo Designer -y
 npx skills add https://github.com/0xbigboss/claude-code --skill web-fetch -y
 npx skills add https://github.com/github/awesome-copilot --skill gh-cli -y
-npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
+npx skills add https://github.com/obra/superpowers --skill executing-plans
 ```
 
 #### 产品设计
@@ -70,6 +70,7 @@ npx skills add https://github.com/anthropics/skills --skill theme-factory -y
 npx skills add https://github.com/giuseppe-trisciuoglio/developer-kit --skill shadcn-ui -y
 npx skills add https://github.com/jezweb/claude-skills --skill icon-design -y
 npx skills add https://github.com/anthropics/skills --skill canvas-design -y
+npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
 ```
 
 #### 待整理
