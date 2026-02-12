@@ -14,6 +14,26 @@ npx skills add https://github.com/github/awesome-copilot --skill gh-cli -y
 npx skills add https://github.com/remotion-dev/skills --skill remotion-best-practices -y
 ```
 
+#### 文档处理
+```shell
+
+```
+
+#### 视频处理
+```shell
+
+```
+
+#### cloudflare 站点
+```shell
+
+```
+
+#### 游戏开发
+```shell
+
+```
+
 #### 浏览器插件
 ```shell
 npx skills add https://github.com/sickn33/antigravity-awesome-skills --skill browser-extension-builder -y
