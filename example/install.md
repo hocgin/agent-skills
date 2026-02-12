@@ -60,8 +60,9 @@ npx skills add https://github.com/hocgin/agent-skills --skill swift-composable-a
 npx skills add https://github.com/hocgin/agent-skills --skill swift-sqlite-data -y
 npx skills add https://github.com/johnrogers/claude-swift-engineering --skill swift-style -y
 npx skills add https://github.com/tryhuset/agent-skills --skill swiftui-animations -y
-npx skills add https://github.com/avdlee/swiftui-agent-skill --skill swiftui-expert-skill
-npx skills add https://github.com/avdlee/swift-concurrency-agent-skill --skill swift-concurrency
+npx skills add https://github.com/avdlee/swiftui-agent-skill --skill swiftui-expert-skill -y
+npx skills add https://github.com/avdlee/swift-concurrency-agent-skill --skill swift-concurrency -y
+npx skills add https://github.com/tuist/claude-marketplace --skill tuist -y
 ```
 
 #### 前端
