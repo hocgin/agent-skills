@@ -64,6 +64,8 @@ npx skills add https://github.com/avdlee/swiftui-agent-skill --skill swiftui-exp
 npx skills add https://github.com/avdlee/swift-concurrency-agent-skill --skill swift-concurrency -a claude-code -y
 npx skills add https://github.com/tuist/claude-marketplace --skill tuist -a claude-code -y
 npx skills add https://github.com/tuist/agent-skills --skill fix-flaky-tests -a claude-code -y
+
+/plugin marketplace add greenstevester/fastlane-skill
 ```
 
 #### 前端
