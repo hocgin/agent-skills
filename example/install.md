@@ -4,20 +4,20 @@
 
 #### Basic
 ```shell
-npx skills add https://github.com/rknall/claude-skills --skill SVG Logo Designer -y
-npx skills add https://github.com/0xbigboss/claude-code --skill web-fetch -y
-npx skills add https://github.com/github/awesome-copilot --skill gh-cli -y
-npx skills add https://github.com/obra/superpowers --skill executing-plans
+npx skills add https://github.com/rknall/claude-skills --skill SVG Logo Designer -a claude-code -y
+npx skills add https://github.com/0xbigboss/claude-code --skill web-fetch -a claude-code -y
+npx skills add https://github.com/github/awesome-copilot --skill gh-cli -a claude-code -y
+npx skills add https://github.com/obra/superpowers --skill executing-plans -a claude-code -y
 ```
 
 #### 产品设计
 ```shell
-npx skills add https://github.com/obra/superpowers --skill brainstorming
+npx skills add https://github.com/obra/superpowers --skill brainstorming -a claude-code -y
 ```
 
 #### 文案营销
 ```shell
-npx skills add https://github.com/coreyhaines31/marketingskills --skill copywriting
+npx skills add https://github.com/coreyhaines31/marketingskills --skill copywriting -a claude-code -y
 ```
 
 #### 视频制作
@@ -49,8 +49,8 @@ npx skills add https://github.com/skill-zero/s --skill text-to-speech
 
 #### 浏览器插件
 ```shell
-npx skills add https://github.com/sickn33/antigravity-awesome-skills --skill browser-extension-builder -y
-npx skills add https://github.com/anthropics/skills --skill frontend-design -y
+npx skills add https://github.com/sickn33/antigravity-awesome-skills --skill browser-extension-builder -a claude-code -y
+npx skills add https://github.com/anthropics/skills --skill frontend-design -a claude-code -y
 ```
 
 #### Swift 开发
