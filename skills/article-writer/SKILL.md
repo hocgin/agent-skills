@@ -4,7 +4,7 @@ description: AI驱动的智能写作系统，专注于创作高质量、低AI检
 compatibility: Requires wenyan-cli
 metadata:
   author: hocgin
-  version: "2.0"
+  version: "3.0"
   ai-detection-target: "< 25%"
   primary-mode: fast (自动生成)
   dependencies: wenyan-cli (可选，用于AI生图)
