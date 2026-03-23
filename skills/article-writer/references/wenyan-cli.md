@@ -199,7 +199,42 @@ wenyan publish -f article.md --appId your_app_id --appSecret your_secret
 - 非 0 退出码表示失败
 - 详细的错误消息帮助快速定位问题
 
+## Frontmatter 要求
+
+必须在 Markdown 顶部包含一段 frontmatter：
+
+```
+---
+title: 文章标题
+cover: ./cover.jpg
+author: 作者名称
+source_url: https://example.com
+---
+```
+
+字段说明：
+
+| 字段         | 必填 | 说明                |
+| ---------- | -- | ----------------- |
+| title      | 是  | 文章标题              |
+| cover      | 否  | 封面图片（本地路径或网络 URL） |
+| author     | 否  | 作者                |
+| source_url | 否  | 原文链接              |
+
+说明：
+
+* 如果未指定 cover，将自动使用正文第一张图片作为封面
+* cover 支持本地路径和网络 URL
+
 ## 常见问题
+
+### 图片上传失败
+
+请检查：
+
+* 图片路径是否正确
+* 图片文件是否存在
+* 图片格式是否支持（jpg、png、gif）
 
 ### 主题列表为空
 ```bash
