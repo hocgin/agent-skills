@@ -1,7 +1,7 @@
 ---
 name: article-writer
 description: AI驱动的智能写作系统，专注于创作高质量、低AI检测率的文章内容
-compatibility: Requires Claude Code / Cursor / Gemini CLI
+compatibility: Requires wenyan-cli
 metadata:
   author: hocgin
   version: "2.0"
