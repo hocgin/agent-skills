@@ -27,6 +27,12 @@ npx skills add https://github.com/skill-zero/s --skill ai-video-generation
 npx skills add https://github.com/skill-zero/s --skill text-to-speech
 ```
 
+#### 公众号
+```shell
+npx skills add https://github.com/hocgin/agent-skills/ --skills article-writer -a openclaw -y
+npx skills add https://github.com/hocgin/agent-skills/ --skills wenyan-cli     -a openclaw -y
+```
+
 #### 文档处理
 ```shell
 
