@@ -1,6 +1,10 @@
-# WenYan CLI
-
-微信公众号 Markdown 渲染和发布工具，支持将 Markdown 文档转换为样式化的 HTML 并直接发布到微信公众号。
+---
+name: wenyan-cli
+description: 微信公众号 Markdown 渲染和发布工具，支持将 Markdown 文档转换为样式化的 HTML 并直接发布到微信公众号
+metadata:
+  author: hocgin
+  version: "3.0"
+---
 
 ## 主要功能
 
