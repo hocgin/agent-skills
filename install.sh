@@ -216,7 +216,8 @@ while IFS=$'\t' read -r repo skill item_agent; do
     continue
   fi
 
-  if "${cmd[@]}"; then
+  # 避免安装命令消费 while read 的标准输入，导致后续 skill 被跳过。
+  if "${cmd[@]}" </dev/null; then
     success_count=$((success_count + 1))
   else
     failed_count=$((failed_count + 1))
