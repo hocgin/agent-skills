@@ -67,6 +67,7 @@ EOF
   local line_count
   line_count="$(wc -l < "$TMP_DIR/npx.log" | tr -d ' ')"
   assert_equals "10" "$line_count" "应通过 --file 安装完整的 10 个 skill"
+  assert_contains "$output" "Bundle: ios-dev" "--file 模式应优先显示清单中的 bundle 名称"
   assert_contains "$output" "Summary: success=10, failed=0" "应汇总 10 个安装成功"
 }
 

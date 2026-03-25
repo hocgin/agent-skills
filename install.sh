@@ -128,6 +128,18 @@ for item in data.get("skills", []):
 '
 }
 
+read_bundle_name() {
+  python3 -c '
+import json
+import sys
+
+data = json.load(sys.stdin)
+name = str(data.get("name", "")).strip()
+if name:
+    print(name)
+'
+}
+
 while [ "$#" -gt 0 ]; do
   case "$1" in
     --with)
@@ -204,6 +216,10 @@ if [ -n "$FILE_PATH" ]; then
   bundle_label="$(basename "$FILE_PATH")"
   bundle_source="$FILE_PATH"
   bundle_content="$(read_bundle_file "$FILE_PATH")"
+  parsed_bundle_name="$(printf '%s' "$bundle_content" | read_bundle_name || true)"
+  if [ -n "$parsed_bundle_name" ]; then
+    bundle_label="$parsed_bundle_name"
+  fi
 else
   bundle_path="bundle/${BUNDLE_NAME}/skills.json"
   bundle_label="$BUNDLE_NAME"
