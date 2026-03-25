@@ -8,6 +8,7 @@ DEFAULT_REF="main"
 
 AGENT="$DEFAULT_AGENT"
 BUNDLE_NAME=""
+FILE_PATH=""
 REPO_SLUG="$DEFAULT_REPO"
 REF_NAME="$DEFAULT_REF"
 ASSUME_YES=true
@@ -18,10 +19,12 @@ usage() {
   cat <<'EOF'
 Usage:
   install.sh --with <bundle> [--agent <agent>] [--repo <owner/repo>] [--ref <git-ref>] [--dry-run]
+  install.sh --file <path> [--agent <agent>] [--dry-run]
   install.sh --list [--repo <owner/repo>] [--ref <git-ref>]
 
 Options:
   --with <bundle>   指定要安装的 bundle 名称
+  --file <path>     指定本地 bundle JSON 文件
   --agent <agent>   指定目标 agent，默认 codex
   --repo <repo>     指定仓库，默认 hocgin/agent-skills
   --ref <ref>       指定分支或标签，默认 main
@@ -69,6 +72,17 @@ read_source() {
   fi
 
   fetch_text "$(raw_url "$path")"
+}
+
+read_bundle_file() {
+  local path="$1"
+
+  if [ ! -f "$path" ]; then
+    err "本地文件不存在: $path"
+    exit 1
+  fi
+
+  cat "$path"
 }
 
 list_bundles() {
@@ -124,6 +138,10 @@ while [ "$#" -gt 0 ]; do
       AGENT="${2:-}"
       shift 2
       ;;
+    --file)
+      FILE_PATH="${2:-}"
+      shift 2
+      ;;
     --repo)
       REPO_SLUG="${2:-}"
       shift 2
@@ -164,28 +182,45 @@ if [ "$LIST_ONLY" = true ]; then
   exit 0
 fi
 
-if [ -z "$BUNDLE_NAME" ]; then
-  err "必须通过 --with 指定 bundle"
+if [ -n "$FILE_PATH" ] && [ -n "$BUNDLE_NAME" ]; then
+  err "--file 与 --with 不能同时使用"
+  usage
+  exit 1
+fi
+
+if [ -z "$FILE_PATH" ] && [ -z "$BUNDLE_NAME" ]; then
+  err "必须通过 --with 或 --file 指定安装来源"
   usage
   exit 1
 fi
 
 require_cmd npx
 
-bundle_path="bundle/${BUNDLE_NAME}/skills.json"
+bundle_label="$BUNDLE_NAME"
+bundle_source=""
+bundle_content=""
 
-log "Bundle: $BUNDLE_NAME"
-log "Agent: $AGENT"
-if [ -f "./${bundle_path}" ]; then
-  log "Source: ./${bundle_path}"
+if [ -n "$FILE_PATH" ]; then
+  bundle_label="$(basename "$FILE_PATH")"
+  bundle_source="$FILE_PATH"
+  bundle_content="$(read_bundle_file "$FILE_PATH")"
 else
-  log "Source: $(raw_url "$bundle_path")"
+  bundle_path="bundle/${BUNDLE_NAME}/skills.json"
+  bundle_label="$BUNDLE_NAME"
+  if [ -f "./${bundle_path}" ]; then
+    bundle_source="./${bundle_path}"
+  else
+    bundle_source="$(raw_url "$bundle_path")"
+  fi
+  if ! bundle_content="$(read_source "$bundle_path")"; then
+    err "无法读取 bundle: $BUNDLE_NAME"
+    exit 1
+  fi
 fi
 
-if ! bundle_content="$(read_source "$bundle_path")"; then
-  err "无法读取 bundle: $BUNDLE_NAME"
-  exit 1
-fi
+log "Bundle: $bundle_label"
+log "Agent: $AGENT"
+log "Source: $bundle_source"
 
 success_count=0
 failed_count=0
