@@ -1,0 +1,18 @@
+{
+  "name": "video-production",
+  "description": "视频制作常用 skill 集合",
+  "skills": [
+    {
+      "repo": "https://github.com/remotion-dev/skills",
+      "skill": "remotion-best-practices"
+    },
+    {
+      "repo": "https://github.com/skill-zero/s",
+      "skill": "ai-video-generation"
+    },
+    {
+      "repo": "https://github.com/skill-zero/s",
+      "skill": "text-to-speech"
+    }
+  ]
+}

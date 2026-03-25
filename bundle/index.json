@@ -7,6 +7,22 @@
     {
       "name": "frontend",
       "description": "前端设计与工程常用 skill 集合"
+    },
+    {
+      "name": "nextjs",
+      "description": "静态站点与 Next.js 常用 skill 集合"
+    },
+    {
+      "name": "browser-extension",
+      "description": "浏览器插件开发常用 skill 集合"
+    },
+    {
+      "name": "video-production",
+      "description": "视频制作常用 skill 集合"
+    },
+    {
+      "name": "cloudflare",
+      "description": "Cloudflare 站点与 Workers 常用 skill 集合"
     }
   ]
 }

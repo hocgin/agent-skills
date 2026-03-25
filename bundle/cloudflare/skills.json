@@ -1,0 +1,14 @@
+{
+  "name": "cloudflare",
+  "description": "Cloudflare 站点与 Workers 常用 skill 集合",
+  "skills": [
+    {
+      "repo": "https://github.com/cloudflare/skills",
+      "skill": "wrangler"
+    },
+    {
+      "repo": "https://github.com/hocgin/agent-skills",
+      "skill": "cloudflare"
+    }
+  ]
+}

@@ -47,6 +47,10 @@ test_list_uses_local_index() {
   output="$(cd "$ROOT_DIR" && bash install.sh --list)"
   assert_contains "$output" $'ios-dev\tiOS 开发常用 skill 集合' "应列出 ios-dev bundle"
   assert_contains "$output" $'frontend\t前端设计与工程常用 skill 集合' "应列出 frontend bundle"
+  assert_contains "$output" $'nextjs\t静态站点与 Next.js 常用 skill 集合' "应列出 nextjs bundle"
+  assert_contains "$output" $'browser-extension\t浏览器插件开发常用 skill 集合' "应列出 browser-extension bundle"
+  assert_contains "$output" $'video-production\t视频制作常用 skill 集合' "应列出 video-production bundle"
+  assert_contains "$output" $'cloudflare\tCloudflare 站点与 Workers 常用 skill 集合' "应列出 cloudflare bundle"
 }
 
 test_file_installs_all_skills() {

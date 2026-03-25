@@ -1,0 +1,38 @@
+{
+  "name": "nextjs",
+  "description": "静态站点与 Next.js 常用 skill 集合",
+  "skills": [
+    {
+      "repo": "https://github.com/rknall/claude-skills",
+      "skill": "SVG Logo Designer"
+    },
+    {
+      "repo": "https://github.com/0xbigboss/claude-code",
+      "skill": "web-fetch"
+    },
+    {
+      "repo": "https://github.com/github/awesome-copilot",
+      "skill": "gh-cli"
+    },
+    {
+      "repo": "https://github.com/obra/superpowers",
+      "skill": "executing-plans"
+    },
+    {
+      "repo": "https://github.com/obra/superpowers",
+      "skill": "brainstorming"
+    },
+    {
+      "repo": "https://github.com/coreyhaines31/marketingskills",
+      "skill": "copywriting"
+    },
+    {
+      "repo": "https://github.com/vercel-labs/next-skills",
+      "skill": "next-best-practices"
+    },
+    {
+      "repo": "https://github.com/coreyhaines31/marketingskills",
+      "skill": "programmatic-seo"
+    }
+  ]
+}
