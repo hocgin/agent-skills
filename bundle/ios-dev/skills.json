@@ -3,6 +3,18 @@
   "description": "iOS 开发常用 skill 集合",
   "skills": [
     {
+      "repo": "https://github.com/rknall/claude-skills",
+      "skill": "svg-logo-designer"
+    },
+    {
+      "repo": "https://github.com/0xbigboss/claude-code",
+      "skill": "web-fetch"
+    },
+    {
+      "repo": "https://github.com/github/awesome-copilot",
+      "skill": "gh-cli"
+    },
+    {
       "repo": "https://github.com/obra/superpowers",
       "skill": "executing-plans"
     },
