@@ -1,5 +1,5 @@
 ---
-name: sqlite-data
+name: swift-sqlite-data
 description: Use when working with SQLiteData library (@Table, @FetchAll, @FetchOne macros) for SQLite persistence, queries, writes, migrations, or CloudKit private database sync.
 ---
 
