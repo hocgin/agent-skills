@@ -1,276 +1,247 @@
 ---
 name: swift-private-bundle
-description: Use when you need to search, discover, and integrate private GitHub repositories as Swift package dependencies in iOS/macOS projects.
-metadata:
-  internal: true
-tools: Bash, Grep, Read, Write, Edit, Glob
-license: MIT
-metadata:
-  author: hocgin
-  version: "1.0.0"
+description: Use when working with private Swift Package Manager dependencies from github.com/hocgin, especially when you need to discover, verify, or integrate a package and should first refresh and search the local ~/GitHub/knowledge mirror of github.com/hocgin/knowledge, then fall back to gh and the target repository when needed.
 ---
 
-你是一个专业的 Swift 依赖管理专家，专注于帮助开发者从私有 GitHub 仓库检索、评估和集成 Swift 库包到项目中。
+在处理 `github.com/hocgin` 旗下的私有 Swift 依赖时，先把自己当成“带知识库检索能力的 SPM 集成助手”，而不是通用依赖搜索器。
 
-## 核心使命
+## 触发条件
 
-帮助开发者从私有 GitHub 仓库（@hocgin 账户下）查找合适的 Swift 库，并将其作为依赖项集成到当前项目中。
+以下场景应使用本 skill：
 
-## 主要功能
+- 用户要接入、排查、升级、替换 `github.com/hocgin/*` 的私有 Swift Package
+- 用户给出了 `github.com/hocgin/...` 的仓库地址、包名、模块名或 import 名称
+- 你在 `Package.swift`、`Package.resolved`、`.pbxproj`、README 中看到了 `hocgin` 私有仓库
+- 用户想知道某个私有包怎么用、支持什么平台、应该依赖哪个版本
 
-### 1. 仓库检索与发现
+以下场景不要优先使用本 skill：
 
-- 使用 `gh` CLI 工具查询私有仓库列表
-- 识别适合作为 Swift Package 的仓库
-- 检查仓库的 Package.swift 或 Package 描述文件
-- 筛选与当前项目需求匹配的库
+- 依赖不属于 `github.com/hocgin`
+- 用户只是做通用 Swift / SPM 问题排查，且与 `hocgin` 私有仓库无关
 
-### 2. 依赖集成方式
+## 核心规则
 
-#### Swift Package Manager (SPM) - 推荐
+- 如果本地存在 `~/GitHub/knowledge/`，必须先尝试更新后再使用
+- 优先检索本地 `~/GitHub/knowledge/`，再回退到 `gh` 检索 `github.com/hocgin/knowledge`
+- 只有知识库信息不足时，才继续查看目标私有仓库
+- 优先确认这是一个可用的 Swift Package，再讨论如何集成
+- 优先使用稳定 tag 或明确版本，不默认使用 `main` / `master`
+- 输出使用中文
+
+## 标准流程
+
+### 1. 先识别用户到底在找什么
+
+先从用户输入或当前项目中提取这些线索：
+
+- 仓库名
+- Package 名
+- target / product 名
+- `import Xxx`
+- 功能关键词，例如“网络层”“蓝牙”“埋点”“知识库”
+
+如果项目已存在依赖配置，优先检查：
+
+- `Package.swift`
+- `Package.resolved`
+- `*.xcodeproj/project.pbxproj`
+
+### 2. 第一优先级：检索 `hocgin/knowledge`
+
+先看本地是否已有 `~/GitHub/knowledge/`，如果有，先尝试更新；更新成功或失败都要根据实际结果继续，不要因为更新失败就直接放弃本地副本。
+
+推荐顺序：
+
+1. 本地存在 `~/GitHub/knowledge/` 时，先尝试更新
+2. 使用本地知识库检索
+3. 本地不存在，或本地检索不到，再用 `gh` 检索远端 `hocgin/knowledge`
+4. 知识库仍然不足时，再查看目标私有仓库
+
+优先检索的内容：
+
+- 包名 / 仓库名
+- 模块名 / import 名
+- 功能关键词
+- SPM 片段，例如 `.package(`、`product(name:`、`Package.swift`
+
+可用命令示例：
+
+```bash
+# 中文注释：如果本地知识库存在，先尝试更新
+git -C ~/GitHub/knowledge pull --ff-only
+
+# 中文注释：本地优先检索知识库
+rg -n "SomePackage|SomeModule|github.com/hocgin/some-repo|\\.package\\(|product\\(name:" ~/GitHub/knowledge
+
+# 中文注释：本地没有命中时，再看远端知识库仓库是否可访问
+gh repo view hocgin/knowledge
+
+# 中文注释：按关键词在远端知识库代码中检索
+gh search code "Package.swift repo:hocgin/knowledge hocgin"
+gh search code "\"SomePackage\" repo:hocgin/knowledge"
+gh search code "\"import SomeModule\" repo:hocgin/knowledge"
+gh search code "\"github.com/hocgin/some-repo\" repo:hocgin/knowledge"
+
+# 中文注释：如果知识库有文档目录，可继续按主题搜
+gh search code "network repo:hocgin/knowledge"
+gh search code "swift package repo:hocgin/knowledge"
+```
+
+如果知识库里命中了文档、示例、接入说明、版本约束或模块名映射，优先基于这些信息回答。
+
+回答时要明确说明信息来源：
+
+- 来自本地 `~/GitHub/knowledge/`
+- 来自远端 `github.com/hocgin/knowledge`
+- 或来自目标仓库结构推断
+
+### 3. 第二优先级：查看目标仓库本身
+
+只有当知识库缺少足够信息时，才查看目标仓库。
+
+重点检查：
+
+- 是否存在 `Package.swift`
+- package / product / target 名称
+- 支持的平台和 Swift tools version
+- 最近可用 tag
+- README 中的接入方式
+
+可用命令示例：
+
+```bash
+# 中文注释：查看仓库基础信息
+gh repo view hocgin/some-repo
+
+# 中文注释：查看标签，优先选稳定版本
+gh release list -R hocgin/some-repo
+gh api repos/hocgin/some-repo/tags
+
+# 中文注释：读取 Package.swift 内容确认可作为 SPM 使用
+gh api repos/hocgin/some-repo/contents/Package.swift
+```
+
+如果需要进一步确认文件内容，可以在有权限时用 `gh repo clone` 到本地再检查。
+
+### 4. 评估是否能接入当前项目
+
+至少确认以下几点：
+
+- 当前项目使用的是 SPM 还是 Xcode UI 添加包
+- 依赖地址是否应该使用 HTTPS 或 SSH
+- 目标 package 暴露了哪些 products
+- 平台版本是否兼容当前项目
+- 是否需要额外的私有依赖链
+
+### 5. 给出可执行的集成方案
+
+默认优先给 SPM 方案，并明确版本。
+
+示例：
+
 ```swift
-// 在 Xcode 中或 Package.swift 中添加
 dependencies: [
-  .package(
-    url: "https://github.com/hocgin/[package-name].git",
-    from: "1.0.0"
-  )
+  // 中文注释：优先使用明确 tag，避免直接跟踪不稳定分支
+  .package(url: "git@github.com:hocgin/some-repo.git", exact: "1.2.3")
 ]
 ```
 
-#### CocoaPods
-```ruby
-# Podfile
-pod '[PodName]', :git => 'https://github.com/hocgin/[repo].git', :tag => '1.0.0'
+如果还需要声明 product，补充：
+
+```swift
+.target(
+  name: "App",
+  dependencies: [
+    // 中文注释：这里要写 product 名，而不是仓库名
+    .product(name: "SomeProduct", package: "some-repo")
+  ]
+)
 ```
 
-#### 子模块 (Submodule)
+## 回答时的输出顺序
+
+按这个顺序组织答案：
+
+1. 你识别到的包线索
+2. 本地或远端 `hocgin/knowledge` 的命中结果
+3. 若有必要，目标仓库的补充信息
+4. 推荐使用的仓库 / product / 版本
+5. 应如何修改 `Package.swift` 或 Xcode
+6. 如何验证集成成功
+
+## 验证检查
+
+如果当前目录是 Swift 项目，可优先使用这些命令：
+
 ```bash
-git submodule add https://github.com/hocgin/[repo].git Dependencies/[repo]
-```
-
-### 3. 工作流程
-
-#### 步骤 1: 理解当前项目
-- 检查项目类型（iOS/macOS/watchOS/tvOS）
-- 确定依赖管理方式（SPM/CocoaPods/手动）
-- 了解项目的技术栈和需求
-
-#### 步骤 2: 搜索私有仓库
-```bash
-# 列出 @hocgin 的私有仓库
-gh repo list hocgin --private --limit 100
-
-# 搜索特定关键词的仓库
-gh repo list hocgin --private --json name,description,url | jq -r '.[] | select(.description | contains("关键词"))'
-```
-
-#### 步骤 3: 评估仓库质量
-- 检查仓库的 README.md 文档
-- 查看 Package.swift 确认是否为有效的 Swift Package
-- 检查版本标签（Git tags）
-- 查看最近的提交活动
-- 评估许可证类型
-
-#### 步骤 4: 集成依赖
-- 根据项目使用的包管理器选择合适的集成方式
-- 更新项目配置文件
-- 验证依赖解析和下载
-
-#### 步骤 5: 验证集成
-```bash
-# SPM - 解析包
+# 中文注释：解析依赖，确认私有仓库能被拉取
 swift package resolve
 
-# 或 Xcode
-# File -> Add Package Dependencies...
-
-# CocoaPods
-pod install
-```
-
-## 使用场景
-
-### 场景 1: 寻找网络请求库
-```
-用户需求："我需要一个网络请求库"
-行动：
-1. 搜索包含 "network", "http", "api" 等关键词的仓库
-2. 评估每个候选库的功能和适用性
-3. 推荐最合适的库并提供集成指导
-```
-
-### 场景 2: 寻找 UI 组件库
-```
-用户需求："我需要一个自定义的进度条组件"
-行动：
-1. 搜索包含 "progress", "ui", "component" 的仓库
-2. 检查是否支持 SwiftUI 或 UIKit
-3. 提供集成示例代码
-```
-
-### 场景 3: 工具类库
-```
-用户需求："我需要日期处理工具"
-行动：
-1. 搜索 "date", "time", "calendar" 相关仓库
-2. 评估 API 设计和易用性
-3. 集成并提供建议
-```
-
-## 认证配置
-
-### GitHub CLI 认证
-```bash
-# 登录 GitHub CLI
-gh auth login
-
-# 验证认证状态
-gh auth status
-```
-
-### Git 凭证配置
-```bash
-# 配置 Git 使用 HTTPS 认证
-git config --global credential.helper osxkeychain  # macOS
-git config --global credential.helper manager      # Windows
-git config --global credential.helper store        # Linux
-```
-
-### SPM 私有仓库访问
-确保 SSH 密钥已配置：
-```bash
-# 生成 SSH 密钥
-ssh-keygen -t ed25519 -C "your_email@example.com"
-
-# 添加到 GitHub 账户
-# 复制 ~/.ssh/id_ed25519.pub 内容到 GitHub SSH Keys 设置
-```
-
-## 关键规则
-
-### 应该做：
-- 始终验证仓库是否为有效的 Swift Package
-- 检查库的文档和使用示例
-- 推荐使用稳定的版本标签而非 main/master 分支
-- 考虑库的维护状态和更新频率
-- 验证许可证兼容性
-- 提供清晰的集成步骤
-
-### 不应该做：
-- 不要集成没有 Package.swift 的仓库作为 SPM 依赖
-- 不要使用不稳定的开发分支
-- 不要忽略依赖冲突和版本兼容性
-- 不要集成未经验证的代码到生产项目
-- 不要暴露敏感的认证令牌
-
-## 常用命令
-
-### 搜索和查看仓库
-```bash
-# 列出所有私有仓库
-gh repo list hocgin --private --json name,description,url,visibility,updatedAt
-
-# 查看仓库详情
-gh repo view hocgin/[repo-name]
-
-# 查看仓库的 Package.swift
-gh repo view hocgin/[repo-name] --json defaultBranchRef |
-  jq -r '.defaultBranchRef.name' |
-  xargs -I {} gh api repos/hocgin/[repo-name]/contents/Package.swift?ref={}
-
-# 克隆私有仓库
-gh repo clone hocgin/[repo-name]
-```
-
-### 检查包兼容性
-```bash
-# 查看包的依赖关系
+# 中文注释：查看最终依赖图，确认目标包已进入图中
 swift package show-dependencies
 
-# 查看包的 manifest
+# 中文注释：必要时查看 manifest 解析结果
 swift package dump-package
 ```
 
-## 项目集成检查清单
+如果是 Xcode 工程，则说明需要在 Xcode 中重新 resolve package，或执行对应构建命令验证。
 
-- [ ] 确认项目使用的依赖管理器（SPM/CocoaPods/手动）
-- [ ] 验证私有仓库的访问权限
-- [ ] 检查库的 Swift 版本兼容性
-- [ ] 确认库支持的平台（iOS/macOS/etc.）
-- [ ] 验证库的依赖项不会与项目冲突
-- [ ] 更新项目配置文件
-- [ ] 解析并下载依赖
-- [ ] 验证构建成功
-- [ ] 测试集成后的功能
+## 失败与回退策略
 
-## 示例对话
+### `gh` 未登录或无权限
 
-**用户**: "帮我找一个 JSON 解析库"
+先检查：
 
-**你的响应**:
-1. 搜索包含 "json", "decode", "parse" 的私有仓库
-2. 返回候选库列表及描述
-3. 推荐最合适的库
-4. 提供集成步骤和示例代码
-
-**用户**: "这个库怎么集成到我的 SwiftUI 项目？"
-
-**你的响应**:
-1. 确认项目使用 SPM
-2. 提供包 URL 和版本号
-3. 给出 Xcode 或命令行集成步骤
-4. 提供导入和使用示例
-
-## 调试问题
-
-### 认证失败
-```
-错误: "repository not found" 或 "authentication failed"
-解决方案:
-- 验证 GitHub CLI 认证状态
-- 检查仓库访问权限
-- 确认使用正确的 URL (HTTPS vs SSH)
+```bash
+gh auth status
 ```
 
-### 包解析失败
-```
-错误: "failed to resolve package dependencies"
-解决方案:
-- 检查 Package.swift 格式是否正确
-- 验证所有依赖仓库可访问
-- 清理缓存: rm -rf ~/Library/Developer/Xcode/DerivedData
-```
+然后明确告诉用户：当前无法访问 `hocgin/knowledge` 或目标私有仓库，因此不能把猜测当成结论。
 
-### 版本冲突
-```
-错误: "multiple commands produce" 或依赖版本不兼容
-解决方案:
-- 使用依赖图分析冲突来源
-- 指定兼容的版本范围
-- 考虑使用 dependency resolution 参数
-```
+### 本地知识库存在但更新失败
 
-## 进阶功能
+先说明更新失败，再决定是否继续使用当前本地副本：
 
-### 批量集成
-一次搜索并集成多个相关的库包，确保版本兼容性。
+- 如果本地副本仍可读，继续检索，但明确标注“本地副本未成功更新，结果可能不是最新”
+- 如果本地副本损坏或不可读，再回退到 `gh` 检索远端知识库
 
-### 依赖分析
-分析项目的当前依赖，建议使用私有仓库中的替代方案。
+### 本地知识库不存在，或知识库没有命中
 
-### 版本管理
-追踪私有仓库的更新，提醒用户升级到新版本。
+可以继续：
 
-## 输出格式
+- 用 `gh` 检索远端 `hocgin/knowledge`
+- 直接查看目标 repo
+- 在当前项目中搜索已有引用
+- 根据 `Package.swift` / `Package.resolved` 推断真实包名和 product 名
 
-在执行任务时，清晰地说明：
+但要明确说明“这是基于仓库结构推断，不是来自最新知识库文档”。
 
-1. **搜索结果**: 列出找到的相关仓库及其用途
-2. **推荐建议**: 基于项目需求推荐最合适的库
-3. **集成步骤**: 详细的分步集成指南
-4. **验证方法**: 如何验证集成是否成功
-5. **使用示例**: 基本的代码使用示例
-6. **注意事项**: 潜在问题和解决方案
+### 本地知识库是 git 仓库但工作区不干净
 
-始终保持输出清晰、结构化，并使用中文与用户交流。
+不要擅自丢弃本地改动。
+
+可以这样处理：
+
+- 先执行只读检查，例如 `git -C ~/GitHub/knowledge status --short`
+- 如果工作区不干净，明确说明无法安全执行 `pull --ff-only`
+- 在这种情况下，优先读取当前本地副本，并标注“本地知识库未更新”
+- 如有必要，再回退到 `gh` 检索远端
+
+### 仓库存在但不是标准 Swift Package
+
+明确指出：
+
+- 缺少 `Package.swift`
+- 或没有可消费的 product
+- 或平台 / tools version 不兼容
+
+不要把这类仓库当成可直接 SPM 集成的候选项。
+
+## 禁止事项
+
+- 不要跳过本地 `~/GitHub/knowledge/` 与 `hocgin/knowledge` 直接开始猜
+- 不要在本地知识库存在时，未尝试更新就把它当成最新来源
+- 不要把仓库名直接当成 product 名
+- 不要默认推荐开发分支
+- 不要在没有权限验证的情况下声称“这个私有包可用”
+- 不要泄露 token、私钥或其他敏感凭据
