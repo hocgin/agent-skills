@@ -1,0 +1,46 @@
+{
+  "name": "ios-dev",
+  "description": "iOS 开发常用 skill 集合",
+  "skills": [
+    {
+      "repo": "https://github.com/obra/superpowers",
+      "skill": "executing-plans"
+    },
+    {
+      "repo": "https://github.com/hocgin/agent-skills",
+      "skill": "swift-private-bundle"
+    },
+    {
+      "repo": "https://github.com/hocgin/agent-skills",
+      "skill": "swift-composable-architecture"
+    },
+    {
+      "repo": "https://github.com/hocgin/agent-skills",
+      "skill": "swift-sqlite-data"
+    },
+    {
+      "repo": "https://github.com/johnrogers/claude-swift-engineering",
+      "skill": "swift-style"
+    },
+    {
+      "repo": "https://github.com/tryhuset/agent-skills",
+      "skill": "swiftui-animations"
+    },
+    {
+      "repo": "https://github.com/avdlee/swiftui-agent-skill",
+      "skill": "swiftui-expert-skill"
+    },
+    {
+      "repo": "https://github.com/avdlee/swift-concurrency-agent-skill",
+      "skill": "swift-concurrency"
+    },
+    {
+      "repo": "https://github.com/tuist/claude-marketplace",
+      "skill": "tuist"
+    },
+    {
+      "repo": "https://github.com/tuist/agent-skills",
+      "skill": "fix-flaky-tests"
+    }
+  ]
+}

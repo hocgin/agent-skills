@@ -1,0 +1,34 @@
+{
+  "name": "frontend",
+  "description": "前端设计与工程常用 skill 集合",
+  "skills": [
+    {
+      "repo": "https://github.com/vercel-labs/agent-skills",
+      "skill": "web-design-guidelines"
+    },
+    {
+      "repo": "https://github.com/anthropics/skills",
+      "skill": "frontend-design"
+    },
+    {
+      "repo": "https://github.com/anthropics/skills",
+      "skill": "theme-factory"
+    },
+    {
+      "repo": "https://github.com/giuseppe-trisciuoglio/developer-kit",
+      "skill": "shadcn-ui"
+    },
+    {
+      "repo": "https://github.com/jezweb/claude-skills",
+      "skill": "icon-design"
+    },
+    {
+      "repo": "https://github.com/anthropics/skills",
+      "skill": "canvas-design"
+    },
+    {
+      "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "skill": "ui-ux-pro-max"
+    }
+  ]
+}

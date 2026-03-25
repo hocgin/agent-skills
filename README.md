@@ -10,6 +10,14 @@ npx skills add hocgin/agent-skills
 
 **OR**
 
+### Bundle Installer
+
+```shell
+curl -fsSL https://raw.githubusercontent.com/hocgin/agent-skills/main/install.sh | bash -s -- --list
+curl -fsSL https://raw.githubusercontent.com/hocgin/agent-skills/main/install.sh | bash -s -- --agent codex --with ios-dev
+curl -fsSL https://raw.githubusercontent.com/hocgin/agent-skills/main/install.sh | bash -s -- --agent codex --with ios-dev --dry-run
+```
+
 ### Claude Code Cli
 ```shell
 /plugin marketplace add

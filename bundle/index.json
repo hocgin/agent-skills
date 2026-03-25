@@ -1,0 +1,12 @@
+{
+  "bundles": [
+    {
+      "name": "ios-dev",
+      "description": "iOS 开发常用 skill 集合"
+    },
+    {
+      "name": "frontend",
+      "description": "前端设计与工程常用 skill 集合"
+    }
+  ]
+}
