@@ -69,12 +69,14 @@ bundle/
 
 ```shell
 bash install.sh --list
+curl -fsSL https://raw.githubusercontent.com/hocgin/agent-skills/main/install.sh | bash -s -- --list
 ```
 
 按 bundle 安装：
 
 ```shell
 bash install.sh --agent codex --with ios-dev
+curl -fsSL https://raw.githubusercontent.com/hocgin/agent-skills/main/install.sh | bash -s -- --agent codex --with ios-dev
 ```
 
 通过本地文件安装：
@@ -87,6 +89,7 @@ bash install.sh --agent codex --file ./bundle/ios-dev/skills.json
 
 ```shell
 bash install.sh --agent codex --with frontend --dry-run
+curl -fsSL https://raw.githubusercontent.com/hocgin/agent-skills/main/install.sh | bash -s -- --agent codex --with frontend --dry-run
 ```
 
 ## 新增 bundle 步骤
