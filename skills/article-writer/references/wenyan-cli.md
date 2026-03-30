@@ -1,6 +1,10 @@
-# WenYan CLI
-
-微信公众号 Markdown 渲染和发布工具，支持将 Markdown 文档转换为样式化的 HTML 并直接发布到微信公众号。
+---
+name: wenyan-cli
+description: 微信公众号 Markdown 渲染和发布工具，支持将 Markdown 文档转换为样式化的 HTML 并直接发布到微信公众号
+metadata:
+  author: hocgin
+  version: "3.1"
+---
 
 ## 主要功能
 
@@ -43,6 +47,8 @@ wenyan publish -f https://example.com/article.md --appId your_app_id --appSecret
 wenyan publish -f article.md \
   --server https://api.yourdomain.com \
   --api-key your_api_key
+  --appId your_app_id \
+  --appSecret your_app_secret \
 ```
 
 ### 2. render - 仅渲染
@@ -123,14 +129,16 @@ wenyan submit \
 
 | 选项 | 简写 | 说明 | 默认值 |
 |------|------|------|--------|
-| `--file <path>` | `-f` | 从文件或 URL 读取内容 | - |
-| `--theme <theme-id>` | `-t` | 使用指定主题 | `default` |
-| `--highlight <theme-id>` | `-h` | 代码高亮主题 | `solarized-light` |
-| `--custom-theme <path>` | `-c` | 自定义主题 CSS 文件路径 | - |
-| `--mac-style` | - | 显示 Mac 风格代码块 | `true` |
-| `--no-mac-style` | - | 禁用 Mac 风格代码块 | - |
-| `--footnote` | - | 将链接转换为脚注 | `true` |
-| `--no-footnote` | - | 禁用脚注转换 | - |
+| `-f, --file <path>` | 从本地文件或 URL 读取 Markdown | - |
+| `--server <url>` | 远程 Wenyan Server 地址 | - |
+| `--api-key <apiKey>` | 远程服务密钥 | - |
+| `--appId <appId>` | 本地直连公众号 API 的 appId | - |
+| `--appSecret <appSecret>` | 本地直连公众号 API 的 appSecret | - |
+| `-t, --theme <theme-id>` | 排版主题 | `default` |
+| `-h, --highlight <theme-id>` | 代码高亮主题 | `solarized-light` |
+| `-c, --custom-theme <path>` | 自定义主题 CSS | - |
+| `--no-mac-style` | 禁用 Mac 风格代码块 | 启用 |
+| `--no-footnote` | 禁用脚注转换 | 启用 |
 
 ## 使用示例
 
@@ -192,13 +200,6 @@ wenyan publish -f article.md --appId your_app_id --appSecret your_secret
 - 需要 server URL 和 api-key
 - 适合团队协作和部署
 
-## 错误处理
-
-所有命令都包含统一的错误处理：
-- 错误信息会以红色显示在 stderr
-- 非 0 退出码表示失败
-- 详细的错误消息帮助快速定位问题
-
 ## Frontmatter 要求
 
 必须在 Markdown 顶部包含一段 frontmatter：
@@ -226,15 +227,14 @@ source_url: https://example.com
 * 如果未指定 cover，将自动使用正文第一张图片作为封面
 * cover 支持本地路径和网络 URL
 
+## 错误处理
+
+所有命令都包含统一的错误处理：
+- 错误信息会以红色显示在 stderr
+- 非 0 退出码表示失败
+- 详细的错误消息帮助快速定位问题
+
 ## 常见问题
-
-### 图片上传失败
-
-请检查：
-
-* 图片路径是否正确
-* 图片文件是否存在
-* 图片格式是否支持（jpg、png、gif）
 
 ### 主题列表为空
 ```bash
