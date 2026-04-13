@@ -50,7 +50,11 @@ npx skills add https://github.com/hocgin/agent-skills/ --skills wenyan-cli     -
 
 #### cloudflare 站点
 ```shell
-
+npx skills add https://github.com/bobmatnyc/claude-mpm-skills --skill drizzle-orm -a codex -y
+npx skills add https://github.com/cloudflare/skills --skill cloudflare -a codex -y
+npx skills add https://github.com/cloudflare/skills --skill wrangler -a codex -y
+npx skills add https://github.com/yusukebe/hono-skill --skill hono -a codex -y
+npx skills add https://github.com/antfu/skills --skill vite -a codex -y
 ```
 
 #### 游戏开发
