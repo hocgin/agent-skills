@@ -20,6 +20,11 @@ npx skills add https://github.com/obra/superpowers --skill brainstorming -a clau
 npx skills add https://github.com/coreyhaines31/marketingskills --skill copywriting -a claude-code -y
 ```
 
+#### appstore 商店截图
+```shell
+npx skills add https://github.com/parthjadhav/app-store-screenshots --skill app-store-screenshots -a codex -y
+```
+
 #### 视频制作
 ```shell
 npx skills add https://github.com/remotion-dev/skills --skill remotion-best-practices -y
