@@ -81,6 +81,7 @@ npx skills add https://github.com/tuist/claude-marketplace --skill tuist -a clau
 npx skills add https://github.com/tuist/agent-skills --skill fix-flaky-tests -a claude-code -y
 npx skills add https://github.com/hocgin/agent-skills --skill swift-localization -a claude-code -y
 npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro -a claude-code -y
+npx skills add https://github.com/avdlee/xcode-build-optimization-agent-skill
 
 /plugin marketplace add greenstevester/fastlane-skill
 ```
