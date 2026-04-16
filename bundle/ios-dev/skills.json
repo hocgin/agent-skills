@@ -7,6 +7,14 @@
       "skill": "SVG Logo Designer"
     },
     {
+      "repo": "https://github.com/hocgin/agent-skills",
+      "skill": "swift-localization"
+    },
+    {
+      "repo": "https://github.com/twostraws/swiftui-agent-skill",
+      "skill": "swiftui-pro"
+    },
+    {
       "repo": "https://github.com/0xbigboss/claude-code",
       "skill": "web-fetch"
     },
