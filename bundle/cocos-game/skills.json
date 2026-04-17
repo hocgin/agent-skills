@@ -1,0 +1,14 @@
+{
+  "name": "cocos-game",
+  "description": "COCOS 3.X 开发常用 skill 集合",
+  "skills": [
+    {
+      "repo": "https://github.com/zpqq132555/skills",
+      "skill": "cocos-creator-3x-cn"
+    },
+    {
+      "repo": "https://github.com/obra/superpowers",
+      "skill": "executing-plans"
+    }
+  ]
+}
