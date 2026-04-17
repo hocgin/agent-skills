@@ -111,7 +111,14 @@ npx skills add https://github.com/coreyhaines31/marketingskills --skill programm
 /plugin install everything-claude-code@everything-claude-code
 ```
 
+#### COCOS-3X
+```shell
+npx skills add https://github.com/the1studio/theone-training-skills --skill theone-cocos-standards
 
+npx skills add https://github.com/zpqq132555/skills --skill cocos-creator-3x-cn
+
+
+```
 
 
 ### 需求分析
