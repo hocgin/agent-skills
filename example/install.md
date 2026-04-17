@@ -121,6 +121,10 @@ npx skills add https://github.com/zpqq132555/skills --skill cocos-creator-3x-cn
 
 ```
 
+#### phaser
+> @see https://skills.sh/phaserjs/phaser
+
+
 
 ### 需求分析
 技术架构+技术选型+核心功能+功能方案+收费点
