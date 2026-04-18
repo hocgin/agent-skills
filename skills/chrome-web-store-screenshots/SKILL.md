@@ -1,5 +1,5 @@
 ---
-name: browser-store-screenshots
+name: chrome-web-store-screenshots
 description: Use when building Chrome Web Store screenshot pages, generating exportable marketing screenshots for Chrome extensions, or creating programmatic screenshot generators with Next.js. Triggers on chrome web store, extension screenshots, chrome store, promo tile, marquee, browser screenshot, chrome extension listing.
 ---
 
