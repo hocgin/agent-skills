@@ -69,6 +69,7 @@ npx skills add https://github.com/obra/superpowers --skill executing-plans -a cl
 npx skills add https://github.com/rknall/claude-skills --skill SVG Logo Designer -a claude-code -y
 npx skills add https://github.com/sickn33/antigravity-awesome-skills --skill browser-extension-builder -a claude-code -y
 npx skills add https://github.com/anthropics/skills --skill frontend-design -a claude-code -y
+npx skills add https://github.com/hocgin/agent-skills --skill chrome-web-store-screenshots -a claude-code -y
 ```
 
 #### Swift 开发
