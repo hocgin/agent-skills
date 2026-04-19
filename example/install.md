@@ -129,6 +129,14 @@ npx skills add https://github.com/zpqq132555/skills --skill cocos-creator-3x-cn
 #### phaser
 > @see https://skills.sh/phaserjs/phaser
 
+### 微信小程序
+```shell
+```
+
+### 微信小游戏
+```shell
+npx skills add tencentcloudbase/cloudbase-skills
+```
 
 
 ### 需求分析
