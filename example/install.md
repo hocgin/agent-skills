@@ -8,6 +8,7 @@ npx skills add https://github.com/rknall/claude-skills --skill SVG Logo Designer
 npx skills add https://github.com/0xbigboss/claude-code --skill web-fetch -a claude-code -y
 npx skills add https://github.com/github/awesome-copilot --skill gh-cli -a claude-code -y
 npx skills add https://github.com/obra/superpowers --skill executing-plans -a claude-code -y
+# https://github.com/forrestchang/andrej-karpathy-skills/tree/main
 ```
 
 #### 产品设计
