@@ -1,0 +1,45 @@
+# 从“看见三维”的AI革命到重现宇宙诞生瞬间，从巨头模型竞速到史诗级数据安全危机：技术突破、商业博弈与风险暗涌交织
+
+从京东将图像编辑推进到“空间智能”的新维度，到欧洲核子研究中心借助大型对撞机重现宇宙诞生初态；从Google与OpenAI在AI产品与定价策略上的持续博弈，到疑似史上最大规模的数据安全事件引发行业警觉——本周的科技动态呈现出一幅高度交织的图景。技术边界不断被突破的同时，安全、成本与应用场景也在重新定义未来的竞争格局。这不仅是技术进展的堆叠，更是新一轮科技秩序演化的缩影。
+
+![京东开源图像模型 JoyAI-Image-Edit，从平面修图升级为三维空间重塑](https://cdn1.telesco.pe/file/PC9TDZ0Z6QB_HOouPe91Kwljvlph_7HLr4lobAyFZiK7mgtHZRn2Yn3wrMyrBw1u8Vay26dFHGw6Bxj_NeOC8R4dutRw8zpzvt6XRkQ-iioawugBQvJ-muvNwuF3hwMAPrG8ku1dpqs4KomM0yGV51Ib_DKtR1C_UYxQn6-2jbFLRin3oVypHUzxfCO3BV5zJeuyzivl-OWSIvnQl6uhgzG_Md_J-qaf1RGxptCnhtckbqiIlc4IJqvLQoWM2uGC9oG1vljtd1RpIzHOILZ23oCfr1qURCAr-t9k_Mc1cbmdEfZzlpUQqYioQSVFwqs-mPItd4Rxd_N-1m_z-q6x0Q.jpg)
+
+### 京东开源图像模型 JoyAI-Image-Edit，从平面修图升级为三维空间重塑
+
+京东探索研究院于4月7日正式开源自研图像模型 JoyAI-Image-Edit。该模型被业界定位为首个将“空间智能”融入其中的开源模型，实现从平面修图向三维空间重塑的升级。JoyAI-Image-Edit 深度建模空间位置关系、多视角一致性等维度，实现相机坐标视角变换、物体空间位移旋转等技术突破。京东实验验证显示，该模型在物体移动精度、空间一致性等核心指标上达到世界一流水准。JoyAI-Image-Edit 具备视角变换、空间漫游、物体空间关系操控三大空间编辑能力，并全面兼容15类通用编辑功能。该模型可应用于电商内容生产、创意设计、智能图像处理、3D模型重建及具身智能视觉感知等领域。
+
+---
+
+![大型强子对撞机首次清晰观测宇宙原初夸克 - 胶子等离子体](https://cdn1.telesco.pe/file/WpBVbhPGbQGlzcImy-jefuS6F8OkjesdziJeCcpkC4tkkkxx1Na6d8st8ZKlJxjmC6ht-pWS2KU1RQKyimE275srWMpMkAPsqJRoULiuoNa0rWIoVkihOygb3GPHT1zsmE4JB925rljYLtiNoFENGPScUboCReK9BazES7L9B2VQnqGeYFiEC2BDHh5RYe0E8JeA9v2kKhNwr2W-5fo8rojhIY_RBikykHM6x-OZbS3eI6dIBvnDqWyVZNmXiFtrCPS2v4obUvjJLnK02PorKAt6pl4NQQiUbM9VgTXAYrI3qYLvxlD64pXRFPdriPejubACWSexlxP33CDB8I6bkw.jpg)
+
+### 大型强子对撞机首次清晰观测宇宙原初夸克 - 胶子等离子体
+
+欧洲核子研究中心（CERN）的科学家们利用周长近 27.4 公里的大型强子对撞机（LHC）通过对撞铁原子核，成功重现了宇宙大爆炸后极短时间内存在的夸克-胶子等离子体。ALICE 合作组发现，在质子-质子、质子-铅以及铅-铅三种对撞模式中均存在共性模式，为理解早期宇宙状态提供了新信息。研究表明，夸克-胶子等离子体的形成可能并不需要此前认为的更大粒子碰撞规模。科学家观察到粒子沿特定方向喷射的各向异性流现象，重子的流动强度高于介子，这与夸克聚合形成更大粒子的过程相关。相关研究成果已于 3 月 20 日发表在《自然 · 通讯》期刊上。ALICE团队计划利用 2025 年记录的氧核对撞数据，进一步研究夸克-胶子等离子体在不同对撞系统中的本质与演化。
+
+---
+
+![谷歌 Gemini 推出“笔记本”功能，可整合特定主题文件与对话记录作为 AI 上下文](https://cdn1.telesco.pe/file/CImZg-379E_y6vXzUI1HQHkneoDvhyr-1ulZACduYiUl2pGUv_E1bMhoSN7uuj_EnAF6di9fF1FMyE1lQ9-PY6kOQYbpkKnoTrY3F9A8JMii4_PYgp8RJ10ibymnYwGmPtWMq-_-Ozc12_54lpoJA-lfNIbpybba9ksEXYIYAH9LBmWPEO40__AmYms5Mq8dnEfL2QIvWLvbmdRcC-Gw5tBpm437tdsymQRk3rjbKRG2H0yjDNgUPhjSTAMiFpGYMe6qw_inbUNlnKcy1xh3SUnJ_O2JgMqN3Yvkw4_biccrTtMFskCfomas3DAbcU8qmZVQ4qc2PgyMTdzXdFP46g.jpg)
+
+### 谷歌 Gemini 推出“笔记本”功能，可整合特定主题文件与对话记录作为 AI 上下文
+
+谷歌于4月9日宣布，其AI聊天机器人Gemini新增“笔记本”功能，旨在帮助用户集中整理特定主题内容，包括文件、历史对话和自定义指令。Gemini在对话时将参考笔记本内容作为上下文。该功能与ChatGPT于2024年推出的Projects功能相似，可集中存储主题资料，并被谷歌定位为跨产品共享的个人知识库。Gemini笔记本将与AI研究工具NotebookLM同步，两应用间资料互通。该功能已于本周面向Gemini Ultra、Pro、Plus订阅用户推出，未来几周内将登陆移动端并向免费用户开放。
+
+---
+
+![黑客声称从中国国家超级计算中心窃取 10 PB 敏感数据，此举将成为中国历史上最大规模的网络攻击，涉及科学、国防等领域 6,000 个客户](https://cdn1.telesco.pe/file/VnXAamEIhWGDdbM97AOnfwzKnWxoSUex5kMgRQsEbuiyFjqJ5gy0f1_H9wCtBN4G0KX2xreug3uOUeyE835wdIhojc8lj8Yant4x4EBk6Lz0b3aZRhuTCXn4BRTjl4s0aFvDQKp__H4bW4Bm-wnz3ZZP_XZpLHNjW0lnoOQtBWY_ggUphpqUBzWThQry35F7cJr-Bm1idmo62hOPW_rJtm0aLNxEqVX8apXWI0MJPmzUOeqw2PKFsFDnYP-hVnhjTHbnZBFFX_9LTZRzyUtvQLCai1ltG7P22peKFtLU1ENbLCzELb8oVn581JKXb2wgH2ZNqxE9Nbl7do5_Vyvxlg.jpg)
+
+### 黑客声称从中国国家超级计算中心窃取 10 PB 敏感数据，此举将成为中国历史上最大规模的网络攻击，涉及科学、国防等领域 6,000 个客户
+
+黑客声称已从中国国家超级计算中心窃取高达 10 petabytes 的敏感数据，如果属实，这将成为中国历史上规模最大的网络攻击事件。此次攻击影响范围广泛，涉及约 6,000 个客户，涵盖科学、国防等多个领域。目前事件的真实性尚未得到独立验证，但黑客声称掌握了大量敏感信息。安全专家正在对此事件进行分析。
+
+---
+
+![谷歌 Gemini 推出“笔记本”功能，可整合特定主题文件与对话记录作为 AI 上下文](https://cdn5.telesco.pe/file/eepHyLGpKMTuyjvc9YQrX1waOb-fmNqiB89Cv_tm5BE6YAt3zXhDEJZGOeIxkbuLvUl5m-YZOPWDL_h31ktPr5ZBJ8uHk-qbOmAnhPsg6nRVxVbUTlZMu43xxhi6-8d_E5ImFrzDjZL9WlFgeISXtTxl4_TePAqqRI-5CY5RnMcL2qWjC8UkjHiMECg7tW9wwr3TZvJsfaH2MVhuadPGYIi8wuFXQbdf4GRpjDwSBgLY66Z1l4mZTwX8kjHmeqizN2Mh2nhC7jf3gW_SxjLiI7rp1IwoPwOaJWdo8sV9IsMEWFn7ZzBQ-Qtjy7uIGxMT1XrIM_Kc-eqiVaQ5e-Ixqg.jpg)
+
+### OpenAI 将 Pro 计划价格减半至 100 美元，针对重度 Codex 用户，低于 Anthropic 和 Google 的定价
+
+OpenAI 宣布推出新的 Pro 计划，月费为 100 美元，旨在为重度 Codex 用户提供更多使用量，价格为旧 Pro 计划价格的一半。此举旨在降低成本，并对 Anthropic 和 Google 构成竞争压力。OpenAI 正在重组其订阅层级，以适应不同用户的需求。
+
+---
+
+如果你觉得这篇文章对你有帮助，欢迎点赞和分享！
