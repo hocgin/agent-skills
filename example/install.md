@@ -37,6 +37,7 @@ npx skills add https://github.com/skill-zero/s --skill text-to-speech
 ```shell
 npx skills add https://github.com/hocgin/agent-skills/ --skills article-writer -a openclaw -y
 npx skills add https://github.com/hocgin/agent-skills/ --skills wenyan-cli     -a openclaw -y
+npx skills add https://github.com/hocgin/agent-skills/ --skills humanizer-zh     -a openclaw -y
 ```
 
 #### 避免 AI 化
