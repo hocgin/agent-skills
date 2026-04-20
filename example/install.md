@@ -38,6 +38,14 @@ npx skills add https://github.com/skill-zero/s --skill text-to-speech
 npx skills add https://github.com/hocgin/agent-skills/ --skills article-writer -a openclaw -y
 npx skills add https://github.com/hocgin/agent-skills/ --skills wenyan-cli     -a openclaw -y
 ```
+
+#### 避免 AI 化
+##### 英文文章
+```shell
+npx skills add https://github.com/conorbronsdon/avoid-ai-writing --skill avoid-ai-writing
+```
+
+
 ##### 中篇小说
 ```shell
 
