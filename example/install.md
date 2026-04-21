@@ -2,6 +2,11 @@
 
 ### Skill
 
+#### web-fetch
+```shell
+npx skills add https://github.com/geekjourneyx/jina-cli --skill jina-cli
+```
+
 #### Basic
 ```shell
 npx skills add https://github.com/rknall/claude-skills --skill SVG Logo Designer -a claude-code -y
