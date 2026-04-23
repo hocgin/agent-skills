@@ -1,5 +1,5 @@
 ```shell
-/ralph-wiggum:ralph-loop "Fix bug: 令牌过期后，用户无法重置密码.
+/ralph-loop:ralph-loop "Fix bug: 令牌过期后，用户无法重置密码.
 
 Steps:
 1. 重现缺陷

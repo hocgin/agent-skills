@@ -1,4 +1,4 @@
-/ralph-wiggum:ralph-loop "实现用户身份验证.
+/ralph-loop:ralph-loop "实现用户身份验证.
 
 Requirements:
 - JWT 令牌生成

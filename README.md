@@ -29,7 +29,7 @@ bash install.sh --agent codex --file ./bundle/ios-dev/skills.json
 ### Claude Code Use
 #### 1. [ralph-loop 使用](https://zhuanlan.zhihu.com/p/1991485016379761533)
 ```shell
-/ralph-wiggum:ralph-loop "Build a hello world API" --completion-promise "DONE" --max-iterations 10
+/ralph-loop:ralph-loop "Build a hello world API" --completion-promise "DONE" --max-iterations 10
 
 ```
 

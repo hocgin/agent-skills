@@ -1,5 +1,5 @@
 ```shell
-/ralph-wiggum:ralph-loop "使用TDD实现支付功能.
+/ralph-loop:ralph-loop "使用TDD实现支付功能.
 
 Process:
 1. 为下一个需求编写失败的测试用例
