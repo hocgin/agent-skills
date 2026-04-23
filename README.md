@@ -26,6 +26,13 @@ bash install.sh --agent codex --file ./bundle/ios-dev/skills.json
 /plugin install swift-skills
 ```
 
+### Claude Code Use
+#### 1. [ralph-loop 使用](https://zhuanlan.zhihu.com/p/1991485016379761533)
+```shell
+/ralph-wiggum:ralph-loop "Build a hello world API" --completion-promise "DONE" --max-iterations 10
+
+```
+
 
 ## 资料
 - [Skills 命令使用文档](https://github.com/vercel-labs/skills)
