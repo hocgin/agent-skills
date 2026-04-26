@@ -11,6 +11,10 @@
       "skill": "swift-localization"
     },
     {
+      "repo": "https://github.com/hocgin/agent-skills",
+      "skill": "gpt-image2-ratos"
+    },
+    {
       "repo": "https://github.com/twostraws/swiftui-agent-skill",
       "skill": "swiftui-pro"
     },
