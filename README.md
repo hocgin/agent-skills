@@ -19,6 +19,11 @@ curl -fsSL https://raw.githubusercontent.com/hocgin/agent-skills/main/install.sh
 bash install.sh --agent codex --file ./bundle/ios-dev/skills.json
 ```
 
+```shell
+echo "" >> CLAUDE.md
+curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md >> CLAUDE.md
+```
+
 ### Claude Code Cli
 ```shell
 /plugin marketplace add
