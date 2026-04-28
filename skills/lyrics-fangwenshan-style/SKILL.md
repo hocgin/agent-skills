@@ -1,6 +1,9 @@
 ---
 name: lyrics-fangwenshan-style
 description: 基于方文山“听觉韵脚”方法写中文歌词的技能。适用于写新歌词、按主题出主歌/副歌、续写、改写、检查押韵、整理中国风意象，或用户明确要求“参考方文山韵脚表”时。
+metadata:
+  author: hocgin
+  version: "3.0"
 ---
 
 # 方文山韵脚歌词写作
