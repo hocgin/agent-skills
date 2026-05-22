@@ -145,6 +145,8 @@ npx skills add https://github.com/zpqq132555/skills --skill cocos-creator-3x-cn
 # 图片制作: https://github.com/0x0funky/agent-sprite-forge/tree/main
 # 工具箱: https://frameronin.com/
 # 不同游戏场景推荐的算法和方案: ./skills/game-scene-plan
+# - https://v.douyin.com/3YZY79gIKXw/
+# - https://v.douyin.com/u3__YdK9Q0I/
 
 ```
 
