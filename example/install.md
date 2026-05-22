@@ -105,6 +105,9 @@ npx skills add https://github.com/dpearson2699/swift-ios-skills --skill spriteki
 npx skills add https://github.com/avdlee/xcode-build-optimization-agent-skill
 
 /plugin marketplace add greenstevester/fastlane-skill
+
+
+https://www.skills.sh/eronred/aso-skills/apple-search-ads
 ```
 
 #### 前端
