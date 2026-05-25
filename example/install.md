@@ -44,6 +44,7 @@ npx skills add https://github.com/skill-zero/s --skill text-to-speech
 npx skills add https://github.com/hocgin/agent-skills/ --skills article-writer -a openclaw -y
 npx skills add https://github.com/hocgin/agent-skills/ --skills wenyan-cli     -a openclaw -y
 npx skills add https://github.com/hocgin/agent-skills/ --skills humanizer-zh     -a openclaw -y
+npx skills add https://github.com/tw93/Kami  -a codex -y
 ```
 
 #### 避免 AI 化
@@ -148,6 +149,11 @@ npx skills add https://github.com/zpqq132555/skills --skill cocos-creator-3x-cn
 # - https://v.douyin.com/3YZY79gIKXw/
 # - https://v.douyin.com/u3__YdK9Q0I/
 
+```
+
+##### Godot
+```shell
+npx skills add https://github.com/wshobson/agents --skill godot-gdscript-patterns
 ```
 
 #### phaser
