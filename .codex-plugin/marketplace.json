@@ -1,0 +1,123 @@
+{
+  "name": "agent-skills",
+  "owner": {
+    "name": "hocgin",
+    "email": "hocgin@gmail.com"
+  },
+  "metadata": {
+    "description": "hocgin skills for OpenAI Codex CLI",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "document-skills",
+      "description": "Collection of document processing suite including Excel, Word, PowerPoint, and PDF capabilities",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/xlsx",
+        "./skills/docx",
+        "./skills/pptx",
+        "./skills/pdf"
+      ]
+    },
+    {
+      "name": "swift-skills",
+      "description": "Collection of Swift development resources including TCA, SQLite, SwiftUI animations, localization, and style guides",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/swift-private-bundle",
+        "./skills/swift-composable-architecture ",
+        "./skills/swift-sqlite-data",
+        "./skills/swift-style",
+        "./skills/swiftui-animations ",
+        "./skills/swift-localization",
+        "./skills/swift-localization-spm",
+        "./skills/instruments-profiling"
+      ]
+    },
+    {
+      "name": "browser-extension-skills",
+      "description": "Browser extension development and Chrome Web Store publishing",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/browser-extension-builder",
+        "./skills/browser-store-screenshots",
+        "./skills/frontend-design"
+      ]
+    },
+    {
+      "name": "video-production-skills",
+      "description": "Video creation and editing capabilities including Remotion, video mashup, and generation",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/remotion-best-practices",
+        "./skills/video-mashup"
+      ]
+    },
+    {
+      "name": "writing-skills",
+      "description": "Content writing tools for articles, novels, lyrics, and text humanization",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/article-tech-write",
+        "./skills/article-writer",
+        "./skills/novel-write",
+        "./skills/lyrics-fangwenshan-style",
+        "./skills/humanizer-zh"
+      ]
+    },
+    {
+      "name": "image-skills",
+      "description": "Image generation and editing tools",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/image-gen",
+        "./skills/gpt-image2-ratos"
+      ]
+    },
+    {
+      "name": "cloudflare-skills",
+      "description": "Cloudflare Workers, Pages, and Wrangler CLI for deploying and managing cloud infrastructure",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/cloudflare",
+        "./skills/wrangler"
+      ]
+    },
+    {
+      "name": "publishing-skills",
+      "description": "Content publishing tools for WeChat Official Accounts and other platforms",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/wenyan-cli"
+      ]
+    },
+    {
+      "name": "api-skills",
+      "description": "API integration tools including Apple iTunes Search API",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/apple-itunes-api"
+      ]
+    },
+    {
+      "name": "devtools-skills",
+      "description": "Development workflow tools including commit organization and game scene planning",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/commit-organizer",
+        "./skills/game-scene-plan"
+      ]
+    }
+  ]
+}
