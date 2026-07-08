@@ -109,6 +109,7 @@ npx skills add https://github.com/avdlee/xcode-build-optimization-agent-skill
 
 
 https://www.skills.sh/eronred/aso-skills/apple-search-ads
+npx skills add https://github.com/rshankras/claude-code-apple-skills --skill app-store
 ```
 
 #### 前端
