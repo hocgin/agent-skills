@@ -1,0 +1,3 @@
+interface:
+  display_name: "iOS Widget Design"
+  short_description: "按 Apple HIG 设计并评审 iOS/iPadOS WidgetKit 小组件"
