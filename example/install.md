@@ -1,5 +1,14 @@
 # 静态站点 / next.js
 
+### 待整理
+
+```shell
+npx skills@latest add s1dashu/ip-as-logo-skill
+https://github.com/callstack/agent-device
+
+```
+
+
 ### Skill
 
 #### web-fetch
