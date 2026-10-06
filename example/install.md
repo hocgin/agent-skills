@@ -183,3 +183,5 @@ npx skills add tencentcloudbase/cloudbase-skills
 技术架构+技术选型+核心功能+功能方案+收费点
 
 
+### 软著
+安装skill https://github.com/Fokkyp/SoftwareCopyright-Skill
