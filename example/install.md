@@ -5,6 +5,7 @@
 ```shell
 npx skills@latest add s1dashu/ip-as-logo-skill
 https://github.com/callstack/agent-device
+https://github.com/rshankras/claude-code-apple-skills
 
 ```
 
@@ -144,6 +145,8 @@ npx skills add https://github.com/coreyhaines31/marketingskills --skill programm
 /plugin install planning-with-files@planning-with-files
 /plugin marketplace add affaan-m/everything-claude-code
 /plugin install everything-claude-code@everything-claude-code
+
+https://github.com/rshankras/claude-code-apple-skills
 ```
 
 #### 游戏开发
