@@ -44,6 +44,12 @@ cp themes/_template.md themes/<id>/theme.md
 
 在 `themes/index.md` 的表格新增一行，并在「自动选择规则」的调性列表中补充该主题对应的调性。
 
+然后重新生成网页预览用的主题目录：
+
+```bash
+python3 scripts/build_prompt.py --catalog   # 更新 skill 根目录的 README.md
+```
+
 ## 5. 自检
 
 ```bash

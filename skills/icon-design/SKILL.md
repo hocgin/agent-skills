@@ -14,6 +14,7 @@ description: 基于参考图片沉淀的「设计主题」生成风格高度统�
 ```
 icon-design/
 ├── SKILL.md
+├── README.md                 # 主题目录（含参考图预览，脚本自动生成）
 ├── themes/
 │   ├── index.md              # 主题注册表 + 自动选择规则（必读）
 │   ├── _template.md          # 新主题模板
@@ -77,7 +78,7 @@ python3 scripts/build_prompt.py --theme line-dot --mode showcase \
 python3 scripts/build_prompt.py --theme pop-offset --subject "..." --format json
 ```
 
-其他命令：`--list` 列出全部主题。
+其他命令：`--list` 列出全部主题；`--catalog` 重新生成根目录 `README.md` 预览目录。
 
 ### 5. 输出
 

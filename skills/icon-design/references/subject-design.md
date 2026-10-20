@@ -28,6 +28,7 @@
    - `solid-knockout`：能做成饱满的实心底板，符号能以白色负形镂空表达。
    - `pastel-layer`：能拆成「主层 + 辅层」两块重叠的圆胖形状。
    - `flat-object`：是有明确固有色的实物，正视剪影即可辨认。
+   - `mono-thin`：能用极少的细线功能性几何结构画出，内部细节不超过 2 处。
 4. 与同类知名产品图标是否撞车？过于雷同 → 换辅元素或换角度。
 
 ## 3. 撰写主体描述（英文）
@@ -55,6 +56,7 @@
 | 「安心备份」云备份工具 | `solid-knockout` | a solid cloud silhouette in periwinkle blue with a white knockout checkmark in the center |
 | 「宝宝喂养记」母婴记录 | `pastel-layer` | a baby bottle in the apricot orange hue family: rounded nipple cap as the front layer, lighter bottle body behind, three tiny capsule measurement bars |
 | 「零钱包」个人记账 | `flat-object` | a brown leather wallet seen from the front with a darker brown flap on top, green banknotes peeking out of the top edge, and a small dark clasp dot on the right |
+| 「听书」有声书 App | `mono-thin` | an open book seen from the front with a center spine line, and a small headphone arc resting over the top edge of the pages |
 | 「云笺」云笔记 | `line-dot` | a rounded cloud outline with a folded page corner on the upper right and two short horizontal text lines inside; the yellow dot sits at the end of the lower line |
 
 ## 4. 成套图标

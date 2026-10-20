@@ -6,6 +6,7 @@
 用法:
   build_prompt.py --list
   build_prompt.py --auto "项目描述"
+  build_prompt.py --catalog   # 重新生成 README.md 主题目录
   build_prompt.py --theme <id> --subject "<主体描述>" [--subject ...] [--mode showcase|standalone|app-icon] [--format text|json]
 """
 
@@ -108,10 +109,38 @@ def auto_select(themes: dict, text: str) -> list:
     return sorted(scores, key=lambda x: -x[0])
 
 
+def write_catalog(themes: dict) -> Path:
+    """生成 skill 根目录的 README.md，便于在 GitHub 等网页直接预览全部主题。"""
+    lines = [
+        "# 主题目录",
+        "",
+        "> 本文件由 `python3 scripts/build_prompt.py --catalog` 自动生成，请勿手动编辑。选择规则见 [themes/index.md](themes/index.md)。",
+        "",
+        f"共 {len(themes)} 套主题。",
+        "",
+        "| 参考图 | 主题 | 风格 | 色板 |",
+        "|---|---|---|---|",
+    ]
+    for tid, theme in themes.items():
+        ref = theme.get("reference", "reference.jpg")
+        text = (theme["dir"] / "theme.md").read_text(encoding="utf-8")
+        colors = list(dict.fromkeys(re.findall(r"`(#[0-9A-Fa-f]{6})`", text)))
+        palette = " ".join(f"`{c}`" for c in colors)
+        lines.append(
+            f'| <a href="themes/{tid}/{ref}"><img src="themes/{tid}/{ref}" height="160" alt="{tid}"></a> '
+            f"| **[{theme.get('name', tid)}](themes/{tid}/theme.md)**<br>`{tid}` "
+            f"| {theme.get('summary', '')} | {palette} |"
+        )
+    out = THEMES_DIR.parent / "README.md"
+    out.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return out
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="icon-design 提示词拼装")
     parser.add_argument("--list", action="store_true", help="列出全部主题")
     parser.add_argument("--auto", metavar="TEXT", help="按关键词为项目描述推荐主题")
+    parser.add_argument("--catalog", action="store_true", help="重新生成 README.md 主题目录")
     parser.add_argument("--theme", help="主题 ID")
     parser.add_argument("--subject", action="append", default=[], help="主体描述（英文），可重复以生成成套图标")
     parser.add_argument("--mode", choices=MODES.keys(), default="showcase", help="用途模式")
@@ -125,6 +154,10 @@ def main() -> int:
             print(f"{tid}\t{theme.get('name', '')}\t{theme.get('summary', '')}")
         return 0
 
+    if args.catalog:
+        print(f"已生成 {write_catalog(themes)}")
+        return 0
+
     if args.auto:
         ranking = auto_select(themes, args.auto)
         for score, tid, hits in ranking:
@@ -134,7 +167,7 @@ def main() -> int:
         return 0
 
     if not args.theme or not args.subject:
-        parser.error("需要 --theme 与至少一个 --subject（或使用 --list / --auto）")
+        parser.error("需要 --theme 与至少一个 --subject（或使用 --list / --auto / --catalog）")
     if args.theme not in themes:
         parser.error(f"未知主题 {args.theme}，可选: {', '.join(themes)}")
     if len(args.subject) > 6:
