@@ -2,7 +2,7 @@
 id: flat-object
 name: 固有色扁平
 reference: reference.png
-keywords: finance, wallet, payment, bank, budget, expense, mail, calendar, password, security, vault, shop, ecommerce, life, daily, utility, widget, 金融, 钱包, 支付, 银行, 预算, 记账, 账单, 邮件, 日历, 密码, 安全, 保险箱, 购物, 电商, 生活, 日常, 小组件, 直观
+keywords: finance, wallet, payment, bank, budget, expense, mail, email, calendar, password, security, vault, shop, ecommerce, life, daily, utility, widget, 金融, 钱包, 支付, 银行, 预算, 记账, 账单, 邮件, 日历, 密码, 安全, 保险箱, 购物, 电商, 生活, 日常, 小组件, 直观
 tile_color: "#FFFFFF"
 summary: 无描边的小巧实物剪影，按物体固有色上色，同色系深浅两阶表现结构，像精简版 emoji，一眼可认。
 ---

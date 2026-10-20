@@ -104,7 +104,8 @@ def auto_select(themes: dict, text: str) -> list:
     text = text.lower()
     scores = []
     for tid, theme in themes.items():
-        hits = [k for k in theme["keywords"] if k in text]
+        # 英文关键词按单词边界匹配，避免 "ai" 误中 "email" 之类
+        hits = [k for k in theme["keywords"] if (re.search(rf"\b{re.escape(k)}\b", text) if k.isascii() else k in text)]
         scores.append((len(hits), tid, hits))
     return sorted(scores, key=lambda x: -x[0])
 

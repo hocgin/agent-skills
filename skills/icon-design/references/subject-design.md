@@ -29,6 +29,7 @@
    - `pastel-layer`：能拆成「主层 + 辅层」两块重叠的圆胖形状。
    - `flat-object`：是有明确固有色的实物，正视剪影即可辨认。
    - `mono-thin`：能用极少的细线功能性几何结构画出，内部细节不超过 2 处。
+   - `glow-blob`：轮廓能断开成 1–3 段粗线，最好有可放黑色圆点节点的端点。
 4. 与同类知名产品图标是否撞车？过于雷同 → 换辅元素或换角度。
 
 ## 3. 撰写主体描述（英文）
@@ -43,7 +44,7 @@
 
 - 只写「画什么、放在哪」，**不写**线条粗细、颜色质感、光影等风格词——这些由主题 style 块负责。
 - 需要指定颜色时只能引用主题色板中的色名（如 `violet`、`lime-green band`、`yellow dot`）。
-- 多色板主题（`solid-knockout`、`pastel-layer`）每个图标只用一种颜色/色相，需在描述中写明，如 `in cobalt blue`、`in the lilac hue family`；成套时各图标轮换不同颜色。
+- 多色板主题（`solid-knockout`、`pastel-layer`、`glow-blob`）每个图标只用一种颜色/色相，需在描述中写明，如 `in cobalt blue`、`in the lilac hue family`；成套时各图标轮换不同颜色。
 - 控制在 1–2 句、40 词以内，避免细节过多导致风格被稀释。
 
 ### 示例
@@ -57,6 +58,7 @@
 | 「宝宝喂养记」母婴记录 | `pastel-layer` | a baby bottle in the apricot orange hue family: rounded nipple cap as the front layer, lighter bottle body behind, three tiny capsule measurement bars |
 | 「零钱包」个人记账 | `flat-object` | a brown leather wallet seen from the front with a darker brown flap on top, green banknotes peeking out of the top edge, and a small dark clasp dot on the right |
 | 「听书」有声书 App | `mono-thin` | an open book seen from the front with a center spine line, and a small headphone arc resting over the top edge of the pages |
+| 「灵感引擎」AI 创作插件 | `glow-blob` | a four-point sparkle star whose outline breaks into two segments, with a small solid black dot node at one gap; violet glow blob offset to the lower left |
 | 「云笺」云笔记 | `line-dot` | a rounded cloud outline with a folded page corner on the upper right and two short horizontal text lines inside; the yellow dot sits at the end of the lower line |
 
 ## 4. 成套图标
