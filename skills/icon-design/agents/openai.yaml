@@ -1,0 +1,3 @@
+interface:
+  display_name: "Icon Design"
+  short_description: "基于参考图主题生成风格统一的 Icon 提示词"
