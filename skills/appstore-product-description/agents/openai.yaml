@@ -1,0 +1,3 @@
+interface:
+  display_name: "App Store Description"
+  short_description: "按固定格式生成 App Store 产品描述，附订阅取消说明与协议模板"
