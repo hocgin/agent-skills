@@ -1,0 +1,3 @@
+interface:
+  display_name: "App Icon Design"
+  short_description: "从案例图提取 App Icon 风格模板并生成风格一致的提示词"
