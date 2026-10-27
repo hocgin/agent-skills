@@ -65,19 +65,19 @@
 
 ## 保存与复用
 
-唯一保存规范：[Style Profile](../../.onboarding-design/styles/pastel-paper-doodle-v1.json)。[原始参考图](../../.onboarding-design/references/pastel-paper-doodle-v1/reference.png) 保留原文件字节与 ICC 配置，未编辑。Profile 中的参考路径相对于 `.onboarding-design/styles/`。
+唯一保存规范：[Style Profile](../../skills/onboarding-design/styles/pastel-paper-doodle-v1.json)。[原始参考图](../../skills/onboarding-design/references/pastel-paper-doodle-v1/reference.png) 保留原文件字节与 ICC 配置，未编辑。Profile 中的参考路径相对于 `skills/onboarding-design/styles/`。
 
 ```text
 使用 onboarding-design
 style_id: pastel-paper-doodle-v1
-profile_store: /Users/hocgin/Projects/agent-skills/.onboarding-design/styles
+profile_store: /Users/hocgin/Projects/agent-skills/skills/onboarding-design/styles
 背景变体: edge-notes
 项目类型: 你的实际 App 类型
 核心功能: 你的真实产品能力
 ```
 
 ```bash
-python3 skills/onboarding-design/scripts/onboarding.py load-profile --style-id pastel-paper-doodle-v1 --store .onboarding-design/styles
+python3 skills/onboarding-design/scripts/onboarding.py load-profile --style-id pastel-paper-doodle-v1 --store skills/onboarding-design/styles
 ```
 
 复用时加载完整 JSON，而不只传递风格 ID 标签。跨项目可指定上述存储目录，或复制 Profile 与参考目录。后续修改固定色板、材质或图案规则时派生新 ID。原有 `pastel-bottom-wash-v1` 保持独立。

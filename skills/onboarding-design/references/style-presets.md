@@ -4,7 +4,7 @@
 
 ## 已保存的参考图风格
 
-以下为可直接加载的完整 Profile，区别于下方泛风格起点。配色、背景/前景分层、图形语法、来源与提示词见 [六种参考图风格](six-reference-styles.md)。文件位于本 Skill 的 `styles/<style_id>.json`，可用现有 `load-profile --store <本 Skill 目录>/styles` 读取。
+以下为可直接加载的完整 Profile，区别于下方泛风格起点。全部参考图与色板见 [风格目录](../README.md)，前六套的详细提取说明见 [六种参考图风格](six-reference-styles.md)；各 Profile 记录完整规范和来源。文件位于本 Skill 的 `styles/<style_id>.json`，可用现有 `load-profile --store <本 Skill 目录>/styles` 读取。
 
 | 名称 | style_id | 背景与签名图形 |
 | --- | --- | --- |
@@ -14,8 +14,11 @@
 | 薄荷悬浮 | `mint-photo-orbit-v1` | 浅薄荷渐白、一张主相片与稀疏悬浮缩略片 |
 | 炭黑荧光地图 | `charcoal-lime-map-v1` | 深橄榄炭黑、局部路网面板、柠檬黄路径与 CTA |
 | 电影感青蓝摄影 | `cinematic-teal-photo-v1` | 满版灰蓝/青蓝摄影、白字、白色胶囊 CTA |
+| 浅彩底晕 | `pastel-bottom-wash-v1` | 上白下浅彩的垂直底晕、单一几何点缀、黑色 CTA |
+| 薄荷流纹 | `mint-organic-contours-v1` | 近白底、低对比蜿蜒曲带、雾蓝到薄荷绿的底晕 |
+| 粉彩纸趣 | `pastel-paper-doodle-v1` | 白底局部粉彩纸片、圆拱与邮票齿边、稀疏细线涂鸦 |
 
-六种风格独立使用。叠片与悬浮共享近似底色，构图规则不同；彩格和地图是前景容器内的图形，并非重复背景纹样。更换产品只替换内容，不强制复制相片、食物、头像或街景中的具体对象。
+各套风格独立使用。叠片与悬浮共享近似底色，构图规则不同；彩格和地图是前景容器内的图形，并非重复背景纹样。更换产品只替换内容，不强制复制相片、食物、头像或街景中的具体对象。
 
 ## 泛风格起点
 

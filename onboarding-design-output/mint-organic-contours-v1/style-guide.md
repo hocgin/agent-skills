@@ -42,18 +42,18 @@
 
 ## 文件与复用
 
-- 正式风格：[保存的 Profile](../../.onboarding-design/styles/mint-organic-contours-v1.json)。
+- 正式风格：[保存的 Profile](../../skills/onboarding-design/styles/mint-organic-contours-v1.json)。
 - 交付快照：[style-profile.json](style-profile.json)，内容与正式 Profile 相同。
 - 矢量背景：[background.svg](background.svg)，393×852，可缩放，非原图抠图。
 - 分层预览：[style-preview.svg](style-preview.svg) / [style-preview.png](style-preview.png)。
-- 原始参考：[reference.png](../../.onboarding-design/references/mint-organic-contours-v1/reference.png)，保留原字节。
+- 原始参考：[reference.png](../../skills/onboarding-design/references/mint-organic-contours-v1/reference.png)，保留原字节。
 
 后续请求可直接使用：
 
 ```text
 使用 onboarding-design
 style_id: mint-organic-contours-v1
-profile_store: /Users/hocgin/Projects/agent-skills/.onboarding-design/styles
+profile_store: /Users/hocgin/Projects/agent-skills/skills/onboarding-design/styles
 项目类型: 实际 App 类型
 核心功能: 实际产品能力
 ```
@@ -63,7 +63,7 @@ profile_store: /Users/hocgin/Projects/agent-skills/.onboarding-design/styles
 ```bash
 python3 skills/onboarding-design/scripts/onboarding.py load-profile \
   --style-id mint-organic-contours-v1 \
-  --store .onboarding-design/styles
+  --store skills/onboarding-design/styles
 ```
 
 加载完整 JSON 后复用，不依赖跨聊天记忆或再次上传图片。跨项目可指定上述绝对存储路径，也可复制 JSON 及参考目录；SVG 是独立资源，使用时一并复制。改配色、路径尺度或渐变曲线时派生新 ID，保留 v1。

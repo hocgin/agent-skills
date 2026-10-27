@@ -40,13 +40,13 @@
 
 ## 保存与复用
 
-唯一保存规范：[Style Profile](../../.onboarding-design/styles/pastel-bottom-wash-v1.json)。原始参考：[reference.png](../../.onboarding-design/references/pastel-bottom-wash-v1/reference.png)，保留原文件字节，未进行编辑。Profile 的参考路径相对于 `.onboarding-design/styles/`；后续复用不必再次上传图片。
+唯一保存规范：[Style Profile](../../skills/onboarding-design/styles/pastel-bottom-wash-v1.json)。原始参考：[reference.png](../../skills/onboarding-design/references/pastel-bottom-wash-v1/reference.png)，保留原文件字节，未进行编辑。Profile 的参考路径相对于 `skills/onboarding-design/styles/`；后续复用不必再次上传图片。
 
 在当前项目中使用：
 
 ```text
 style_id: pastel-bottom-wash-v1
-profile_store: /Users/hocgin/Projects/agent-skills/.onboarding-design/styles
+profile_store: /Users/hocgin/Projects/agent-skills/skills/onboarding-design/styles
 背景变体: cyan
 项目类型: 你的实际 App 类型
 核心功能: 你的实际产品能力
@@ -55,7 +55,7 @@ profile_store: /Users/hocgin/Projects/agent-skills/.onboarding-design/styles
 也可读取完整规范后交给 `onboarding-design`：
 
 ```bash
-python3 skills/onboarding-design/scripts/onboarding.py load-profile --style-id pastel-bottom-wash-v1 --store .onboarding-design/styles
+python3 skills/onboarding-design/scripts/onboarding.py load-profile --style-id pastel-bottom-wash-v1 --store skills/onboarding-design/styles
 ```
 
 跨项目时指定上述存储目录，或把 JSON 与参考目录一起复制过去。修改端色、渐变曲线等固定参数时派生新 ID，不覆盖 v1。
