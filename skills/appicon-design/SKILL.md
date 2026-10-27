@@ -53,7 +53,7 @@ appicon-design/
 | 核心功能 | 1–3 个关键能力、目标用户、调性 | 从描述推断 |
 | 风格 | `style-id` | 自动匹配（步骤 2） |
 | 画布形状 | `square`（全出血，交付 Xcode）/ `squircle`（带圆角，展示用） | 默认取风格的 `default_shape`，未设置则 `square`（`real-morph` 的物体本身即圆角方块，默认 `squircle`） |
-| 文字 | 图标上是否出现品牌字样 | 默认**无文字**；仅当用户明确要求且风格允许时使用 `--label`。字母标风格（`lettering: required`，如 `pop-letter`）文字即主体，必须用 `--label` 传入 2–4 个字母 |
+| 文字 | 图标上是否出现品牌字样 | 默认**无文字**；仅当用户明确要求且风格允许时使用 `--label`。字母标风格（`lettering: required`）文字即主体，必须用 `--label` 传入；`pop-letter` / `jelly-letter` 为 2–4 个字母，`holo-ribbon` 为单个字母 |
 
 ### 2. 选择风格
 
@@ -113,3 +113,4 @@ python3 scripts/build_prompt.py --style retro-stripe \
 3. **颜色只用风格色板**：主体描述中不得出现色板外的颜色词，需要颜色时引用风格中的色名。例外以风格 `style.md` 的「可变元素」为准（如 `cozy-face` 可换角色主色、`real-morph` 色板由物体固有色决定）。
 4. **风格隔离**：一次生成只使用一个风格。
 5. **同风格多项目**：不同项目使用同一风格时，主体描述保持相近的复杂度与构图骨架（焦点位置、装饰位置一致），确保系列感。
+6. **成组主体**：`subject_layout: paired`（如 `buddy-tiles`）表示固定的一大一小叠放组合。脚本将两者视为一个视觉组，并移除通用的多主体禁令；角色数量、主次与重叠关系仍由风格块约束。

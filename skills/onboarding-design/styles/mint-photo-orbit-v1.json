@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "style_id": "mint-photo-orbit-v1",
+  "name": "薄荷悬浮",
+  "derived_from": null,
+  "provenance": {
+    "mode": "reference-extraction",
+    "references": [
+      {
+        "id": "ref-six-04",
+        "source": "../references/images/onboarding-six-styles.png",
+        "sha256": "bf2ac599c318967e4b91bcaaeb4c068e0bddefbb981817c017d98cf06d5ec51e",
+        "image_size_px": [
+          806,
+          1076
+        ],
+        "crop_xywh_px": [
+          18,
+          590,
+          220,
+          479
+        ],
+        "position": "左下",
+        "kind": "onboarding screenshot",
+        "role": "primary"
+      }
+    ],
+    "color_sampling": {
+      "method": "RGB 局部区域逐通道中位数，box 为 [left, top, right, bottom)；未做滤色。颜色是截图代表值，并非原始设计 token。",
+      "samples": [
+        {
+          "token": "background",
+          "box_px": [
+            32,
+            625,
+            52,
+            645
+          ],
+          "median_hex": "#F3F7ED",
+          "profile_hex": "#F3F7ED"
+        },
+        {
+          "token": "surface",
+          "box_px": [
+            35,
+            975,
+            50,
+            989
+          ],
+          "median_hex": "#FFFFFF",
+          "profile_hex": "#FFFFFF"
+        }
+      ],
+      "normalized": "未列入 samples 的颜色、渐变 stop、遮罩、尺寸与时长均为本次规范化值；摄影主色不是全画布固定像素。"
+    },
+    "observations": [
+      {
+        "reference_id": "ref-six-04",
+        "dimension": "style",
+        "finding": "薄荷到白的轻柔底色 / 一大三小的疏散悬浮相片 / 居中衬线标题与黑色胶囊 CTA",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-six-04",
+        "dimension": "color",
+        "finding": "竖向浅薄荷 #F3F7ED 到纯白 #FFFFFF，stop 0/0.45/0.70/1 对应 #F3F7ED/#FAFCF7/#FFFFFF/#FFFFFF；干净空白，无纹样。悬浮相片是后续独立前景，不画进纯背景。",
+        "basis": "normalized",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-six-04",
+        "dimension": "typography",
+        "finding": "标题用衬线类别，拉丁文可选系统 New York，中文用可用宋体回退；正文系统无衬线，字体为实现选择",
+        "basis": "normalized",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-six-04",
+        "dimension": "layout",
+        "finding": "安全区内主视觉 54%、文案 23%、导航 16%、弹性留白 7%",
+        "basis": "normalized",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-six-04",
+        "dimension": "graphics",
+        "finding": "背景同属浅薄荷到白的无纹理家族；区别在于中央一张大相片配周围三个悬浮缩略片，背景本身无图案。",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-six-04",
+        "dimension": "detail",
+        "finding": "一张正置竖向主相片，外围最多三张小缩略片，分别在上方、左下、右下；只允许一张小片轻旋，不形成堆叠扇形。",
+        "basis": "normalized",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-six-04",
+        "dimension": "mood",
+        "finding": "轻松、分享感、人与人的连接",
+        "basis": "inferred",
+        "confidence": "medium"
+      }
+    ],
+    "decisions": {
+      "retained": [
+        "薄荷到白的轻柔底色",
+        "一大三小的疏散悬浮相片",
+        "居中衬线标题与黑色胶囊 CTA"
+      ],
+      "translated": [
+        "保留背景与图形语法，图片主体随实际产品变化",
+        "截图小字与细小按钮改为可读的原生字号及 44 pt 以上点击目标"
+      ],
+      "dropped": [
+        "原始品牌、具体人物/店铺/食物/地标内容与文案",
+        "外侧灰色展示底、设备圆角与传感器装饰"
+      ],
+      "rationale": "用户要求分别保留六种背景配色和图案语言；本 Profile 只定义其中一种，不合并为单一混搭风格。"
+    }
+  },
+  "design_tokens": {
+    "colors": {
+      "background": "#F3F7ED",
+      "surface": "#FFFFFF",
+      "primary": "#232323",
+      "text_primary": "#171917",
+      "text_secondary": "#4D514D",
+      "on_primary": "#FFFFFF",
+      "accent": "#EAB85C",
+      "usage": "background 为不透明回退底色；摄影主色与彩格色仅用于视觉资源，不自动用于文字。正文位于可读的不透明底或经复核的遮罩上。"
+    },
+    "typography": {
+      "family": "标题用衬线类别，拉丁文可选系统 New York，中文用可用宋体回退；正文系统无衬线，字体为实现选择",
+      "title": {
+        "size_pt": 26,
+        "weight": "semibold",
+        "line_height_pt": 33
+      },
+      "body": {
+        "size_pt": 16,
+        "weight": "regular",
+        "line_height_pt": 23
+      },
+      "button": {
+        "size_pt": 16,
+        "weight": "semibold",
+        "line_height_pt": 22
+      },
+      "caption": {
+        "size_pt": 13,
+        "weight": "medium",
+        "line_height_pt": 18
+      },
+      "alignment": "标题、正文与 CTA 居中；支持动态字号"
+    },
+    "spacing_pt": {
+      "unit": 8,
+      "small": 8,
+      "medium": 16,
+      "large": 24,
+      "section": 32,
+      "page_horizontal": 24
+    },
+    "radii_pt": {
+      "card": 8,
+      "button": 999,
+      "thumbnail": 6
+    },
+    "shadows": {
+      "card": {
+        "color": "#000000",
+        "alpha": 0.1,
+        "x_pt": 0,
+        "y_pt": 5,
+        "blur_pt": 16
+      },
+      "button": {
+        "color": "#000000",
+        "alpha": 0.12,
+        "x_pt": 0,
+        "y_pt": 4,
+        "blur_pt": 14
+      }
+    },
+    "opacity": {
+      "text": 1,
+      "surface": 1,
+      "border": 0.85
+    },
+    "effects": {
+      "background_gradient": {
+        "coordinate_space": "full-screen-normalized-y",
+        "direction": "top-to-bottom",
+        "stops": [
+          {
+            "location": 0,
+            "color": "#F3F7ED"
+          },
+          {
+            "location": 0.45,
+            "color": "#FAFCF7"
+          },
+          {
+            "location": 0.7,
+            "color": "#FFFFFF"
+          },
+          {
+            "location": 1,
+            "color": "#FFFFFF"
+          }
+        ]
+      },
+      "border_width_pt": 1,
+      "border_color": "#FFFFFF",
+      "texture": "无人工颗粒或重复纹理"
+    }
+  },
+  "visual_language": {
+    "dominant_style": "photo-orbit",
+    "secondary_styles": [
+      {
+        "style": "editorial",
+        "scope": "只影响排版与留白",
+        "source": "ref-six-04"
+      }
+    ],
+    "signature_features": [
+      "薄荷到白的轻柔底色",
+      "一大三小的疏散悬浮相片",
+      "居中衬线标题与黑色胶囊 CTA"
+    ],
+    "rendering": "一张正置竖向主相片，外围最多三张小缩略片，分别在上方、左下、右下；只允许一张小片轻旋，不形成堆叠扇形。",
+    "materials": "原生平面底色、细白边与独立摄影资源；不混入玻璃、金属或黏土材质",
+    "lighting": "照片维持相似自然日光和白平衡；缩略片只用弱接触阴影，不增加霓虹边缘",
+    "perspective": "UI 与卡片平视，摄影透视由场景决定；同组保持相似焦距和视线高度",
+    "mood": "轻松、分享感、人与人的连接",
+    "layer_rules": {
+      "background": "背景同属浅薄荷到白的无纹理家族；区别在于中央一张大相片配周围三个悬浮缩略片，背景本身无图案。",
+      "foreground": "一张正置竖向主相片，外围最多三张小缩略片，分别在上方、左下、右下；只允许一张小片轻旋，不形成堆叠扇形。",
+      "background_only_prompt": "竖向浅薄荷 #F3F7ED 到纯白 #FFFFFF，stop 0/0.45/0.70/1 对应 #F3F7ED/#FAFCF7/#FFFFFF/#FFFFFF；干净空白，无纹样。悬浮相片是后续独立前景，不画进纯背景。",
+      "boundary": "纯背景请求不输出前景卡片/内容节点/文字/按钮；满版摄影款的照片属于背景资源，遮罩与控件独立渲染。"
+    }
+  },
+  "layout_rules": {
+    "baseline_canvas_pt": {
+      "width": 393,
+      "height": 852
+    },
+    "safe_area": "背景可全屏出血；文字、进度、CTA 用系统安全区，不复制刘海、设备外壳或状态栏",
+    "regions": "安全区内主视觉 54%、文案 23%、导航 16%、弹性留白 7%",
+    "variants": {
+      "orbit-three": "主片 x=0.5，三个小片在约 (0.58,0.13)/(0.13,0.48)/(0.77,0.45) 全屏归一化坐标。",
+      "orbit-two": "减少至两个缩略片，保留上方和右下位置；主片锚点、尺寸和阅读留白不变。"
+    },
+    "responsive": "小屏或动态大字号先缩小主视觉并减少间距；允许文案滚动，底部 CTA 始终可达；宽屏限制最大内容宽度，图片等比裁切",
+    "typography": "标题起点 26/33 pt，正文 16/23 pt，最多两段；行数不硬裁切。截图字号不可直接照搬为设备 pt。"
+  },
+  "component_rules": {
+    "button": "primary 实色胶囊，on_primary 字；高 52 pt，可随大字号增高；点击目标至少 44 pt。",
+    "progress": "有多页时按实际页数显示；活动点用 primary，深色款用荧光短胶囊。单页可以隐藏，不继承截图固定点数。",
+    "card": "一张正置竖向主相片，外围最多三张小缩略片，分别在上方、左下、右下；只允许一张小片轻旋，不形成堆叠扇形。 卡片尺寸为实现重建值；正文不放入复杂底图。",
+    "navigation": "共享底部导航；下一页/跳过/末页终点由真实 Flow 决定。参考中注册/登录与开始不作为风格的强制动作。"
+  },
+  "composition_rules": {
+    "focal_point": "主视觉上中部 x≈0.5/y≈0.32；一张正置竖向主相片，外围最多三张小缩略片，分别在上方、左下、右下；只允许一张小片轻旋，不形成堆叠扇形。",
+    "negative_space": "主视觉与文案至少 24 pt；相片缩略图与彩格不可进入正文或 CTA 区。摄影款左上保留低细节区域。",
+    "visual_weight": "一个主视觉组，周边元素从属；彩格最多九格，轨道缩略图最多三张，地图只强调一条路径。",
+    "allowed_variations": "只换真实产品主体、场景和已登记布局；保留背景/前景分层、配色、留白、字体类别。内容色可来自摄影，不据此改 UI 色板。"
+  },
+  "motion_rules": {
+    "transition": "280 ms ease-in-out 淡入淡出，横向位移不超过 16 pt；可中断，不排队",
+    "entrance": "主视觉 240 ms ease-out 淡入，位移不超过 8 pt；不模拟静态参考未能证明的物理弹跳",
+    "background": "底色与渐变固定；照片可随页切换但遵守统一调色，不持续漂移或自动播放运动背景",
+    "continuity": "保持相片/面板/阅读区锚点；新页面改变场景而非只换文案；所有动效为规范化建议，不是从静态图识别",
+    "reduce_motion": "取消位移与延迟，100 ms 淡入或直接切换；保留导航和信息"
+  },
+  "negative_constraints": [
+    "禁止将参考品牌、人物身份、文案与具体产品能力视为通用风格要求",
+    "禁止把拼图外侧 #D1D1D1 灰色展示画布或黑色传感器区域做成 App 背景",
+    "禁止把文字、CTA、进度、状态栏烘焙进背景图片；界面用原生控件",
+    "禁止页间随机替换色板、字体类别、材质或构图语法",
+    "禁止三张同等大相片扇形重叠、满屏碎片、持续漂浮干扰阅读、彩色光晕和复杂背景纹样。"
+  ]
+}

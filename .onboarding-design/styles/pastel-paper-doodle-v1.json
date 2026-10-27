@@ -1,0 +1,606 @@
+{
+  "schema_version": 1,
+  "style_id": "pastel-paper-doodle-v1",
+  "name": "粉彩纸趣 · Pastel Paper Doodle",
+  "derived_from": null,
+  "provenance": {
+    "mode": "reference-background-and-motif-extraction",
+    "references": [
+      {
+        "id": "ref-01",
+        "source": "../references/pastel-paper-doodle-v1/reference.png",
+        "kind": "六屏移动 App 首次启动引导拼图",
+        "group_id": "pastel-paper-doodle",
+        "role": "primary",
+        "size_px": [
+          1456,
+          2012
+        ],
+        "sha256": "ca605418a2bcc1b9c50c53f3d0007fff7f306960cd4a1ae51eaf21a93e711acf"
+      }
+    ],
+    "observations": [
+      {
+        "reference_id": "ref-01",
+        "dimension": "visual_style",
+        "finding": "白色移动界面上叠加低饱和纸片与手绘细线，兼有扁平几何插画；没有全屏纸张噪点",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "color_system",
+        "finding": "白底和深墨绿按钮贯穿六屏；淡黄、淡紫、浅桃、灰薄荷作为局部色面；珊瑚、紫、薄荷、黄、浅蓝与橙用于图形",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "typography",
+        "finding": "标题为偏圆润的粗无衬线，正文较轻；仅便签装饰有手写字。无法确认精确字体家族或原始字号",
+        "basis": "observed",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "layout",
+        "finding": "大量白色留白；首屏纸片被左右边缘裁切；其他页面采用居中浅色卡片、圆拱面板或邮票主体；底部深色 CTA 稳定",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "graphic_language",
+        "finding": "便签折角、胶带/回形针、邮票齿边、随手画的箭头/爱心/星形和虚线路径；均为稀疏局部装饰，不是重复底纹",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "visual_details",
+        "finding": "首屏文字周围可见浅奶油色软晕；纸片有很轻的投影，主体色块大多平面哑光。不能从此认定全局实体光源或纸纹",
+        "basis": "observed",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "emotion",
+        "finding": "柔和纸片、少量不规则线条与留白形成轻松、友好、手作的气氛",
+        "basis": "inferred",
+        "confidence": "medium"
+      }
+    ],
+    "decisions": {
+      "requested_style": "提取图片背景配色和图案，创建 onboarding-design 的可复用风格；本次不设计产品流程",
+      "retained": [
+        "白底大留白、奶油色局部柔光和低饱和纸片色面",
+        "边缘裁切便签、圆拱面板、邮票齿边与细线手绘图案",
+        "深墨绿高对比主按钮与简洁圆润排版"
+      ],
+      "translated": [
+        "将装饰拆成背景、纸片、线稿和独立内容四层，固定稀疏度与变体",
+        "将不明确的字号、几何、阴影和动效转成可实施的规范值"
+      ],
+      "dropped": [
+        "原品牌、角色造型与表情、文案、数值和邮票品牌标记",
+        "截图外侧灰底、手机展示外壳与状态栏",
+        "与原 App 功能绑定的计时圆环、输入表单、通知开关和完成奖励逻辑"
+      ],
+      "rationale": "提取跨产品可用的配色与纸品装饰语法，图案只辅助真实内容，不继承原品牌或产品能力"
+    },
+    "color_sampling": {
+      "method": "Pillow ImageCms 使用原图内嵌 ICC 转换到 sRGB，再对指定区域逐通道取中位数；饱和图形先作颜色筛选",
+      "source_icc_name": "Display",
+      "output_color_space": "sRGB",
+      "precision_note": "色值为截图局部像素代表值；不等于原设计文件的精确 token。未直接把显示器空间 RGB 当作 sRGB。",
+      "samples": [
+        {
+          "token": "presentation_canvas",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            7,
+            7,
+            38,
+            38
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#E5E5E5"
+        },
+        {
+          "token": "background",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            325,
+            293,
+            363,
+            347
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#FFFFFF"
+        },
+        {
+          "token": "surface",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            575,
+            316,
+            591,
+            342
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#F2F2F2"
+        },
+        {
+          "token": "surface_lilac",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            575,
+            1497,
+            607,
+            1562
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#F6F6F8"
+        },
+        {
+          "token": "paper_yellow",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            70,
+            138,
+            98,
+            168
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#FFF2C4"
+        },
+        {
+          "token": "paper_lilac",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            83,
+            706,
+            112,
+            719
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#EAE2FA"
+        },
+        {
+          "token": "paper_peach",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            1084,
+            477,
+            1106,
+            499
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#FBE6DB"
+        },
+        {
+          "token": "paper_mint",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            1388,
+            428,
+            1399,
+            515
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#ECF1EB"
+        },
+        {
+          "token": "cream_glow",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            169,
+            575,
+            201,
+            614
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#FFF9EA"
+        },
+        {
+          "token": "wash_cyan",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            231,
+            1603,
+            257,
+            1620
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#EDF5F9"
+        },
+        {
+          "token": "accent_coral",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            1138,
+            304,
+            1258,
+            423
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "pixel_filter": "r>200 and 100<g<180 and 70<b<160",
+          "selected_pixels": 6566,
+          "value": "#F4886D"
+        },
+        {
+          "token": "accent_violet",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            672,
+            1345,
+            797,
+            1437
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "pixel_filter": "100<r<180 and 80<g<170 and b>210",
+          "selected_pixels": 7396,
+          "value": "#847BEE"
+        },
+        {
+          "token": "accent_mint",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            811,
+            385,
+            900,
+            445
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "pixel_filter": "60<r<160 and 130<g<210 and 100<b<190 and g>r+25",
+          "selected_pixels": 2599,
+          "value": "#52B69D"
+        },
+        {
+          "token": "accent_yellow",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            840,
+            562,
+            859,
+            571
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#F2CE57"
+        },
+        {
+          "token": "accent_cyan",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            338,
+            1356,
+            358,
+            1394
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#90D0E3"
+        },
+        {
+          "token": "stamp_orange",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            1095,
+            1307,
+            1138,
+            1329
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#ED6E42"
+        },
+        {
+          "token": "stamp_cream",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            1117,
+            1388,
+            1258,
+            1497
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "pixel_filter": "r>235 and g>200 and 120<b<210",
+          "selected_pixels": 7185,
+          "value": "#FFE9B6"
+        },
+        {
+          "token": "primary",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            136,
+            868,
+            190,
+            895
+          ],
+          "method": "ICC 转换为 sRGB 后，逐 RGB 通道中位数；右/下边界不包含",
+          "value": "#242A26"
+        }
+      ]
+    },
+    "parameter_status": {
+      "sampled": "samples 列出的颜色，均在 sRGB 中取样",
+      "observed": "纸片形状、裁切、软晕、细线涂鸦与空白层级",
+      "normalized": "字体、字号、几何尺寸、透明度、阴影参数、动效、正文辅助色与线色为主动重建规范；静态图无法推断原动效"
+    }
+  },
+  "design_tokens": {
+    "colors": {
+      "presentation_canvas": "#E5E5E5",
+      "background": "#FFFFFF",
+      "surface": "#F2F2F2",
+      "surface_lilac": "#F6F6F8",
+      "paper_yellow": "#FFF2C4",
+      "paper_lilac": "#EAE2FA",
+      "paper_peach": "#FBE6DB",
+      "paper_mint": "#ECF1EB",
+      "cream_glow": "#FFF9EA",
+      "wash_cyan": "#EDF5F9",
+      "accent_coral": "#F4886D",
+      "accent_violet": "#847BEE",
+      "accent_mint": "#52B69D",
+      "accent_yellow": "#F2CE57",
+      "accent_cyan": "#90D0E3",
+      "stamp_orange": "#ED6E42",
+      "stamp_cream": "#FFE9B6",
+      "primary": "#242A26",
+      "surface_paper": "#FFFFFF",
+      "text_primary": "#242A26",
+      "text_secondary": "#656B64",
+      "on_primary": "#FFFFFF",
+      "doodle_stroke": "#747267",
+      "progress_inactive": "#D9D9D7",
+      "usage": "背景以白色为主，paper_* 和 surface_lilac 用于局部纸片/面板，cream_glow 为局部柔光，wash_cyan 为小面积提示底；accent_* 与 stamp_* 只用于图形。primary/on_primary 为主按钮配色。text_secondary、doodle_stroke、progress_inactive 为重建规范值，浅彩不承载正文。presentation_canvas 仅是截图外部展示底。"
+    },
+    "typography": {
+      "family": "偏圆润系统无衬线，中文用系统回退；原字体未知。手写字只用于无功能性装饰，不能取代正文",
+      "title": {
+        "size_pt": 32,
+        "weight": "bold",
+        "line_height_pt": 38
+      },
+      "body": {
+        "size_pt": 17,
+        "weight": "regular",
+        "line_height_pt": 25
+      },
+      "button": {
+        "size_pt": 16,
+        "weight": "medium",
+        "line_height_pt": 22
+      },
+      "caption": {
+        "size_pt": 13,
+        "weight": "regular",
+        "line_height_pt": 19
+      },
+      "alignment": "默认标题居中；正文居中或在卡片内左对齐。动态字号下允许换行"
+    },
+    "spacing_pt": {
+      "unit": 8,
+      "small": 8,
+      "medium": 16,
+      "large": 24,
+      "section": 32,
+      "page_horizontal": 28
+    },
+    "radii_pt": {
+      "button": 28,
+      "card": 32,
+      "input": 24,
+      "option": 22
+    },
+    "shadows": {
+      "paper": {
+        "color": "#3B3528",
+        "alpha": 0.06,
+        "x_pt": 0,
+        "y_pt": 3,
+        "blur_pt": 8
+      },
+      "panel": {
+        "color": "#000000",
+        "alpha": 0,
+        "x_pt": 0,
+        "y_pt": 0,
+        "blur_pt": 0
+      }
+    },
+    "opacity": {
+      "paper": 1,
+      "panel": 1,
+      "text": 1,
+      "halo_center": 0.85,
+      "doodle": 0.8
+    },
+    "background_pattern": {
+      "type": "white-space-with-sparse-paper-and-doodle",
+      "base_token": "colors.background",
+      "repeat": false,
+      "texture": "无全屏颗粒、无重复纸纹、无网格、无均匀散布的贴纸",
+      "halo": {
+        "color_token": "colors.cream_glow",
+        "center_xy": [
+          0.5,
+          0.55
+        ],
+        "radius_xy": [
+          0.38,
+          0.22
+        ],
+        "stops": [
+          {
+            "location": 0,
+            "alpha": 0.85
+          },
+          {
+            "location": 0.55,
+            "alpha": 0.35
+          },
+          {
+            "location": 1,
+            "alpha": 0
+          }
+        ],
+        "scope": "仅 cream-halo / edge-notes 可用；只出现一个局部柔光，不延伸为底部渐变",
+        "coordinate_system": "全画布归一化坐标，x/y 0～1；椭圆半径也以画布宽/高计"
+      }
+    },
+    "background_variants": {
+      "plain": {
+        "base": "colors.background",
+        "decoration": "无装饰；默认内容页"
+      },
+      "cream-halo": {
+        "base": "colors.background",
+        "decoration": "一处低对比奶油椭圆软晕，可配一条弧形涂鸦"
+      },
+      "edge-notes": {
+        "base": "colors.background",
+        "decoration": "可配奶油软晕；2～4 张粉彩纸片锚定边缘，裁掉单片约 20%～40%，中央保持干净"
+      },
+      "pastel-card": {
+        "base": "colors.background",
+        "decoration": "单个 paper_peach / paper_lilac / paper_mint 局部圆角色面，不整屏铺色"
+      },
+      "arch-panel": {
+        "base": "colors.background",
+        "decoration": "单个 surface_lilac 圆拱面板，上方半圆、底部平直或圆角，内容放在前景"
+      },
+      "postage": {
+        "base": "colors.background",
+        "decoration": "单张浅桃纸框、均匀圆弧齿边，内部用 stamp_orange 与 stamp_cream 图形；图形按新产品语义设计"
+      }
+    },
+    "graphic_patterns": {
+      "layer_order": [
+        "白底与可选柔光",
+        "边缘纸片或主面板（最多选一个布局族）",
+        "与内容无交互的细线装饰",
+        "真实文案、语义主视觉与交互控件"
+      ],
+      "paper_notes": {
+        "size_pt": [
+          84,
+          120
+        ],
+        "rotation_deg": [
+          -9,
+          9
+        ],
+        "allowed_details": [
+          "一个折角",
+          "一小段半透明胶带",
+          "一个细线回形针"
+        ],
+        "limit": "单张最多一种纸品细节，不同时堆叠胶带/图钉/折角/回形针"
+      },
+      "doodle": {
+        "stroke_pt": 1.5,
+        "linecap": "round",
+        "linejoin": "round",
+        "color_token": "colors.doodle_stroke",
+        "forms": [
+          "单线环绕箭头",
+          "不完全对称的空心爱心",
+          "小四角星",
+          "6 pt 线段 / 4 pt 间隔的短虚线轨迹"
+        ],
+        "density": "每屏最多 3 处线稿，与纸片组成装饰组时最多 4 组；不铺成底纹"
+      },
+      "postage_edge": {
+        "cutout_radius_pt": 3,
+        "pitch_pt": 12,
+        "method": "轮廓沿边按固定节距切去半圆；半径/节距为重建值"
+      },
+      "abstract_shapes": {
+        "forms": [
+          "圆角四角星",
+          "圆润云团",
+          "软沙漏轮廓"
+        ],
+        "usage": "可作为独立语义图形，非背景图案；每页最多一个，不照搬参考角色五官和轮廓"
+      },
+      "density": "无装饰页面允许；默认有色背景/纸片占全画布 8%～30%，主面板页可到 40%；这些是重建预算而非截图测量值"
+    },
+    "effects": {
+      "background_grain": 0,
+      "glass_blur_pt": 0,
+      "paper_border_pt": 0,
+      "blend_mode": "normal",
+      "depth": "主体二维哑光，只有纸片使用轻微柔影，面板无投影"
+    }
+  },
+  "visual_language": {
+    "dominant_style": "pastel-paper-doodle",
+    "secondary_styles": [
+      {
+        "style": "rounded-flat-illustration",
+        "scope": "仅可选的内容主视觉；不复制角色、不向背景增加立体渲染",
+        "source": "ref-01"
+      }
+    ],
+    "signature_features": [
+      "白色留白中的低饱和纸片与局部奶油软晕",
+      "边缘裁切便签、圆拱或邮票齿边的纸品形状",
+      "稀疏、不完全规整的圆头细线涂鸦"
+    ],
+    "rendering": "正视二维矢量色面与自然轻微不对称的线稿；轮廓清楚、哑光、低细节密度",
+    "materials": "平滑的粉彩纸张色面，只用折角、胶带或柔影暗示纸品；不模拟粗纸纤维、玻璃、黏土或金属",
+    "lighting": "全局平面漫射，无明显实体光源。纸片统一轻微向下柔影，是重建约束；奶油软晕是颜色层，不是霓虹光源",
+    "perspective": "正视二维，纸片可在平面内旋转 -9～9 度，不加 3D 透视和空间地平线",
+    "mood": "温柔、轻松、略带玩心与手作感；主信息仍简洁清楚"
+  },
+  "layout_rules": {
+    "baseline_canvas_pt": {
+      "width": 393,
+      "height": 852
+    },
+    "safe_area": "背景和纸片可延伸至边缘；标题、正文、功能性主视觉与 CTA 跟随系统安全区。截图外框不进入界面",
+    "regions": "根据内容选居中图文或上标题下主视觉；装饰只占边缘或一个局部面板；底部单个 CTA 保持稳定，不按拼图六屏机械复制流程",
+    "variants": {
+      "open-center": "白底或局部奶油软晕，中心图文，边缘纸片在内容安全区外裁切",
+      "panel-centered": "顶部标题、中部单张粉彩圆角卡片、下方说明与 CTA；不叠加边缘便签",
+      "arch-centered": "顶部标题，中部圆拱浅色面板；真实文案和控件独立布局于面板前景",
+      "stamp-centered": "中部一张邮票式主视觉，下方短说明；齿边只用于展示性容器，不用于每个按钮"
+    },
+    "responsive": "小屏或大字号先减少或隐藏纸片、软晕、线稿，再压缩主视觉；文案可滚动且 CTA 可达。装饰按容器边缘定位，宽屏主内容限制宽度并居中",
+    "typography": "标题优先两行以内但不截断；正文低密度；小字不使用浅色点缀色；便签若有真实信息则用原生可读文字并取消裁切"
+  },
+  "component_rules": {
+    "button": "primary 深墨绿底/on_primary 白字，54 pt 起高，圆角 28 pt，左右留 28 pt；大字号增高；无描边发光和浮雕",
+    "progress": "仅需要分页时使用小圆点；活动为 accent_coral 的短圆胶囊、非活动 progress_inactive 圆点；提供第几页/共几页读屏文字，不能只靠颜色",
+    "card": "面板用 paper_* 或 surface_lilac 的不透明平面，圆角 32 pt；输入内容用白色；便签阴影不扩散到所有卡片；齿边只用于展示内容",
+    "navigation": "一页一个主要动作；返回、跳过与末页目的地跟随真实产品。可点区域至少 44×44 pt；背景图案不参与命中测试与读屏"
+  },
+  "composition_rules": {
+    "focal_point": "每屏一个真实内容焦点；装饰在边缘或主视觉周边，以深色标题与按钮引导视线",
+    "negative_space": "装饰轮廓与真实文案至少 24 pt 间距；标题与按钮区域保持白色清楚底；允许完全不放纸片的休止页",
+    "visual_weight": "浅彩纸片退后；强调色只给一个主图形和少量辅助细节。局部软晕不能遮字或替代内容",
+    "allowed_variations": "按批准背景/布局族选择，每屏最多一个主面板或一组边缘纸片；更换纸片排列、允许色和语义对象；禁止每屏叠满全部 motif、任意换材质或照搬角色"
+  },
+  "motion_rules": {
+    "transition": "重建建议：240 ms ease-in-out 淡入切页，必要时最多 12 pt 位移，可中断",
+    "entrance": "重建建议：纸片 240 ms ease-out 淡入并最多 6 pt 位移；真实文案不手写逐字播放、不弹跳",
+    "background": "白底与软晕稳定，不循环漂浮、摇摆或色相变化；换变体仅 240 ms 交叉淡入",
+    "continuity": "全流程共享纸张色板、线宽、轻影、标题与按钮；图案变化不能改动交互锚点",
+    "reduce_motion": "取消位移、旋转与延迟；直接切换或 100 ms 淡入。静态参考无法确认原始动效"
+  },
+  "negative_constraints": [
+    "禁止把拼图灰底或手机外壳当成 App 背景",
+    "禁止全屏牛皮纸、粗纸纤维、颗粒噪点、重复贴纸底纹、网格或点阵",
+    "禁止每屏把便签、邮票、圆拱、角色、软晕同时堆满；不强制每页有装饰",
+    "禁止霓虹渐变、重投影、玻璃拟态、黏土 3D、镜面金属与复杂透视",
+    "禁止用浅彩承载正文，或让涂鸦/纸片覆盖标题、CTA、安全区与可操作控件",
+    "禁止复制原品牌、角色五官、文案、计时数值与功能逻辑；不得把参考六屏当规定页数",
+    "禁止把真实文字、按钮、进度或表单烘焙进背景位图；手写字只作非信息性点缀"
+  ],
+  "implementation_hints": {
+    "background": "白色基底与可选椭圆 radial color wash 独立绘制；软晕不是整屏垂直渐变",
+    "graphics": "纸片/折角/胶带/细线用 SVG、Canvas 或原生 Path；邮票用圆弧差集轮廓或 mask；复杂插画独立资源",
+    "layering": "背景、装饰纸片、线稿与真实控件分层；装饰禁用命中测试并从辅助功能树隐藏；需要传递内容的图形另给语义标签",
+    "verification": "已观察原图并进行 ICC→sRGB 局部采样；几何、动效与排版为重建规范。仅风格提取，无产品流程或 App 运行验收"
+  }
+}

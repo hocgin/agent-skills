@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1080" viewBox="0 0 1520 1080">
+<defs>
+<radialGradient id="halo"><stop offset="0" stop-color="#FFF9EA" stop-opacity=".85"/><stop offset=".55" stop-color="#FFF9EA" stop-opacity=".35"/><stop offset="1" stop-color="#FFF9EA" stop-opacity="0"/></radialGradient>
+<filter id="paperShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#3B3528" flood-opacity=".06"/></filter>
+
+<clipPath id="panel0"><rect x="56" y="190" width="340" height="440" rx="28"/></clipPath>
+<clipPath id="panel1"><rect x="412" y="190" width="340" height="440" rx="28"/></clipPath>
+<clipPath id="panel2"><rect x="768" y="190" width="340" height="440" rx="28"/></clipPath>
+<clipPath id="panel3"><rect x="1124" y="190" width="340" height="440" rx="28"/></clipPath>
+<mask id="stampMask" maskUnits="userSpaceOnUse" x="0" y="0" width="210" height="270"><rect width="210" height="270" fill="white"/>
+<circle cx="9" cy="0" r="3" fill="black"/><circle cx="9" cy="270" r="3" fill="black"/>
+<circle cx="21" cy="0" r="3" fill="black"/><circle cx="21" cy="270" r="3" fill="black"/>
+<circle cx="33" cy="0" r="3" fill="black"/><circle cx="33" cy="270" r="3" fill="black"/>
+<circle cx="45" cy="0" r="3" fill="black"/><circle cx="45" cy="270" r="3" fill="black"/>
+<circle cx="57" cy="0" r="3" fill="black"/><circle cx="57" cy="270" r="3" fill="black"/>
+<circle cx="69" cy="0" r="3" fill="black"/><circle cx="69" cy="270" r="3" fill="black"/>
+<circle cx="81" cy="0" r="3" fill="black"/><circle cx="81" cy="270" r="3" fill="black"/>
+<circle cx="93" cy="0" r="3" fill="black"/><circle cx="93" cy="270" r="3" fill="black"/>
+<circle cx="105" cy="0" r="3" fill="black"/><circle cx="105" cy="270" r="3" fill="black"/>
+<circle cx="117" cy="0" r="3" fill="black"/><circle cx="117" cy="270" r="3" fill="black"/>
+<circle cx="129" cy="0" r="3" fill="black"/><circle cx="129" cy="270" r="3" fill="black"/>
+<circle cx="141" cy="0" r="3" fill="black"/><circle cx="141" cy="270" r="3" fill="black"/>
+<circle cx="153" cy="0" r="3" fill="black"/><circle cx="153" cy="270" r="3" fill="black"/>
+<circle cx="165" cy="0" r="3" fill="black"/><circle cx="165" cy="270" r="3" fill="black"/>
+<circle cx="177" cy="0" r="3" fill="black"/><circle cx="177" cy="270" r="3" fill="black"/>
+<circle cx="189" cy="0" r="3" fill="black"/><circle cx="189" cy="270" r="3" fill="black"/>
+<circle cx="201" cy="0" r="3" fill="black"/><circle cx="201" cy="270" r="3" fill="black"/>
+<circle cx="0" cy="9" r="3" fill="black"/><circle cx="210" cy="9" r="3" fill="black"/>
+<circle cx="0" cy="21" r="3" fill="black"/><circle cx="210" cy="21" r="3" fill="black"/>
+<circle cx="0" cy="33" r="3" fill="black"/><circle cx="210" cy="33" r="3" fill="black"/>
+<circle cx="0" cy="45" r="3" fill="black"/><circle cx="210" cy="45" r="3" fill="black"/>
+<circle cx="0" cy="57" r="3" fill="black"/><circle cx="210" cy="57" r="3" fill="black"/>
+<circle cx="0" cy="69" r="3" fill="black"/><circle cx="210" cy="69" r="3" fill="black"/>
+<circle cx="0" cy="81" r="3" fill="black"/><circle cx="210" cy="81" r="3" fill="black"/>
+<circle cx="0" cy="93" r="3" fill="black"/><circle cx="210" cy="93" r="3" fill="black"/>
+<circle cx="0" cy="105" r="3" fill="black"/><circle cx="210" cy="105" r="3" fill="black"/>
+<circle cx="0" cy="117" r="3" fill="black"/><circle cx="210" cy="117" r="3" fill="black"/>
+<circle cx="0" cy="129" r="3" fill="black"/><circle cx="210" cy="129" r="3" fill="black"/>
+<circle cx="0" cy="141" r="3" fill="black"/><circle cx="210" cy="141" r="3" fill="black"/>
+<circle cx="0" cy="153" r="3" fill="black"/><circle cx="210" cy="153" r="3" fill="black"/>
+<circle cx="0" cy="165" r="3" fill="black"/><circle cx="210" cy="165" r="3" fill="black"/>
+<circle cx="0" cy="177" r="3" fill="black"/><circle cx="210" cy="177" r="3" fill="black"/>
+<circle cx="0" cy="189" r="3" fill="black"/><circle cx="210" cy="189" r="3" fill="black"/>
+<circle cx="0" cy="201" r="3" fill="black"/><circle cx="210" cy="201" r="3" fill="black"/>
+<circle cx="0" cy="213" r="3" fill="black"/><circle cx="210" cy="213" r="3" fill="black"/>
+<circle cx="0" cy="225" r="3" fill="black"/><circle cx="210" cy="225" r="3" fill="black"/>
+<circle cx="0" cy="237" r="3" fill="black"/><circle cx="210" cy="237" r="3" fill="black"/>
+<circle cx="0" cy="249" r="3" fill="black"/><circle cx="210" cy="249" r="3" fill="black"/>
+<circle cx="0" cy="261" r="3" fill="black"/><circle cx="210" cy="261" r="3" fill="black"/>
+</mask></defs>
+<rect width="1520" height="1080" fill="#F3F2EE"/><g font-family="PingFang SC, Noto Sans CJK SC, sans-serif" fill="#242A26">
+<text x="56" y="68" font-size="40" font-weight="700">粉彩纸趣</text>
+<text x="56" y="106" font-size="17" fill="#656B64">PASTEL PAPER DOODLE  /  背景配色与纸品图案</text>
+<text x="1464" y="65" font-size="16" fill="#656B64" text-anchor="end">pastel-paper-doodle-v1</text>
+<text x="56" y="154" font-size="18" fill="#656B64">白色留白  ·  局部奶油软晕  ·  粉彩纸片  ·  圆头手绘细线</text>
+<rect x="56" y="190" width="340" height="440" rx="28" fill="white"/>
+<rect x="412" y="190" width="340" height="440" rx="28" fill="white"/>
+<rect x="768" y="190" width="340" height="440" rx="28" fill="white"/>
+<rect x="1124" y="190" width="340" height="440" rx="28" fill="white"/>
+<g clip-path="url(#panel0)"><ellipse cx="226" cy="410" rx="160" ry="140" fill="url(#halo)"/>
+<g transform="translate(31 222) rotate(-8 50 50)" filter="url(#paperShadow)"><path d="M0 0H110V100L94 116H0Z" fill="#FFF2C4"/><path d="M94 116V100H110Z" fill="#F2CE57" fill-opacity=".5"/><path d="M25 42Q49 37 80 43M25 55Q48 50 75 56" fill="none" stroke="#747267" stroke-width="1.5" stroke-linecap="round" opacity=".8"/></g>
+<g transform="translate(330 256) rotate(8)"><rect width="100" height="120" fill="#F6F6F8" filter="url(#paperShadow)"/><path d="M15 36H78M15 52H70M15 68H80" stroke="#EAE2FA"/><path d="M40 5V-15Q40-29 52-29Q65-29 65-15V15Q65 25 56 25Q47 25 47 15V-13Q47-20 53-20Q58-20 58-13V11" fill="none" stroke="#847BEE" stroke-width="2" stroke-linecap="round"/></g>
+<g transform="translate(30 493) rotate(8)"><rect width="100" height="110" fill="#EAE2FA" filter="url(#paperShadow)"/><rect x="25" y="-6" width="50" height="15" fill="white" opacity=".6"/><path d="M32 55C12 40 24 25 34 37C44 24 62 38 32 55Z" fill="none" stroke="#847BEE" stroke-width="1.5"/></g>
+<g transform="translate(343 493) rotate(-7)"><rect width="95" height="110" rx="12" fill="#FBE6DB" filter="url(#paperShadow)"/><path d="M15 28C-1 14 12 7 17 16C28 5 42 18 15 28Z" fill="#F4886D"/></g>
+<path d="M286 380C158 454 169 337 213 376C248 411 229 471 231 522M215 509L231 526L246 507" fill="none" stroke="#747267" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/></g>
+<g clip-path="url(#panel1)"><rect x="481" y="280" width="202" height="252" rx="32" fill="#FBE6DB"/><rect x="352" y="280" width="100" height="252" rx="32" fill="#EAE2FA" opacity=".4"/><rect x="712" y="280" width="100" height="252" rx="32" fill="#ECF1EB"/>
+<path d="M538 365C544 365 564 324 582 320C602 323 613 359 626 365C637 377 599 394 595 411C583 433 564 394 553 391C529 386 523 372 538 365Z" fill="#F4886D"/>
+<path d="M612 260Q652 240 676 272" fill="none" stroke="#F4886D" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round"/>
+<path d="M550 469H614M561 484H603" stroke="#747267" stroke-width="1.5" stroke-linecap="round" opacity=".4"/></g>
+<g clip-path="url(#panel2)"><path d="M803 545V402A135 135 0 0 1 1073 402V545Q1073 570 1048 570H828Q803 570 803 545Z" fill="#F6F6F8"/><circle cx="938" cy="365" r="63" fill="white"/>
+<path d="M882 410C884 333 992 333 994 410" fill="none" stroke="#847BEE" stroke-width="2" stroke-linecap="round"/><path d="M902 398Q938 423 972 398" fill="none" stroke="#747267" stroke-width="1.5" stroke-linecap="round"/><rect x="828" y="452" width="220" height="91" rx="24" fill="white"/><path d="M853 479H1006M853 497H982" stroke="#EAE2FA" stroke-width="2" stroke-linecap="round"/></g>
+<g transform="translate(1189 267)"><g mask="url(#stampMask)"><rect width="210" height="270" fill="#FBE6DB"/><rect x="15" y="15" width="180" height="218" fill="#ED6E42"/></g><path d="M70 183C30 143 68 96 111 80C151 93 166 145 123 174C105 185 86 181 70 183Z" fill="#FFE9B6"/><path d="M77 194Q102 161 114 117" fill="none" stroke="#ED6E42" stroke-width="4" stroke-linecap="round"/><path d="M21 251H94M169 251H188" stroke="#747267" stroke-width="1.5" opacity=".6"/></g>
+<text x="56" y="671" font-size="20" font-weight="600">01  边缘便签 + 奶油软晕</text>
+<text x="56" y="700" font-size="15" fill="#656B64">edge-notes / cream-halo</text>
+<text x="412" y="671" font-size="20" font-weight="600">02  局部粉彩卡片</text>
+<text x="412" y="700" font-size="15" fill="#656B64">pastel-card</text>
+<text x="768" y="671" font-size="20" font-weight="600">03  圆拱浅色面板</text>
+<text x="768" y="700" font-size="15" fill="#656B64">arch-panel</text>
+<text x="1124" y="671" font-size="20" font-weight="600">04  邮票圆弧齿边</text>
+<text x="1124" y="700" font-size="15" fill="#656B64">postage</text>
+<text x="56" y="755" font-size="17" font-weight="600">背景与纸片</text>
+<rect x="56" y="778" width="188" height="54" rx="12" fill="#FFFFFF" stroke="#E5E3DF" stroke-width=".7"/>
+<text x="56" y="858" font-size="15">纯白</text>
+<text x="244" y="858" font-size="14" fill="#656B64" text-anchor="end">#FFFFFF</text>
+<rect x="260" y="778" width="188" height="54" rx="12" fill="#FFF9EA" stroke="#E5E3DF" stroke-width=".7"/>
+<text x="260" y="858" font-size="15">奶油柔光</text>
+<text x="448" y="858" font-size="14" fill="#656B64" text-anchor="end">#FFF9EA</text>
+<rect x="464" y="778" width="188" height="54" rx="12" fill="#FFF2C4" stroke="#E5E3DF" stroke-width=".7"/>
+<text x="464" y="858" font-size="15">便签黄</text>
+<text x="652" y="858" font-size="14" fill="#656B64" text-anchor="end">#FFF2C4</text>
+<rect x="668" y="778" width="188" height="54" rx="12" fill="#EAE2FA" stroke="#E5E3DF" stroke-width=".7"/>
+<text x="668" y="858" font-size="15">浅薰衣草</text>
+<text x="856" y="858" font-size="14" fill="#656B64" text-anchor="end">#EAE2FA</text>
+<rect x="872" y="778" width="188" height="54" rx="12" fill="#FBE6DB" stroke="#E5E3DF" stroke-width=".7"/>
+<text x="872" y="858" font-size="15">浅桃</text>
+<text x="1060" y="858" font-size="14" fill="#656B64" text-anchor="end">#FBE6DB</text>
+<rect x="1076" y="778" width="188" height="54" rx="12" fill="#ECF1EB" stroke="#E5E3DF" stroke-width=".7"/>
+<text x="1076" y="858" font-size="15">灰薄荷</text>
+<text x="1264" y="858" font-size="14" fill="#656B64" text-anchor="end">#ECF1EB</text>
+<rect x="1280" y="778" width="188" height="54" rx="12" fill="#F6F6F8" stroke="#E5E3DF" stroke-width=".7"/>
+<text x="1280" y="858" font-size="15">浅灰紫</text>
+<text x="1468" y="858" font-size="14" fill="#656B64" text-anchor="end">#F6F6F8</text>
+<text x="56" y="900" font-size="17" font-weight="600">图形与交互</text>
+<rect x="56" y="920" width="188" height="45" rx="12" fill="#F4886D"/>
+<text x="56" y="990" font-size="15">珊瑚</text>
+<text x="244" y="990" font-size="14" fill="#656B64" text-anchor="end">#F4886D</text>
+<rect x="260" y="920" width="188" height="45" rx="12" fill="#847BEE"/>
+<text x="260" y="990" font-size="15">柔紫</text>
+<text x="448" y="990" font-size="14" fill="#656B64" text-anchor="end">#847BEE</text>
+<rect x="464" y="920" width="188" height="45" rx="12" fill="#52B69D"/>
+<text x="464" y="990" font-size="15">薄荷</text>
+<text x="652" y="990" font-size="14" fill="#656B64" text-anchor="end">#52B69D</text>
+<rect x="668" y="920" width="188" height="45" rx="12" fill="#F2CE57"/>
+<text x="668" y="990" font-size="15">暖黄</text>
+<text x="856" y="990" font-size="14" fill="#656B64" text-anchor="end">#F2CE57</text>
+<rect x="872" y="920" width="188" height="45" rx="12" fill="#90D0E3"/>
+<text x="872" y="990" font-size="15">浅蓝</text>
+<text x="1060" y="990" font-size="14" fill="#656B64" text-anchor="end">#90D0E3</text>
+<rect x="1076" y="920" width="188" height="45" rx="12" fill="#ED6E42"/>
+<text x="1076" y="990" font-size="15">邮票橙</text>
+<text x="1264" y="990" font-size="14" fill="#656B64" text-anchor="end">#ED6E42</text>
+<rect x="1280" y="920" width="188" height="45" rx="12" fill="#242A26"/>
+<text x="1280" y="990" font-size="15">深墨绿 CTA</text>
+<text x="1468" y="990" font-size="14" fill="#656B64" text-anchor="end">#242A26</text>
+<text x="56" y="1044" font-size="16" fill="#656B64">配色经 ICC → sRGB 转换后取样；图案为重建示意，非产品页面。背景、纸片、线稿与真实控件分别实现。</text>
+</g></svg>

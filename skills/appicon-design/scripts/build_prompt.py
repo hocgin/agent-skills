@@ -37,7 +37,7 @@ SHAPES = {
 
 # 通用 iOS App Icon 规则（所有风格共享）
 IOS_RULES = (
-    "Follows iOS app icon design principles: one clear subject and a single focal point, centered and balanced, "
+    "Follows iOS app icon design principles: {subject_rule}, "
     "important details kept inside the central 80% safe area and away from the corners, bold readable shapes "
     "and strong value contrast so it stays recognizable at 60px, simple and uncluttered."
 )
@@ -81,6 +81,12 @@ def load_styles() -> dict:
 def build(style: dict, subject: str, shape: str, label: str | None) -> dict:
     shape_text, shape_negative = SHAPES[shape]
     composition = style["composition"]
+    paired = style.get("subject_layout") == "paired"
+    subject_rule = (
+        "one cohesive visual group with a dominant subject and a smaller overlapping companion, balanced as a single focal point"
+        if paired else "one clear subject and a single focal point, centered and balanced"
+    )
+    generic_negative = [t for t in GENERIC_NEGATIVE if not (paired and t == "multiple subjects")]
     negative = [t.strip() for t in style["negative"].split(",") if t.strip()]
     if shape == "squircle":
         # 展示模式：「铺满画布」改为「铺满图标底板」，并移除与白色外边距冲突的负向词
@@ -104,8 +110,8 @@ def build(style: dict, subject: str, shape: str, label: str | None) -> dict:
     else:
         parts.append("No text, letters or numbers anywhere on the icon.")
         negative += NO_TEXT_NEGATIVE
-    parts += [IOS_RULES, shape_text]
-    negative = list(dict.fromkeys(negative + GENERIC_NEGATIVE + shape_negative))
+    parts += [IOS_RULES.format(subject_rule=subject_rule), shape_text]
+    negative = list(dict.fromkeys(negative + generic_negative + shape_negative))
 
     prompt = " ".join(parts)
     negative_text = ", ".join(negative)
@@ -200,7 +206,7 @@ def main() -> int:
     parser.add_argument("--style", help="风格 ID")
     parser.add_argument("--subject", help="主体描述（英文）")
     parser.add_argument("--shape", choices=SHAPES.keys(), help="画布形状（默认取风格的 default_shape，否则 square）")
-    parser.add_argument("--label", help="图标上唯一允许出现的品牌字样（风格需定义 label_style）；字母标风格中即为主体字母")
+    parser.add_argument("--label", help="图标上唯一允许出现的品牌字样（风格需定义 label_style）；字母标风格中即为主体字母，数量见风格规范")
     parser.add_argument("--format", choices=["text", "json"], default="text")
     args = parser.parse_args()
 
@@ -241,7 +247,7 @@ def main() -> int:
     if args.label and not style.get("label_style"):
         parser.error(f"风格 {args.style} 未定义 label_style，不允许出现文字")
     if style.get("lettering") == "required" and not args.label:
-        parser.error(f"风格 {args.style} 是字母标风格，需要用 --label 指定字母（2–4 个）")
+        parser.error(f"风格 {args.style} 是字母标风格，需要用 --label 指定字母，数量见该风格的主体转译规则")
 
     shape = args.shape or style.get("default_shape") or "square"
     if shape not in SHAPES:

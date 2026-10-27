@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "style_id": "pastel-bottom-wash-v1",
+  "name": "浅彩底晕 · Pastel Bottom Wash",
+  "derived_from": null,
+  "provenance": {
+    "mode": "reference-background-extraction",
+    "references": [
+      {
+        "id": "ref-01",
+        "source": "../references/pastel-bottom-wash-v1/reference.png",
+        "kind": "八屏 App 首次启动引导拼图",
+        "group_id": "minimal-bottom-wash",
+        "role": "primary",
+        "size_px": [
+          1154,
+          1200
+        ],
+        "sha256": "9cdc1b8a72ffbf812d651974da443736e5f9f1471391205ffff226669f8f13ee"
+      }
+    ],
+    "observations": [
+      {
+        "reference_id": "ref-01",
+        "dimension": "visual_style",
+        "finding": "白色为主的极简移动 UI，底部柔和浅彩渐变；画面大部分没有材质或装饰",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "color_system",
+        "finding": "多屏共用白底黑字黑按钮；底部从浅蓝、奶油黄、杏橙、浅粉到薄荷绿变化，关键数字或符号使用更鲜明的单点色",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "typography",
+        "finding": "正文与标题为粗细清楚的无衬线，标题偏圆润、字重较重，数字可放大；无法从图片确认精确字体家族或字号",
+        "basis": "observed",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "layout",
+        "finding": "大块白色留白，核心信息居中集中，顶部细分段进度，底部一条黑色圆角 CTA",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "graphic_language",
+        "finding": "背景未观察到重复纹样、网格、点阵或插画。大数字、简洁表情、细箭头和单个圆环属于内容前景，并非背景纹理",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "visual_details",
+        "finding": "渐变无明显边界，背景无可见颗粒噪点或阴影；内容前景中的环形图有局部体积和高光，但不能据此将全部背景定义为 3D/玻璃",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "emotion",
+        "finding": "低饱和彩色底晕与高对比内容共同产生轻盈、直接、亲近的感受",
+        "basis": "inferred",
+        "confidence": "medium"
+      }
+    ],
+    "decisions": {
+      "requested_style": "仅提取参考图片背景配色与图案语言，创建可复用命名风格",
+      "retained": [
+        "白色大留白与从下方渐起的低饱和彩色底晕",
+        "统一深色内容、黑色 CTA 与少量语义强调色",
+        "背景没有重复纹样，图形低密度且与内容相关"
+      ],
+      "translated": [
+        "把截图中的五种浅彩背景与纯白整理成有命名、有固定端色的变体",
+        "渐变起始位置、曲线、字体字号、控件尺寸和时长重建为逻辑 pt/归一化规则，非截图测量参数"
+      ],
+      "dropped": [
+        "原品牌标志、年龄/频次/人生年数文案与数值",
+        "原功能相关的系统授权弹窗、Connecting 文案和固定 70% 数值",
+        "拼图外侧灰蓝底与手机展示圆角；它们属于展示画布，不是 App 内背景"
+      ],
+      "rationale": "只迁移背景与几何语法，不继承原 App 的功能、品牌或内容；同一个风格内允许预先定义的配色变体，不随机产生新色"
+    },
+    "color_sampling": {
+      "method": "Pillow 读取原图 RGB；选择无控件背景区域取通道中位数，内容强调色先筛选像素",
+      "precision_note": "色值表示此张截图局部像素的近似代表色，不能反推原设计文件的精确渐变端色或色彩空间",
+      "samples": [
+        {
+          "token": "presentation_canvas",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            20,
+            20,
+            50,
+            50
+          ],
+          "method": "逐 RGB 通道的矩形区域中位数；右/下边界不包含",
+          "value": "#CFD3DE"
+        },
+        {
+          "token": "background",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            360,
+            160,
+            390,
+            190
+          ],
+          "method": "逐 RGB 通道的矩形区域中位数；右/下边界不包含",
+          "value": "#FFFFFF"
+        },
+        {
+          "token": "wash_cyan",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            390,
+            574,
+            490,
+            582
+          ],
+          "method": "逐 RGB 通道的矩形区域中位数；右/下边界不包含",
+          "value": "#CEECFD"
+        },
+        {
+          "token": "wash_cream",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            640,
+            574,
+            760,
+            582
+          ],
+          "method": "逐 RGB 通道的矩形区域中位数；右/下边界不包含",
+          "value": "#FFE9C9"
+        },
+        {
+          "token": "wash_apricot",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            900,
+            574,
+            1020,
+            582
+          ],
+          "method": "逐 RGB 通道的矩形区域中位数；右/下边界不包含",
+          "value": "#FFDEAF"
+        },
+        {
+          "token": "wash_blush",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            125,
+            1112,
+            245,
+            1120
+          ],
+          "method": "逐 RGB 通道的矩形区域中位数；右/下边界不包含",
+          "value": "#FECBC8"
+        },
+        {
+          "token": "wash_mint",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            900,
+            1112,
+            1020,
+            1120
+          ],
+          "method": "逐 RGB 通道的矩形区域中位数；右/下边界不包含",
+          "value": "#B9EACC"
+        },
+        {
+          "token": "primary",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            400,
+            538,
+            425,
+            555
+          ],
+          "method": "逐 RGB 通道的矩形区域中位数；右/下边界不包含",
+          "value": "#000000"
+        },
+        {
+          "token": "text_primary",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            100,
+            780,
+            275,
+            805
+          ],
+          "method": "条件筛选后逐 RGB 通道中位数",
+          "pixel_filter": "max(r,g,b)<70",
+          "selected_pixels": 1071,
+          "value": "#202223"
+        },
+        {
+          "token": "accent_blue",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            390,
+            287,
+            495,
+            350
+          ],
+          "method": "条件筛选后逐 RGB 通道中位数",
+          "pixel_filter": "b>r+60 and g>r+40",
+          "selected_pixels": 3144,
+          "value": "#3AB3EB"
+        },
+        {
+          "token": "accent_orange",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            620,
+            285,
+            781,
+            355
+          ],
+          "method": "条件筛选后逐 RGB 通道中位数",
+          "pixel_filter": "r>220 and 80<g<200 and b<70",
+          "selected_pixels": 4166,
+          "value": "#F99405"
+        },
+        {
+          "token": "accent_coral",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            933,
+            289,
+            990,
+            352
+          ],
+          "method": "条件筛选后逐 RGB 通道中位数",
+          "pixel_filter": "r>220 and 50<g<150 and b<150",
+          "selected_pixels": 1660,
+          "value": "#FA564C"
+        },
+        {
+          "token": "accent_green",
+          "reference_id": "ref-01",
+          "bbox_px": [
+            987,
+            780,
+            1055,
+            930
+          ],
+          "method": "条件筛选后逐 RGB 通道中位数",
+          "pixel_filter": "g>150 and r<70 and 60<b<170",
+          "selected_pixels": 5492,
+          "value": "#1CCD7B"
+        }
+      ]
+    },
+    "parameter_status": {
+      "sampled": "colors 中列明的截图采样项",
+      "observed": "白底、下部渐变、内容/背景图形分离等视觉特征",
+      "normalized": "渐变 stop、布局 pt、字体尺寸、动效时长、次要文字色和未激活进度色为本次重建选择"
+    }
+  },
+  "design_tokens": {
+    "colors": {
+      "presentation_canvas": "#CFD3DE",
+      "background": "#FFFFFF",
+      "wash_cyan": "#CEECFD",
+      "wash_cream": "#FFE9C9",
+      "wash_apricot": "#FFDEAF",
+      "wash_blush": "#FECBC8",
+      "wash_mint": "#B9EACC",
+      "primary": "#000000",
+      "text_primary": "#202223",
+      "accent_blue": "#3AB3EB",
+      "accent_orange": "#F99405",
+      "accent_coral": "#FA564C",
+      "accent_green": "#1CCD7B",
+      "surface": "#FFFFFF",
+      "text_secondary": "#565A61",
+      "on_primary": "#FFFFFF",
+      "progress_inactive": "#DEE0E3",
+      "usage": "白底为主；primary/on_primary 用于黑底白字 CTA；wash_* 仅作低饱和背景端色；accent_* 只用于一个关键数字或图形。presentation_canvas 是参考拼图外底色，不进入 App 背景。text_secondary/progress_inactive 是重建值，其余色值是本截图采样近似值。"
+    },
+    "typography": {
+      "family": "中性偏圆润的系统无衬线；中文系统字体回退，精确原字体未知",
+      "title": {
+        "size_pt": 32,
+        "weight": "bold",
+        "line_height_pt": 39
+      },
+      "body": {
+        "size_pt": 17,
+        "weight": "regular",
+        "line_height_pt": 25
+      },
+      "button": {
+        "size_pt": 17,
+        "weight": "medium",
+        "line_height_pt": 22
+      },
+      "hero_number": {
+        "size_pt": 88,
+        "weight": "bold",
+        "line_height_pt": 96
+      },
+      "alignment": "核心标题与图形默认居中；说明可居中或使用批准的左对齐变体，同一流程一致"
+    },
+    "spacing_pt": {
+      "unit": 8,
+      "small": 8,
+      "medium": 16,
+      "large": 24,
+      "section": 32,
+      "page_horizontal": 24
+    },
+    "radii_pt": {
+      "button": 20,
+      "card": 20
+    },
+    "shadows": {
+      "background": {
+        "color": "#000000",
+        "alpha": 0,
+        "x_pt": 0,
+        "y_pt": 0,
+        "blur_pt": 0
+      },
+      "card": {
+        "color": "#000000",
+        "alpha": 0,
+        "x_pt": 0,
+        "y_pt": 0,
+        "blur_pt": 0
+      }
+    },
+    "opacity": {
+      "background": 1,
+      "text": 1,
+      "button": 1,
+      "wash_midpoint_strength": 0.25
+    },
+    "background_pattern": {
+      "type": "vertical-linear-bottom-wash",
+      "coordinate_system": "相对整个 App 内容画布，y=0 顶部，y=1 底部；不以文本框高度为基准",
+      "base_token": "colors.background",
+      "direction": "top-to-bottom",
+      "start_point": [
+        0.5,
+        0
+      ],
+      "end_point": [
+        0.5,
+        1
+      ],
+      "stops": [
+        {
+          "location": 0,
+          "endpoint_mix": 0
+        },
+        {
+          "location": 0.45,
+          "endpoint_mix": 0
+        },
+        {
+          "location": 0.67,
+          "endpoint_mix": 0.25
+        },
+        {
+          "location": 1,
+          "endpoint_mix": 1
+        }
+      ],
+      "mixing": "每个 stop 以不透明白色和对应 endpoint 的 sRGB 通道线性混色；不是整屏叠低透明度彩色蒙层",
+      "repeat": false,
+      "texture": "无噪点、颗粒、纸纹、网格、点阵或规则图案",
+      "default_variant": "cyan",
+      "variant_scope": "每屏绑定一个已定义变体；变化只在同一白底渐变语法内发生"
+    },
+    "background_variants": {
+      "white": {
+        "endpoint_token": "colors.background",
+        "accent_token": "colors.text_primary",
+        "role": "中性开场或休止；保持纯白"
+      },
+      "cyan": {
+        "endpoint_token": "colors.wash_cyan",
+        "accent_token": "colors.accent_blue",
+        "role": "信息、理解或能力说明；默认配色"
+      },
+      "cream": {
+        "endpoint_token": "colors.wash_cream",
+        "accent_token": "colors.accent_orange",
+        "role": "温和强调或数据解释"
+      },
+      "apricot": {
+        "endpoint_token": "colors.wash_apricot",
+        "accent_token": "colors.accent_coral",
+        "role": "更强的注意力提示，避免借色制造未经证实的紧迫感"
+      },
+      "blush": {
+        "endpoint_token": "colors.wash_blush",
+        "accent_token": "colors.accent_orange",
+        "role": "情绪或问题说明；保持克制"
+      },
+      "mint": {
+        "endpoint_token": "colors.wash_mint",
+        "accent_token": "colors.accent_green",
+        "role": "积极结果、完成或状态反馈；不暗示尚未完成的授权成功"
+      }
+    },
+    "graphic_patterns": {
+      "background": "纯白到浅彩的平滑连续色域，无具象纹样；没有内容任务时保持空白",
+      "optional_foreground": [
+        "一个放大的数字或简洁词形，用一种绑定强调色突出",
+        "一条平滑弧线或简洁环形，只在真实产品信息需要时采用",
+        "一条细圆头手绘引导箭头，仅作说明辅助，不作为重复底纹"
+      ],
+      "density": "每页一个主要图形，最多一个辅助符号；装饰图形不得铺满屏幕",
+      "stroke_pt": 3,
+      "foreground_rule": "可选图形是独立内容层，不烘焙进背景，不强制复制参考图的数字/表情/圆环"
+    },
+    "effects": {
+      "background_blur_pt": 0,
+      "background_grain": 0,
+      "border_width_pt": 0,
+      "blend_mode": "normal",
+      "depth": "背景严格平面；前景需要体积时使用单一柔光对象，不改变背景材质"
+    }
+  },
+  "visual_language": {
+    "dominant_style": "minimal-pastel-bottom-wash",
+    "secondary_styles": [
+      {
+        "style": "typographic-editorial",
+        "scope": "仅作用于可选的居中粗标题与单个放大数字；不增加海报密度或纹理",
+        "source": "ref-01"
+      }
+    ],
+    "signature_features": [
+      "上白下浅彩的无缝垂直底晕",
+      "大块无纹理留白与黑色高对比交互",
+      "单一数字/弧形/圆环的低密度图形点缀"
+    ],
+    "rendering": "背景使用平面矢量渐变，无插画、摄影或 3D 背景；前景表达独立定义",
+    "materials": "背景为光滑干净的数字色面，不使用玻璃、金属、纸张或塑料质感",
+    "lighting": "背景无实体光源与投影；底部颜色扩散不视为发光物体。若增加体积前景，使用统一左上柔光，该方向为重建约束而非原图测量",
+    "perspective": "背景为正视二维平面，无透视和空间地平线；前景默认正视，环形可有轻微厚度",
+    "mood": "轻盈、清楚、亲近、克制；颜色辅助区分叙事阶段，深色内容保证可读"
+  },
+  "layout_rules": {
+    "baseline_canvas_pt": {
+      "width": 393,
+      "height": 852
+    },
+    "safe_area": "背景覆盖整个画布并可出血；顶部进度、真实文案与底部 CTA 跟随系统安全区，不把截图手机外框当实际布局",
+    "regions": "背景上部约 45% 保持白，下部渐起彩色。中心内容可占安全区高度约 30%～45%；顶部与内容间大留白；底部导航稳定；比例为适配起点而非硬性切片",
+    "variants": {
+      "value-centered": "一个居中的文字/数字信息组，焦点约 x=0.50/y=0.43，周围留白，不添加额外卡片",
+      "single-motif": "一个语义图形居中，图形与短标题构成一个焦点；不要求固定圆环，文案与导航可独立布局",
+      "copy-led": "短标题与说明构成中心焦点，无独立图形；字体层级继承同一 token"
+    },
+    "responsive": "小屏或大字号优先减少图形尺寸与空白，必要时允许内容滚动但 CTA 可达；渐变仍以全屏坐标绘制；宽屏不横向拉伸图形",
+    "typography": "每页一条核心信息；粗标题短句，正文低密度；放大数字仅在产品确有可解释数据时使用，不继承参考图数值"
+  },
+  "component_rules": {
+    "button": "共享主 CTA：primary 黑底/on_primary 白字，高 54 pt 起，圆角 button，宽度为内容区；大字号允许增高；按钮无彩色发光与投影",
+    "progress": "顶部细分段线条，活动段 text_primary、未激活 progress_inactive；段数跟随实际流程，统一圆头与高度约 4 pt，状态另有读屏说明",
+    "card": "默认不使用装饰卡片。必要信息容器仅用不透明白面或留白分组；无玻璃模糊、粗描边和浮雕阴影",
+    "navigation": "一页一个主要动作，底部 CTA 区位置稳定；跳过、返回、完成及权限时机由实际产品 Flow 定义，不复制参考的授权弹窗"
+  },
+  "composition_rules": {
+    "focal_point": "中部一个信息/图形焦点，底部一条黑色 CTA；背景始终退后，不额外制造光团或地平线",
+    "negative_space": "默认约半屏或更多区域保持近白且没有装饰；文字周围至少 large 间距，内容不压入进度或 CTA",
+    "visual_weight": "深色标题与单个强调图形负责信息，底部浅彩低饱和。背景色不当文字色，不把整个画布填成浓色",
+    "allowed_variations": "允许选择 background_variants 中一个固定变体以及批准布局；同流程先决定颜色序列。允许换产品对象、标题与图形，禁止新增随机端色、改变 stop 曲线或把每页变成不同材质"
+  },
+  "motion_rules": {
+    "transition": "重建建议：220 ms ease-in-out 交叉淡入，可中断；无需模仿参考未展示的实际动效",
+    "entrance": "重建建议：核心内容 220 ms ease-out 淡入并最多 8 pt 上移；不持续漂浮或弹跳",
+    "background": "重建建议：已绑定色彩变体间 320 ms 平滑混色，固定白底、方向和 stop 位置；无旋转、色相循环、脉冲或噪点动画",
+    "continuity": "保持白色上部、焦点锚点、字体、黑色按钮、渐变曲线和系统安全区规则；每页端色只能来自批准的绑定",
+    "reduce_motion": "取消位移和长混色，直接替换状态或最多 100 ms 淡入，不丢失语义信息"
+  },
+  "negative_constraints": [
+    "禁止将参考拼图外侧 #CFD3DE 灰蓝展示底当成 App 的全屏背景",
+    "禁止在背景添加重复纹样、点阵、网格、颗粒噪点、纸纹、摄影或装饰插画",
+    "禁止径向霓虹光团、强光斑、暗角、硬色块边界、多色彩虹渐变或整屏高饱和填充",
+    "禁止把玻璃拟态、厚重 3D 或物体投影扩散为背景主风格",
+    "禁止一屏混用多个背景端色，或使用未登记的随机页级颜色；同流程共享相同渐变曲线",
+    "禁止复制原品牌、原文案、原数值、系统权限弹窗或固定进度环作为通用背景",
+    "禁止把数字、圆环、箭头或按钮烘焙进背景；禁止以浅彩承载低对比正文"
+  ],
+  "implementation_hints": {
+    "background": "纯原生垂直 LinearGradient 即可：按 stops 将白色与端色混成不透明颜色，使用顶部到下部坐标；无需 AI 生成图片或位图背景资源",
+    "variant_binding": "以 background_variants 的固定键绑定每一屏；gradient curve 与白底不变，端色/强调色用成对 token，不从当前页面临时生成颜色",
+    "graphics": "大数字、弧线、分段进度、黑色按钮与简单环形均可用原生 Text/Shape/Path 实现；复杂前景另作资源，保持背景独立",
+    "verification": "对参考图已做视觉分析和局部像素采样；渐变 stop 与组件数值为归一化重建，尚未进行原生设备匹配验收"
+  }
+}

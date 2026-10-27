@@ -4,6 +4,7 @@ name: <中文名>
 references: reference.png
 keywords: <英文关键词>, <中文关键词>
 lettering: <optional | required；required 表示字母标风格，文字即主体，生成时必须 --label>
+subject_layout: <可选：paired；仅当风格固定为一大一小叠放的双主体组合时填写，其余删除此行>
 label_style: <允许品牌字样时的字体与配色描述（英文）；不允许则留空>
 default_shape: <可选：square | squircle；物体本身就是圆角方块外形的风格设为 squircle，其余留空>
 summary: <一句话概括：材质 + 配色 + 签名特征>

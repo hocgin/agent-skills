@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "style_id": "mint-organic-contours-v1",
+  "name": "薄荷流纹 · Mint Organic Contours",
+  "derived_from": null,
+  "provenance": {
+    "mode": "reference-background-extraction",
+    "references": [
+      {
+        "id": "ref-01",
+        "source": "../references/mint-organic-contours-v1/reference.png",
+        "kind": "三屏 App 引导参考图",
+        "group_id": "mint-organic",
+        "role": "primary",
+        "size_px": [
+          814,
+          544
+        ],
+        "sha256": "3efbf129de2a7d80a772b0da634f0a3509d127ade7f92d15e734ef426ade12bb"
+      }
+    ],
+    "observations": [
+      {
+        "reference_id": "ref-01",
+        "dimension": "visual_style",
+        "finding": "近白背景、极浅灰有机曲带、底部青蓝/薄荷绿渐变，前景为细线淡彩插画",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "color_system",
+        "finding": "三屏共用近白底、冷色低饱和底晕与黑色按钮；左下偏蓝、右下偏绿",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "typography",
+        "finding": "标题为较粗衬线，正文为小号无衬线，内容居中；精确家族和字号未知",
+        "basis": "observed",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "layout",
+        "finding": "上部品牌和主视觉，下部进度、标题、说明与宽胶囊按钮；灰色外底是展示画布",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "graphic_language",
+        "finding": "宽圆头曲带形成不规则蜿蜒、U 形和回环，局部被屏边裁切；没有严格规则网格；钱币等是前景内容",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "visual_details",
+        "finding": "纹样与白底对比极低，下部渐变柔和无硬边，主视觉使用细灰轮廓；未见明显颗粒",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-01",
+        "dimension": "emotion",
+        "finding": "近白与淡青绿让画面安静、轻盈、亲近；深色按钮形成明确行动点",
+        "basis": "inferred",
+        "confidence": "medium"
+      }
+    ],
+    "decisions": {
+      "requested_style": "提取背景配色和图案，创建 onboarding-design 可复用风格；本次不创建产品流程",
+      "retained": [
+        "近白底与低对比浅灰宽曲带",
+        "左下雾蓝到右下薄荷绿的柔和底晕",
+        "深色文字和黑色胶囊 CTA 的层级关系"
+      ],
+      "translated": [
+        "将可见曲带重建为可缩放贝塞尔路径，而非逐像素描摹",
+        "渐变 stop、图案线宽、遮罩、字号和动效统一为主动设计参数"
+      ],
+      "dropped": [
+        "Credify 品牌、借贷文案及登录/注册行为",
+        "人物、钱包、纸币、灯泡、手机、店铺、存钱罐等产品前景",
+        "参考拼图的灰色外画布、设备状态栏和展示圆角"
+      ],
+      "rationale": "背景形成独立风格锁，图案无金融语义；前景由未来真实产品内容决定，不将参考场景作为默认素材"
+    },
+    "color_sampling": {
+      "reference_id": "ref-01",
+      "method": "Pillow RGB 局部统计",
+      "precision_note": "截图缩放后的近似代表色，非原始设计 token；图案基色和透明度无法唯一反推",
+      "samples": [
+        {
+          "token": "background",
+          "bbox_px": [
+            300,
+            60,
+            370,
+            125
+          ],
+          "method": "背景区域亮色像素中选取高频近白代表色；非区域中位数",
+          "value": "#FEFEFE"
+        },
+        {
+          "token": "pattern",
+          "bbox_px": [
+            300,
+            60,
+            370,
+            125
+          ],
+          "method": "背景区域亮色像素中选取高频近白代表色；非区域中位数",
+          "value": "#F9FAFC"
+        },
+        {
+          "token": "wash_cyan",
+          "bbox_px": [
+            306,
+            488,
+            334,
+            510
+          ],
+          "method": "矩形区域逐 RGB 通道中位数，右/下边界不包含",
+          "value": "#E4F2F8"
+        },
+        {
+          "token": "wash_mint",
+          "bbox_px": [
+            479,
+            488,
+            508,
+            510
+          ],
+          "method": "矩形区域逐 RGB 通道中位数，右/下边界不包含",
+          "value": "#E5F8F1"
+        },
+        {
+          "token": "primary",
+          "bbox_px": [
+            335,
+            447,
+            364,
+            458
+          ],
+          "method": "矩形区域逐 RGB 通道中位数，右/下边界不包含",
+          "value": "#0E0E0E"
+        },
+        {
+          "token": "presentation_canvas",
+          "bbox_px": [
+            0,
+            0,
+            20,
+            20
+          ],
+          "method": "矩形区域逐 RGB 通道中位数，右/下边界不包含",
+          "value": "#F2F2F2"
+        }
+      ]
+    },
+    "parameter_status": {
+      "sampled": "background、pattern、wash_cyan、wash_mint、primary、presentation_canvas 为截图局部代表色",
+      "normalized": "正文颜色、插画辅助色、字体、pt、渐变 stop、纹样路径与动效是本次重建值；截图无法证明原始动效"
+    }
+  },
+  "design_tokens": {
+    "colors": {
+      "background": "#FEFEFE",
+      "surface": "#FFFFFF",
+      "pattern": "#F9FAFC",
+      "wash_cyan": "#E4F2F8",
+      "wash_mint": "#E5F8F1",
+      "primary": "#0E0E0E",
+      "on_primary": "#FFFFFF",
+      "text_primary": "#15191B",
+      "text_secondary": "#465357",
+      "art_fill": "#D7F0F1",
+      "art_accent": "#A9DDE5",
+      "art_outline": "#71888F",
+      "progress_inactive": "#CDD5D6",
+      "presentation_canvas": "#F2F2F2",
+      "usage": "背景仅使用 background/pattern/wash_*；primary/on_primary 用于 CTA，正文使用深色；art_* 为可选前景重建色；presentation_canvas 不进入 App 背景。"
+    },
+    "typography": {
+      "family": "拉丁标题用系统衬线 bold，中文可用宋体类回退并检查字重；正文用系统无衬线，原图精确字体未知",
+      "title": {
+        "size_pt": 28,
+        "weight": "bold",
+        "line_height_pt": 36
+      },
+      "body": {
+        "size_pt": 16,
+        "weight": "regular",
+        "line_height_pt": 24
+      },
+      "button": {
+        "size_pt": 17,
+        "weight": "semibold",
+        "line_height_pt": 23
+      },
+      "alignment": "标题、说明与 CTA 居中；同流程统一；文字用原生排版"
+    },
+    "spacing_pt": {
+      "unit": 8,
+      "small": 8,
+      "medium": 16,
+      "large": 24,
+      "section": 32,
+      "page_horizontal": 24
+    },
+    "radii_pt": {
+      "button": 28,
+      "card": 20
+    },
+    "shadows": {
+      "background": {
+        "color": "#000000",
+        "alpha": 0,
+        "x_pt": 0,
+        "y_pt": 0,
+        "blur_pt": 0
+      },
+      "art_contact": {
+        "color": "#71888F",
+        "alpha": 0.08,
+        "x_pt": 0,
+        "y_pt": 5,
+        "blur_pt": 14
+      }
+    },
+    "opacity": {
+      "background": 1,
+      "pattern": 1,
+      "text": 1,
+      "button": 1
+    },
+    "background_pattern": {
+      "type": "organic-meandering-ribbons",
+      "coordinate_system": "393×852 逻辑 pt，全屏归一化映射；纹样等比 cover，禁止横向拉伸",
+      "base_token": "colors.background",
+      "pattern_token": "colors.pattern",
+      "stroke_pt": 22,
+      "stroke_range_pt": [
+        18,
+        28
+      ],
+      "line_cap": "round",
+      "line_join": "round",
+      "motifs": "不规则 C/U/S 弯、短回环与连续宽曲带；方向多变，转弯半径约 20～48 pt；不做密集平行等高线",
+      "repeat": "不使用可见小方块平铺；以整屏固定路径，屏边允许裁切",
+      "coverage": "上方区域约 25%～40% 被浅灰宽带占据；形状间留出白色通道，不铺成灰底",
+      "mask_stops": [
+        {
+          "location": 0,
+          "opacity": 1
+        },
+        {
+          "location": 0.5,
+          "opacity": 1
+        },
+        {
+          "location": 0.7,
+          "opacity": 0.15
+        },
+        {
+          "location": 0.82,
+          "opacity": 0
+        },
+        {
+          "location": 1,
+          "opacity": 0
+        }
+      ],
+      "readability": "正文后方衰减接近零；纹样只作装饰，不是信息或可点击元素"
+    },
+    "background_gradient": {
+      "type": "vertical-mix-over-horizontal-gradient",
+      "coordinate_system": "整个屏幕 y=0 顶部/y=1 底部",
+      "left_token": "colors.wash_cyan",
+      "right_token": "colors.wash_mint",
+      "horizontal_stops": [
+        0,
+        1
+      ],
+      "vertical_stops": [
+        {
+          "location": 0,
+          "wash_mix": 0
+        },
+        {
+          "location": 0.56,
+          "wash_mix": 0
+        },
+        {
+          "location": 0.72,
+          "wash_mix": 0.22
+        },
+        {
+          "location": 0.88,
+          "wash_mix": 0.78
+        },
+        {
+          "location": 1,
+          "wash_mix": 1
+        }
+      ],
+      "mixing": "先按 x 线性混合雾蓝与薄荷绿，再依 y 的 wash_mix 与近白基底混合；sRGB 通道插值，无发光/硬边"
+    },
+    "graphic_patterns": {
+      "background": "仅宽圆头有机曲带与底部双色渐变",
+      "optional_foreground": "若适配产品需要，可用细灰线、淡青绿平涂、少量水彩式明暗的二维插画；主体取自真实能力",
+      "art_stroke_pt": 1.2,
+      "density": "一组主视觉，最多三个语义辅助元素；纸币/星光等并非固定背景符号"
+    },
+    "effects": {
+      "background_grain": 0,
+      "background_blur_pt": 0,
+      "blend_mode": "normal",
+      "depth": "背景二维平面，无玻璃、金属、噪点和物体投影"
+    }
+  },
+  "visual_language": {
+    "dominant_style": "near-white-organic-ribbons-mint-wash",
+    "secondary_styles": [
+      {
+        "style": "delicate-tinted-line-illustration",
+        "scope": "只约束可选产品主视觉，不要求出现人物或金融对象",
+        "source": "ref-01"
+      }
+    ],
+    "signature_features": [
+      "近白底上极低对比的宽圆头蜿蜒曲带",
+      "下部由左雾蓝到右薄荷绿的柔和双色底晕",
+      "轻线淡彩与深色胶囊行动按钮的清楚层级"
+    ],
+    "rendering": "背景为矢量曲带与平滑渐变，主视觉可选轻线淡彩二维插画；不使用写实或厚重 3D",
+    "materials": "平滑数字色面；可选前景轻薄淡彩，无纸颗粒、玻璃或塑料材质",
+    "lighting": "背景没有实体光源；可选前景统一上方柔光和极浅接触影，方向是重建建议，非截图测量",
+    "perspective": "背景正视平面；可选插画以正面/轻微侧视表达，整组固定视角语法",
+    "mood": "安静、轻盈、友好、清楚；浅彩负责气氛，深色内容负责可读性"
+  },
+  "layout_rules": {
+    "baseline_canvas_pt": {
+      "width": 393,
+      "height": 852
+    },
+    "safe_area": "背景全屏出血，原生文字、进度与 CTA 读取系统安全区；不绘制截图状态栏或设备外框",
+    "regions": "安全区内容上部主视觉约 50%，中下部进度与文案约 25%，底部 CTA 约 17%，余量留白；比例可适配，渐变按全屏坐标",
+    "variants": {
+      "hero-centered": "主视觉在上半部居中，文字与底部导航居中稳定",
+      "hero-diagonal": "主视觉内部可沿斜向展开，文字与 CTA 仍用共享锚点",
+      "background-only": "仅交付背景与图案；不放品牌、插画、文案、进度、CTA 或模拟设备"
+    },
+    "responsive": "纹样以等比 cover 映射并裁切；底晕保持全屏坐标；小屏和大字号先缩小主视觉、减少留白，文案可滚动而 CTA 可达",
+    "typography": "标题通常两行以内，说明低密度；大字号不截断；文字后的纹样减弱至接近零"
+  },
+  "component_rules": {
+    "button": "黑色 primary 底、白字 on_primary，胶囊圆角，高 56 pt 起，左右 24 pt，允许动态字号增高；无发光、无强投影",
+    "progress": "主视觉下方小型点/短竖胶囊，当前项深色，其余 progress_inactive；点击目标若存在则至少 44 pt，读屏明确页数",
+    "card": "默认无装饰卡片，必要信息容器使用不透明白底；避免与近白纹样叠加成复杂玻璃面",
+    "navigation": "保持共享底部 CTA 区；标签与完成/跳过目标由产品 Flow 决定，不默认引导注册、借款或授权"
+  },
+  "composition_rules": {
+    "focal_point": "主视觉上半部，标题与 CTA 下部；背景低对比，不成为第二焦点",
+    "negative_space": "主体与文案间至少 24 pt；正文后纹样衰减；不让图案拐点或粗带干扰字形",
+    "visual_weight": "深色标题与 CTA 最明确，前景插画次之，曲带最轻，底部双色晕染克制",
+    "allowed_variations": "可替换产品主体、文案和批准布局；同流程锁定色值、路径尺度、渐变 stop 和组件；更换核心色板/图案需新 style_id"
+  },
+  "motion_rules": {
+    "transition": "重建建议：240 ms ease-in-out 淡入淡出，内容最多横移 12 pt，可中断",
+    "entrance": "重建建议：主视觉 240 ms ease-out 淡入，可上移最多 8 pt；文案无持续漂浮",
+    "background": "背景和路径固定，不旋转、滚动、呼吸闪烁或逐页随机重排",
+    "continuity": "同流程背景锚点、曲带尺度和渐变一致；只切换产品内容",
+    "reduce_motion": "取消位移和延迟；直接切换或最多 100 ms 淡入，保留信息与导航"
+  },
+  "negative_constraints": [
+    "禁止将 #F2F2F2 拼图外底或手机展示外框作为 App 内背景",
+    "禁止复制参考品牌、原文案、人物、钱包、纸币、灯泡、手机、店铺或存钱罐作为通用背景",
+    "禁止高对比迷宫、密集平行等高线、硬折角、细碎波纹、小尺寸明显平铺和文字形状底纹",
+    "禁止高饱和彩虹渐变、霓虹光团、强光斑、硬边色块、暗角、噪点和纸纹",
+    "禁止把纹样铺进文字区造成阅读干扰，禁止浅青绿文字承载正文",
+    "禁止逐页换色板、随机重排图案、混入玻璃或厚重 3D 材质",
+    "禁止将标题、按钮、进度和状态栏烘焙到背景；背景不可拦截触摸或作为读屏内容"
+  ],
+  "implementation_hints": {
+    "background": "用 SVG/CSS 或原生 Canvas/Path 渲染：近白底→宽曲带→纵向渐隐的横向蓝绿渐变；mask 控制纹样下部衰减",
+    "assets": "background.svg 为重建矢量背景，不是原图抠图；实际产品复杂插画独立生成，内容不进入核心 Profile",
+    "verification": "已观察参考并采样，参数为重建规范；预览用于风格检查，不声称像素匹配或真机验收"
+  }
+}

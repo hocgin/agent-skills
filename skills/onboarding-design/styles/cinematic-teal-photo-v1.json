@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "style_id": "cinematic-teal-photo-v1",
+  "name": "电影感青蓝摄影",
+  "derived_from": null,
+  "provenance": {
+    "mode": "reference-extraction",
+    "references": [
+      {
+        "id": "ref-six-06",
+        "source": "../references/images/onboarding-six-styles.png",
+        "sha256": "bf2ac599c318967e4b91bcaaeb4c068e0bddefbb981817c017d98cf06d5ec51e",
+        "image_size_px": [
+          806,
+          1076
+        ],
+        "crop_xywh_px": [
+          571,
+          597,
+          218,
+          479
+        ],
+        "position": "右下",
+        "kind": "onboarding screenshot",
+        "role": "primary"
+      }
+    ],
+    "color_sampling": {
+      "method": "RGB 局部区域逐通道中位数，box 为 [left, top, right, bottom)；未做滤色。颜色是截图代表值，并非原始设计 token。",
+      "samples": [
+        {
+          "token": "background",
+          "box_px": [
+            582,
+            1041,
+            598,
+            1053
+          ],
+          "median_hex": "#2D4959",
+          "profile_hex": "#2D4959"
+        },
+        {
+          "token": "sky_gray",
+          "box_px": [
+            600,
+            620,
+            620,
+            640
+          ],
+          "median_hex": "#A2A3A8",
+          "profile_hex": "#A2A3A8"
+        },
+        {
+          "token": "primary",
+          "box_px": [
+            610,
+            1018,
+            625,
+            1028
+          ],
+          "median_hex": "#FFFFFF",
+          "profile_hex": "#FFFFFF"
+        }
+      ],
+      "normalized": "未列入 samples 的颜色、渐变 stop、遮罩、尺寸与时长均为本次规范化值；摄影主色不是全画布固定像素。"
+    },
+    "observations": [
+      {
+        "reference_id": "ref-six-06",
+        "dimension": "style",
+        "finding": "灰蓝与深青蓝的满版摄影 / 左上白色短文案 / 底部悬浮白色胶囊 CTA",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-six-06",
+        "dimension": "color",
+        "finding": "满版真实环境摄影：上部灰蓝 #A2A3A8，中下部深青蓝 #2D4959，少量暖砂 #BD9261；路面或空间线条产生纵深。标题区域叠加 #172D35 半透明上暗下透明遮罩，底部同色渐暗；没有合适摄影时使用深青蓝实色回退。",
+        "basis": "normalized",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-six-06",
+        "dimension": "typography",
+        "finding": "标题和正文均用系统无衬线；标题 medium，左对齐；按钮居中",
+        "basis": "normalized",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-six-06",
+        "dimension": "layout",
+        "finding": "摄影全屏出血；安全区内标题在上部约 12%～26%，底部导航约 12%；中间留给摄影纵深",
+        "basis": "normalized",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-six-06",
+        "dimension": "graphics",
+        "finding": "真实街景摄影铺满全屏，上部灰蓝天空与暖色建筑，下部深青蓝道路；照片本身承载纹理，另用深色可控遮罩保护文字。",
+        "basis": "observed",
+        "confidence": "high"
+      },
+      {
+        "reference_id": "ref-six-06",
+        "dimension": "detail",
+        "finding": "单幅纵向环境摄影，地面或路径形成纵深引导，主体中下部可有轻微运动模糊；上部为低细节文字区，底部白色胶囊悬浮。",
+        "basis": "normalized",
+        "confidence": "medium"
+      },
+      {
+        "reference_id": "ref-six-06",
+        "dimension": "mood",
+        "finding": "真实、沉浸、流动、可靠",
+        "basis": "inferred",
+        "confidence": "medium"
+      }
+    ],
+    "decisions": {
+      "retained": [
+        "灰蓝与深青蓝的满版摄影",
+        "左上白色短文案",
+        "底部悬浮白色胶囊 CTA"
+      ],
+      "translated": [
+        "保留背景与图形语法，图片主体随实际产品变化",
+        "截图小字与细小按钮改为可读的原生字号及 44 pt 以上点击目标"
+      ],
+      "dropped": [
+        "原始品牌、具体人物/店铺/食物/地标内容与文案",
+        "外侧灰色展示底、设备圆角与传感器装饰"
+      ],
+      "rationale": "用户要求分别保留六种背景配色和图案语言；本 Profile 只定义其中一种，不合并为单一混搭风格。"
+    }
+  },
+  "design_tokens": {
+    "colors": {
+      "background": "#2D4959",
+      "surface": "#FFFFFF",
+      "primary": "#FFFFFF",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#FFFFFF",
+      "on_primary": "#152E38",
+      "sky_gray": "#A2A3A8",
+      "shade": "#172D35",
+      "warm_accent": "#BD9261",
+      "usage": "background 为不透明回退底色；摄影主色与彩格色仅用于视觉资源，不自动用于文字。正文位于可读的不透明底或经复核的遮罩上。"
+    },
+    "typography": {
+      "family": "标题和正文均用系统无衬线；标题 medium，左对齐；按钮居中",
+      "title": {
+        "size_pt": 26,
+        "weight": "semibold",
+        "line_height_pt": 33
+      },
+      "body": {
+        "size_pt": 16,
+        "weight": "regular",
+        "line_height_pt": 23
+      },
+      "button": {
+        "size_pt": 16,
+        "weight": "semibold",
+        "line_height_pt": 22
+      },
+      "caption": {
+        "size_pt": 13,
+        "weight": "medium",
+        "line_height_pt": 18
+      },
+      "alignment": "标题和正文左对齐；CTA 居中"
+    },
+    "spacing_pt": {
+      "unit": 8,
+      "small": 8,
+      "medium": 16,
+      "large": 24,
+      "section": 32,
+      "page_horizontal": 24
+    },
+    "radii_pt": {
+      "card": 8,
+      "button": 999,
+      "thumbnail": 6
+    },
+    "shadows": {
+      "card": {
+        "color": "#000000",
+        "alpha": 0.06,
+        "x_pt": 0,
+        "y_pt": 5,
+        "blur_pt": 16
+      },
+      "button": {
+        "color": "#000000",
+        "alpha": 0.04,
+        "x_pt": 0,
+        "y_pt": 4,
+        "blur_pt": 14
+      }
+    },
+    "opacity": {
+      "text": 1,
+      "surface": 1,
+      "border": 0.85
+    },
+    "effects": {
+      "background_gradient": "无；照片/面板独立叠加于 background 底色",
+      "border_width_pt": 1,
+      "border_color": "#FFFFFF",
+      "texture": "无人工颗粒或重复纹理",
+      "photo_scrims": {
+        "color": "#172D35",
+        "top": {
+          "y": [
+            0,
+            0.35
+          ],
+          "alpha": [
+            0.66,
+            0
+          ]
+        },
+        "bottom": {
+          "y": [
+            0.65,
+            1
+          ],
+          "alpha": [
+            0,
+            0.55
+          ]
+        },
+        "contrast_rule": "上述 alpha 为起点；按实际照片合成后复核，正文目标 4.5:1，大字 3:1；不足时增加局部深色面板或遮罩，不只换照片颜色。"
+      }
+    }
+  },
+  "visual_language": {
+    "dominant_style": "cinematic-full-bleed-photo",
+    "secondary_styles": [
+      {
+        "style": "minimal",
+        "scope": "只影响排版与留白",
+        "source": "ref-six-06"
+      }
+    ],
+    "signature_features": [
+      "灰蓝与深青蓝的满版摄影",
+      "左上白色短文案",
+      "底部悬浮白色胶囊 CTA"
+    ],
+    "rendering": "单幅纵向环境摄影，地面或路径形成纵深引导，主体中下部可有轻微运动模糊；上部为低细节文字区，底部白色胶囊悬浮。",
+    "materials": "原生平面底色、细白边与独立摄影资源；不混入玻璃、金属或黏土材质",
+    "lighting": "统一自然环境日光，灰蓝高光与深青蓝阴影，暖色只留在摄影小面积物体；对比保护通过原生遮罩实现",
+    "perspective": "UI 与卡片平视，摄影透视由场景决定；同组保持相似焦距和视线高度",
+    "mood": "真实、沉浸、流动、可靠",
+    "layer_rules": {
+      "background": "真实街景摄影铺满全屏，上部灰蓝天空与暖色建筑，下部深青蓝道路；照片本身承载纹理，另用深色可控遮罩保护文字。",
+      "foreground": "单幅纵向环境摄影，地面或路径形成纵深引导，主体中下部可有轻微运动模糊；上部为低细节文字区，底部白色胶囊悬浮。",
+      "background_only_prompt": "满版真实环境摄影：上部灰蓝 #A2A3A8，中下部深青蓝 #2D4959，少量暖砂 #BD9261；路面或空间线条产生纵深。标题区域叠加 #172D35 半透明上暗下透明遮罩，底部同色渐暗；没有合适摄影时使用深青蓝实色回退。",
+      "boundary": "纯背景请求不输出前景卡片/内容节点/文字/按钮；满版摄影款的照片属于背景资源，遮罩与控件独立渲染。"
+    }
+  },
+  "layout_rules": {
+    "baseline_canvas_pt": {
+      "width": 393,
+      "height": 852
+    },
+    "safe_area": "背景可全屏出血；文字、进度、CTA 用系统安全区，不复制刘海、设备外壳或状态栏",
+    "regions": "摄影全屏出血；安全区内标题在上部约 12%～26%，底部导航约 12%；中间留给摄影纵深",
+    "variants": {
+      "photo-leading-lines": "整屏纵向照片，消失点约 (0.60,0.50)，左上留低细节文案区，CTA 位于底部安全区。",
+      "photo-offset": "主体可偏右，左上阅读区保持；运动模糊仅作用背景运动物，不模糊文字与按钮。"
+    },
+    "responsive": "小屏或动态大字号先缩小主视觉并减少间距；允许文案滚动，底部 CTA 始终可达；宽屏限制最大内容宽度，图片等比裁切",
+    "typography": "标题起点 26/33 pt，正文 16/23 pt，最多两段；行数不硬裁切。截图字号不可直接照搬为设备 pt。"
+  },
+  "component_rules": {
+    "button": "白色胶囊，on_primary 深字；高 52 pt，可随大字号增高；点击目标至少 44 pt。",
+    "progress": "有多页时按实际页数显示；活动点用 primary，深色款用荧光短胶囊。单页可以隐藏，不继承截图固定点数。",
+    "card": "单幅纵向环境摄影，地面或路径形成纵深引导，主体中下部可有轻微运动模糊；上部为低细节文字区，底部白色胶囊悬浮。 卡片尺寸为实现重建值；正文不放入复杂底图。",
+    "navigation": "共享底部导航；下一页/跳过/末页终点由真实 Flow 决定。参考中注册/登录与开始不作为风格的强制动作。"
+  },
+  "composition_rules": {
+    "focal_point": "满版场景纵深焦点约 (0.60,0.50)，左上阅读区与底部按钮始终清楚",
+    "negative_space": "主视觉与文案至少 24 pt；相片缩略图与彩格不可进入正文或 CTA 区。摄影款左上保留低细节区域。",
+    "visual_weight": "一个主视觉组，周边元素从属；彩格最多九格，轨道缩略图最多三张，地图只强调一条路径。",
+    "allowed_variations": "只换真实产品主体、场景和已登记布局；保留背景/前景分层、配色、留白、字体类别。内容色可来自摄影，不据此改 UI 色板。"
+  },
+  "motion_rules": {
+    "transition": "280 ms ease-in-out 淡入淡出，横向位移不超过 16 pt；可中断，不排队",
+    "entrance": "主视觉 240 ms ease-out 淡入，位移不超过 8 pt；不模拟静态参考未能证明的物理弹跳",
+    "background": "底色与渐变固定；照片可随页切换但遵守统一调色，不持续漂移或自动播放运动背景",
+    "continuity": "保持相片/面板/阅读区锚点；新页面改变场景而非只换文案；所有动效为规范化建议，不是从静态图识别",
+    "reduce_motion": "取消位移与延迟，100 ms 淡入或直接切换；保留导航和信息"
+  },
+  "negative_constraints": [
+    "禁止将参考品牌、人物身份、文案与具体产品能力视为通用风格要求",
+    "禁止把拼图外侧 #D1D1D1 灰色展示画布或黑色传感器区域做成 App 背景",
+    "禁止把文字、CTA、进度、状态栏烘焙进背景图片；界面用原生控件",
+    "禁止页间随机替换色板、字体类别、材质或构图语法",
+    "禁止把灰蓝到青蓝的纯渐变冒充摄影、描摹原地标或运输品牌、文字直接压在复杂亮部、以固定透明度声称所有照片都可读。"
+  ]
+}

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<defs>
+<linearGradient id="g-white" x1="0" y1="0" x2="0" y2="1" color-interpolation="sRGB">
+<stop offset="0" stop-color="#FFFFFF"/>
+<stop offset="0.45" stop-color="#FFFFFF"/>
+<stop offset="0.67" stop-color="#FFFFFF"/>
+<stop offset="1" stop-color="#FFFFFF"/>
+</linearGradient>
+<linearGradient id="g-cyan" x1="0" y1="0" x2="0" y2="1" color-interpolation="sRGB">
+<stop offset="0" stop-color="#FFFFFF"/>
+<stop offset="0.45" stop-color="#FFFFFF"/>
+<stop offset="0.67" stop-color="#F3FAFE"/>
+<stop offset="1" stop-color="#CEECFD"/>
+</linearGradient>
+<linearGradient id="g-cream" x1="0" y1="0" x2="0" y2="1" color-interpolation="sRGB">
+<stop offset="0" stop-color="#FFFFFF"/>
+<stop offset="0.45" stop-color="#FFFFFF"/>
+<stop offset="0.67" stop-color="#FFFAF2"/>
+<stop offset="1" stop-color="#FFE9C9"/>
+</linearGradient>
+<linearGradient id="g-apricot" x1="0" y1="0" x2="0" y2="1" color-interpolation="sRGB">
+<stop offset="0" stop-color="#FFFFFF"/>
+<stop offset="0.45" stop-color="#FFFFFF"/>
+<stop offset="0.67" stop-color="#FFF7EB"/>
+<stop offset="1" stop-color="#FFDEAF"/>
+</linearGradient>
+<linearGradient id="g-blush" x1="0" y1="0" x2="0" y2="1" color-interpolation="sRGB">
+<stop offset="0" stop-color="#FFFFFF"/>
+<stop offset="0.45" stop-color="#FFFFFF"/>
+<stop offset="0.67" stop-color="#FFF2F1"/>
+<stop offset="1" stop-color="#FECBC8"/>
+</linearGradient>
+<linearGradient id="g-mint" x1="0" y1="0" x2="0" y2="1" color-interpolation="sRGB">
+<stop offset="0" stop-color="#FFFFFF"/>
+<stop offset="0.45" stop-color="#FFFFFF"/>
+<stop offset="0.67" stop-color="#EEFAF2"/>
+<stop offset="1" stop-color="#B9EACC"/>
+</linearGradient>
+</defs>
+<rect width="1400" height="760" fill="#ECEEF2"/>
+<g font-family="-apple-system, BlinkMacSystemFont, PingFang SC, sans-serif" fill="#202223">
+<text x="50" y="65" font-size="34" font-weight="700">浅彩底晕</text>
+<text x="50" y="102" font-size="17" fill="#565A61">PASTEL BOTTOM WASH · 背景配色与渐变语言</text>
+<text x="1350" y="65" text-anchor="end" font-size="15" fill="#565A61">pastel-bottom-wash-v1</text>
+<rect x="50" y="150" width="200" height="440" rx="26" fill="url(#g-white)"/>
+<text x="50" y="630" font-size="19" font-weight="600">纯白</text>
+<text x="50" y="661" font-size="17" fill="#565A61">#FFFFFF</text>
+<rect x="270" y="150" width="200" height="440" rx="26" fill="url(#g-cyan)"/>
+<text x="270" y="630" font-size="19" font-weight="600">晴空浅蓝</text>
+<text x="270" y="661" font-size="17" fill="#565A61">#CEECFD</text>
+<rect x="490" y="150" width="200" height="440" rx="26" fill="url(#g-cream)"/>
+<text x="490" y="630" font-size="19" font-weight="600">香草奶油</text>
+<text x="490" y="661" font-size="17" fill="#565A61">#FFE9C9</text>
+<rect x="710" y="150" width="200" height="440" rx="26" fill="url(#g-apricot)"/>
+<text x="710" y="630" font-size="19" font-weight="600">柔杏橙</text>
+<text x="710" y="661" font-size="17" fill="#565A61">#FFDEAF</text>
+<rect x="930" y="150" width="200" height="440" rx="26" fill="url(#g-blush)"/>
+<text x="930" y="630" font-size="19" font-weight="600">浅珊瑚粉</text>
+<text x="930" y="661" font-size="17" fill="#565A61">#FECBC8</text>
+<rect x="1150" y="150" width="200" height="440" rx="26" fill="url(#g-mint)"/>
+<text x="1150" y="630" font-size="19" font-weight="600">薄荷浅绿</text>
+<text x="1150" y="661" font-size="17" fill="#565A61">#B9EACC</text>
+<text x="50" y="716" font-size="17" fill="#565A61">上方约 45% 保持纯白 · 向下连续渐染 · 无纹理、无重复图案 · 色值取自截图局部采样，曲线为归一化重建</text>
+</g></svg>
