@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "style_id": "soft-glass-daylight-v1",
+  "project": {
+    "name": "晴间",
+    "type": "天气 App",
+    "features": ["当前天气", "逐时预报", "降雨提醒"],
+    "audience": "需要安排日常出行的通勤用户",
+    "positioning": "以清楚、轻盈的天气信息支持出门决策；这是示例产品设定"
+  },
+  "platform": "iPhone；393×852 pt 为基准画布，非固定设备尺寸",
+  "locale": "zh-Hans",
+  "screen_count_reason": "三个已定义能力各一页，从看现在到安排出行，再到理解提醒价值",
+  "assumptions": [
+    "示例无上传参考图；显式指定 glassmorphism 与轻盈自然日光，所有视觉值为设计选择",
+    "当前天气、逐时预报、降雨提醒均为演示产品的能力设定，不代表已连接真实天气服务",
+    "引导可跳过；完成或跳过后先手动选城市，再进入首页；定位和通知权限在相应功能实际使用时解释并申请",
+    "温度与时间均为示意数据；本次仅交付设计和提示词，未生成图片或运行 App"
+  ],
+  "screens": [
+    {
+      "id": "weather-now",
+      "goal": "让用户理解一眼获取当前天气的价值",
+      "feature": "当前天气",
+      "title": "抬眼，就懂此刻天气",
+      "description": "温度与天气状态清楚呈现，出门前少一点犹豫。",
+      "visual_subject": "一个磨砂玻璃圆盘前方悬浮柔软云形，暖色日光圆片从右后方露出，但全场主光仍来自左上",
+      "scene": "上半部集中展示当前天气的一个场景；云形用冷辅助色，日光圆片用暖辅助色；原生叠加示意 24° 与晴转多云，无城市照片、无额外卡片",
+      "composition": "圆盘对象组占画布宽约 70%，焦点位于 x=0.50/y=0.27；数字低于主体中心，不与标题相撞；正文和底部导航留白",
+      "layout_variant": "hero-centered",
+      "token_refs": ["colors.background", "colors.primary", "colors.art_accent_cool", "colors.art_accent_warm", "typography.title", "opacity.glass_surface"],
+      "interaction": {
+        "primary_label": "继续",
+        "primary_action": "next:hourly-outlook",
+        "secondary_label": "跳过",
+        "secondary_action": "skip:city-picker",
+        "progress": "第 1 页，共 3 页；首点活动"
+      },
+      "motion": "云形与圆盘按统一入口动效进入；进入第二页时保持对象组锚点，淡出圆盘并淡入时间轴；不让太阳成为第二个真实光源；Reduce Motion 只淡入",
+      "implementation": {
+        "code_components": ["背景、标题、说明、24° 与晴转多云为原生文字", "共享主按钮、跳过按钮、分页进度", "资源等比布局与页面切换"],
+        "assets": [
+          {
+            "id": "hero-weather-now",
+            "description": "磨砂玻璃圆盘、云形和日光圆片的对象组；不含数字、文案、按钮或背景",
+            "background": "transparent",
+            "aspect_ratio": "1:1",
+            "export": "PNG alpha，按最大展示约 320 pt × 3 scale 导出 960×960 px；实际设备变化时重算",
+            "crop_safe_area": "主体和柔影完整留在中央 80%，四周透明留白，等比 fit"
+          }
+        ],
+        "fallback": "没有 3D 资源时，用同色板原生圆盘与云形路径重建，不改材质语法和光源；模糊不可用时采用不透明 surface"
+      }
+    },
+    {
+      "id": "hourly-outlook",
+      "goal": "让用户理解逐时变化如何帮助选择出发时间",
+      "feature": "逐时预报",
+      "title": "把出发时间安排好",
+      "description": "沿着逐时预报，看清天气变化，选个合适的时刻出门。",
+      "visual_subject": "一条由近到远缓慢抬升的磨砂玻璃弧形时间轨道，三个节点分别呈现日光、云层、细雨的天气变化",
+      "scene": "轨道沿左下到右上展开，三节点同属一个对象组；原生叠加 09时、12时、15时示意标签，表达时间而非三张相同卡片",
+      "composition": "轨道占画布宽约 78%，对象组焦点仍为 x=0.50/y=0.27，三个节点大小有主次；不挤入下部文案；标题和导航沿用共享网格",
+      "layout_variant": "hero-diagonal",
+      "token_refs": ["colors.background", "colors.primary", "colors.art_accent_cool", "colors.art_accent_warm", "typography.caption", "shadows.card"],
+      "interaction": {
+        "primary_label": "继续",
+        "primary_action": "next:rain-reminder",
+        "secondary_label": "跳过",
+        "secondary_action": "skip:city-picker",
+        "progress": "第 2 页，共 3 页；第二点活动；允许右滑返回第 1 页"
+      },
+      "motion": "时间节点沿轨道按顺序出现，总入口不超过共享动效节奏；进入第三页时中间云形在相同锚点交叉淡入雨幕；不改变光源或镜头；Reduce Motion 直接显示全部节点",
+      "implementation": {
+        "code_components": ["09时、12时、15时标签与所有说明采用原生文字", "简单轨道可用路径，颜色与阴影来自共享 token", "共享导航与可返回的分页状态"],
+        "assets": [
+          {
+            "id": "hero-hourly-outlook",
+            "description": "磨砂弧形时间轨道及日光、云、雨三个节点；不含标签文字，轮廓适度简化",
+            "background": "transparent",
+            "aspect_ratio": "1:1",
+            "export": "PNG alpha，最大展示约 320 pt × 3 scale，960×960 px；与第一页统一导出比例",
+            "crop_safe_area": "完整轨道、节点和柔影留在中央 80%，避免端点贴边；等比 fit"
+          }
+        ],
+        "fallback": "轨道与节点均可用原生路径和同材质简化几何绘制；保留时间演进语义，不退化成三个无关装饰图标"
+      }
+    },
+    {
+      "id": "rain-reminder",
+      "goal": "说明提醒价值并让用户进入产品，权限延后申请",
+      "feature": "降雨提醒",
+      "title": "雨来之前，心里有数",
+      "description": "需要时开启降雨提醒，为临时变化多留一点准备。",
+      "visual_subject": "一把简洁的磨砂玻璃伞位于细雨云下方，雨线在伞面两侧分开；一个小型铃铛轮廓作为提醒符号",
+      "scene": "使用冷辅助色绘制雨与伞，暖辅助色只点亮铃铛符号；不出现已开启通知的成功勾选，不画系统权限弹窗；表达准备行动而非已获授权",
+      "composition": "云与伞构成一个垂直对象组，约占画布宽 68%，焦点保持 x=0.50/y=0.27；铃铛为辅助元素，文案区与导航区保持无装饰",
+      "layout_variant": "hero-centered",
+      "token_refs": ["colors.background", "colors.primary", "colors.text_primary", "colors.art_accent_cool", "colors.art_accent_warm", "radii_pt.button"],
+      "interaction": {
+        "primary_label": "开始使用",
+        "primary_action": "complete:city-picker",
+        "secondary_label": "无",
+        "secondary_action": "无；允许右滑返回第 2 页",
+        "progress": "第 3 页，共 3 页；第三点活动"
+      },
+      "motion": "云与伞同步轻微淡入，铃铛不摇晃或持续闪动；点击开始使用后按统一转场进入城市选择；Reduce Motion 直接切换，仍保留完成状态",
+      "implementation": {
+        "code_components": ["全部文案、主 CTA 和进度为原生控件", "保存 onboardingCompleted 后打开手动城市选择，选完进入天气首页", "通知权限仅在用户实际开启降雨提醒时申请"],
+        "assets": [
+          {
+            "id": "hero-rain-reminder",
+            "description": "同材质雨云、伞、分开的雨线和一个小铃铛符号；无授权成功标记、文字或控件",
+            "background": "transparent",
+            "aspect_ratio": "1:1",
+            "export": "PNG alpha，最大展示约 320 pt × 3 scale，960×960 px；与前两页统一",
+            "crop_safe_area": "伞、铃铛、雨线和柔影均留在中央 80%，保护底部伞柄；等比 fit"
+          }
+        ],
+        "fallback": "资源不可用时用统一色板的原生伞、云路径与简化雨线；不显示虚构的系统授权状态"
+      }
+    }
+  ],
+  "negative_constraints": [
+    "禁止用无关音乐、机器人、聊天气泡或抽象光球替代天气功能表达",
+    "禁止暗示用户已授予定位/通知权限，禁止虚构预报准确率或把演示温度声称为实况",
+    "禁止三页都使用相同云朵卡片仅替换标题"
+  ],
+  "implementation_hints": {
+    "native_ui": [
+      "SwiftUI 用共享 DesignTokens、数据驱动 OnboardingScreen 和可中断分页容器；背景、真实文案、按钮、进度、时间/温度标签均由代码渲染",
+      "玻璃资源已带光照，不再叠加方向冲突的阴影；代码卡片沿用 Profile 的材质与回退，不依赖特定新系统玻璃 API"
+    ],
+    "assets": [
+      "分别导出 hero-weather-now、hero-hourly-outlook、hero-rain-reminder，背景透明、不含文字；以资源清单的比例和安全裁切区验收",
+      "960×960 px 是 320 pt@3x 的示例产物；按实际最大展示大小重新核对，并提供原生路径简化回退"
+    ],
+    "adaptation": [
+      "系统读取上下安全区，背景可出血，CTA 及文案不可；393×852 pt 是设计基准，不硬编码传感器区域高度",
+      "小屏/大字号先压缩主视觉和间距，再让内容滚动且主 CTA 可达；宽屏限制内容宽度、资源等比 fit，禁止拉伸"
+    ],
+    "accessibility": [
+      "系统动态字号、读屏页码与按钮标签；图像若仅装饰则隐藏读屏，信息由文案提供",
+      "按真实合成背景核对正文对比度，交互目标至少 44×44 pt；Reduce Motion 取消位移与延迟，保留状态变化"
+    ],
+    "state_and_navigation": [
+      "继续按 Flow 的 next 目标推进，滑动可返回；前两页跳过与最后页完成均保存完成标记并进入手动城市选择，选城后进入首页",
+      "从设置可重新查看引导；重播完成回到设置，不重复触发权限弹窗；引导不承担通知权限申请"
+    ]
+  },
+  "quality_review": {
+    "scope": "plan-only",
+    "checks": {
+      "style_consistency": {"status": "pass", "evidence": "三页共用同一 Profile 的材质、光源、色板、字体与导航；页面未引入第二套 token", "fix": "无需修正"},
+      "product_relevance": {"status": "pass", "evidence": "圆盘天气对应当前状态，时间轨道对应逐时预报，雨伞与提醒符号对应降雨提醒", "fix": "无需修正；产品为演示设定"},
+      "composition_quality": {"status": "pass", "evidence": "三页锚点一致且文案区无装饰，允许居中与对角两种布局，并定义小屏/大字号规则", "fix": "无需修正；实际渲染待验收"},
+      "flow_completeness": {"status": "pass", "evidence": "认识现在、安排未来、理解提醒后开始使用；下一页、跳过与最终城市选择路径明确", "fix": "无需修正"},
+      "prompt_executability": {"status": "pass", "evidence": "各页定义主体、位置、准确文案、交互、动效和导出资源；由脚本注入独立风格锁及负向约束", "fix": "无需修正；图像模型输出仍需检查"},
+      "reusability": {"status": "pass", "evidence": "Style Profile 无天气专属对象；音乐项目可用同一玻璃材质、左上柔光、居中焦点设计唱片播放与收藏场景，只改 Flow", "fix": "无需修正"},
+      "implementability": {"status": "pass", "evidence": "三个独立透明主视觉与原生文字/控件明确分工，包含资源缺失、模糊降级及延后权限策略", "fix": "无需修正；原生运行与设备检查待执行"}
+    }
+  }
+}

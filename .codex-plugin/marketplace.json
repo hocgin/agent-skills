@@ -78,6 +78,7 @@
       "strict": false,
       "skills": [
         "./skills/image-gen",
+        "./skills/gpt-image-bridge",
         "./skills/gpt-image2-ratos"
       ]
     },

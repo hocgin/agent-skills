@@ -1,0 +1,3 @@
+interface:
+  display_name: "Onboarding Design"
+  short_description: "提取参考图风格并复用，生成一致的 App 引导流程、逐页提示词与原生实现建议"

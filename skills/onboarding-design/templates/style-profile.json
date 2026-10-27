@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "style_id": "soft-glass-daylight-v1",
+  "name": "柔光日间玻璃",
+  "derived_from": null,
+  "provenance": {
+    "mode": "explicit-style-without-reference",
+    "references": [],
+    "observations": [],
+    "decisions": {
+      "requested_style": "glassmorphism，轻盈、清晰、自然日光",
+      "priority": "显式风格优先；本例无参考图，数值均为主动设计的规范值，并非图片测量值",
+      "retained": [],
+      "translated": [],
+      "dropped": [],
+      "rationale": "以磨砂玻璃和稳定柔光建立跨产品可复用的语言，具体对象在 Flow 中定义"
+    }
+  },
+  "design_tokens": {
+    "colors": {
+      "background": "#F3F7FC",
+      "surface": "#FFFFFF",
+      "primary": "#2456CB",
+      "text_primary": "#13243A",
+      "text_secondary": "#43576E",
+      "on_primary": "#FFFFFF",
+      "art_accent_cool": "#8DC9EB",
+      "art_accent_warm": "#F4C66A",
+      "usage": "冷暖辅助色仅用于主视觉；正文在不透明 background 上，CTA 用 primary/on_primary，不用浅辅助色承载小字"
+    },
+    "typography": {
+      "family": "系统无衬线；iOS 拉丁文使用系统字体，中文使用系统中文回退，不栅格化",
+      "title": {"size_pt": 30, "weight": "semibold", "line_height_pt": 38},
+      "body": {"size_pt": 17, "weight": "regular", "line_height_pt": 26},
+      "button": {"size_pt": 17, "weight": "semibold", "line_height_pt": 22},
+      "caption": {"size_pt": 13, "weight": "medium", "line_height_pt": 18},
+      "alignment": "标题、正文左对齐；按钮居中；跟随系统动态字号"
+    },
+    "spacing_pt": {"unit": 8, "small": 8, "medium": 16, "large": 24, "section": 32, "page_horizontal": 24},
+    "radii_pt": {"card": 24, "button": 16},
+    "shadows": {"card": {"color": "#13243A", "alpha": 0.1, "x_pt": 0, "y_pt": 8, "blur_pt": 24}},
+    "opacity": {"glass_surface": 0.76, "glass_border": 0.7, "text": 1},
+    "effects": {"glass_blur_pt": 18, "border_width_pt": 1, "border_color": "#FFFFFF", "background_gradient": "无；稳定 background 实色"}
+  },
+  "visual_language": {
+    "dominant_style": "glassmorphism",
+    "secondary_styles": [],
+    "signature_features": ["薄磨砂玻璃边缘", "左上日光与向右下柔影", "大块浅色留白配不透明深色文字"],
+    "rendering": "柔和半写实几何，干净轮廓，无厚重轮廓线，最多三个景深层",
+    "materials": "主视觉磨砂玻璃；不混入铬金属、皮革、纸噪点或黏土",
+    "lighting": "固定左上 45 度宽漫射日光，低对比度，投影向右下，无第二彩色光源",
+    "perspective": "正面为主的轻微三分之四视角，固定平行投影，无广角畸变",
+    "mood": "清透、安静、可信赖，允许冷暖辅助色平衡，避免霓虹科技感"
+  },
+  "layout_rules": {
+    "baseline_canvas_pt": {"width": 393, "height": 852},
+    "safe_area": "由系统动态决定；背景可延伸全屏，文字/CTA/进度始终位于安全区内，不固定刘海或底部高度",
+    "regions": "默认安全区内容高度：主视觉 50%、文案 25%、导航 17%、余量 8%；大字号时可调整而非硬裁切",
+    "variants": {
+      "hero-centered": "上半部主视觉居中，焦点约 x=0.50/y=0.27；下方文案左对齐，底部共享导航",
+      "hero-diagonal": "上半部主体沿左下到右上节奏展开，焦点仍在 x=0.50/y=0.27 附近；文案与导航位置保持"
+    },
+    "responsive": "小屏或大字号缩小主视觉和间隙，必要时文案滚动且 CTA 可达；宽屏居中限制内容宽度，资源等比 fit",
+    "typography": "正文最多两段；标题默认两行以内但不截断；标题与正文间距 medium，文案与导航至少 large"
+  },
+  "component_rules": {
+    "button": "共享主按钮高 52 pt（大字号可增高）、圆角 button、primary 底/on_primary 字；禁用态有可读说明，不仅降低透明度",
+    "progress": "统一步进点，按实际页数生成；活动点 primary，其他点 text_secondary；读屏为第几页/共几页，不仅依赖颜色",
+    "card": "仅在主视觉中使用 glass_surface 透明度、card 圆角、白色 1 pt 细边和共享阴影；正文区域不做透明叠字",
+    "navigation": "同一底部区域提供进度与一个主 CTA；继续进入下一页，最后 CTA 进入产品；跳过与末页完成目标一致，不自动申请权限"
+  },
+  "composition_rules": {
+    "focal_point": "主体在安全区上半部，占画布宽约 65%～80%，视觉焦点稳定在 x=0.50/y=0.27 附近",
+    "negative_space": "主视觉与文案间至少 24 pt 的视觉间隔；文案背景无装饰，不把装饰挤入导航区",
+    "visual_weight": "一主对象或一个对象组、最多两个辅助元素；正文低于主视觉，CTA 清楚但不盖住主体",
+    "allowed_variations": "可换主体、功能场景、对象数量与已批准布局变体；不变更材质、光源、镜头、文字层级和底部导航"
+  },
+  "motion_rules": {
+    "transition": "页面 320 ms ease-in-out 淡出淡入并最多 24 pt 横向位移，可中断，不能动画排队",
+    "entrance": "主视觉 280 ms ease-out，从下方 12 pt 进入并淡入；文案随后 60 ms 淡入，不持续漂浮",
+    "background": "实色背景保持不变，不逐页换背景色或制造闪烁",
+    "continuity": "主体锚点、光源、视角稳定；同类形状通过位置/透明度过渡，不强行做不合理物体变形",
+    "reduce_motion": "取消位移、缩放和延迟，100 ms 淡入或直接替换；交互和信息保持可用"
+  },
+  "negative_constraints": [
+    "禁止页面之间随机切换色板、字体、材质、光源或渲染技法",
+    "禁止霓虹辉光、厚重黑描边、镜面铬金属、硬阴影和多光源冲突",
+    "禁止不合理透视、超过三个景深层、过度装饰或无关物体",
+    "禁止正文置于透明复杂底图、层级混乱、密集小字和按钮侵入系统安全区",
+    "禁止机械复制参考图品牌/角色/内容、仅换标题重复主视觉、整屏栅格图替代真实交互"
+  ]
+}

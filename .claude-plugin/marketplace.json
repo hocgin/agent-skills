@@ -54,6 +54,15 @@
       ]
     },
     {
+      "name": "image-skills",
+      "description": "Image generation through the Codex CLI with reference image support",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/gpt-image-bridge"
+      ]
+    },
+    {
       "name": "fullstack-website-skills",
       "description": "",
       "source": "./",
