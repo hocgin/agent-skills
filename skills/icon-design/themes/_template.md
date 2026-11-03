@@ -4,6 +4,7 @@ name: <中文名>
 reference: reference.jpg
 keywords: <英文关键词>, <中文关键词>
 tile_color: "#F5F5F5"
+# 可选：icon_type（默认 flat vector icon，3D 等非平面主题需覆盖）、background（默认 pure white background）
 summary: <一句话概括：线条 + 配色 + 标志性细节>
 ---
 

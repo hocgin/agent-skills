@@ -65,10 +65,13 @@ def load_themes() -> dict:
 
 def build(theme: dict, subjects: list, mode: str) -> dict:
     tile = theme.get("tile_color", "#F5F5F5")
-    single_bg, set_bg = MODES[mode]
+    # 可选 front-matter：icon_type（渲染类型名词，默认平面矢量）、background（画布背景描述，默认纯白）
+    icon_type = theme.get("icon_type", "flat vector icon")
+    canvas = theme.get("background", "pure white background")
+    single_bg, set_bg = (t.replace("a pure white background", f"a {canvas}") for t in MODES[mode])
     n = len(subjects)
     if n == 1:
-        head = f"A single flat vector icon of {subjects[0].rstrip('.')}."
+        head = f"A single {icon_type} of {subjects[0].rstrip('.')}."
         background = single_bg.format(tile=tile)
         size = "1:1"
     else:
@@ -76,7 +79,7 @@ def build(theme: dict, subjects: list, mode: str) -> dict:
         rows = math.ceil(n / cols)
         items = "; ".join(f"({i}) {s.rstrip('.')}" for i, s in enumerate(subjects, 1))
         head = (
-            f"A matching set of {n} flat vector icons arranged in an evenly spaced {cols}x{rows} grid, "
+            f"A matching set of {n} {icon_type}s arranged in an evenly spaced {cols}x{rows} grid, "
             f"every icon drawn in exactly the same style, stroke weight, palette and scale: {items}."
         )
         background = set_bg.format(tile=tile)
@@ -84,7 +87,11 @@ def build(theme: dict, subjects: list, mode: str) -> dict:
     style, negative = theme["style"], theme["negative"]
     if n > 1:
         # 成套模式：构图占比改为按单元格计算，并移除与网格冲突的负向词
-        style = style.replace("Subject centered, occupying about 45% of the canvas", "Each icon centered in its own grid cell, occupying about 45% of the cell")
+        style = re.sub(
+            r"Subject centered(?: and upright)?, occupying about (\d+)% of the canvas",
+            r"Each icon centered in its own grid cell, occupying about \1% of the cell",
+            style,
+        )
         negative = ", ".join(t for t in negative.split(", ") if t != "multiple subjects")
     prompt = f"{head} {style} {background}"
     ref = theme["dir"] / theme.get("reference", "reference.jpg")

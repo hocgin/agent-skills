@@ -39,6 +39,8 @@ cp themes/_template.md themes/<id>/theme.md
 - `negative` 块：通用项（gradient/3D/text/watermark…）+ 色板外颜色 + 违背签名特征的项。
 - `keywords`：中英文都写，供 `--auto` 匹配。
 - `reference` 字段与实际文件名一致。
+- 非平面风格（3D、黏土、拟物等）必须设置 `icon_type`（如 `soft 3D clay icon`），否则脚本默认写成 "flat vector icon"；背景不是纯白时设置 `background`（如 `plain warm beige (#E5DBD4) background`）。
+- `style` 块中构图句保持 `Subject centered, occupying about N% of the canvas` 句式，成套模式会自动改写为按单元格计算。
 
 ## 4. 注册
 
