@@ -6,7 +6,7 @@
 npx skills@latest add s1dashu/ip-as-logo-skill
 https://github.com/callstack/agent-device
 https://github.com/rshankras/claude-code-apple-skills
-
+https://github.com/giginet/apple-icon-composer-skill/
 ```
 
 
