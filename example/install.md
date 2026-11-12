@@ -10,8 +10,8 @@ https://github.com/giginet/apple-icon-composer-skill/
 
 
 
-npx skills add https://github.com/cloudflare/skills --skill cloudflare
-npx skills add https://github.com/cloudflare/skills --skill wrangler
+npx skills add https://github.com/cloudflare/skills --skill cloudflare -a codex -y
+npx skills add https://github.com/cloudflare/skills --skill wrangler -a codex -y
 npx skills add https://github.com/bobmatnyc/claude-mpm-skills --skill drizzle-orm -a codex -y
 npx skills add https://github.com/honojs/skills --skill hono -a codex -y
 curl -fsSL https://heroui.com/install | bash -s heroui-react
