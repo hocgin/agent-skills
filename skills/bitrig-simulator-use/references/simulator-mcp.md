@@ -13,8 +13,9 @@
 - `simulator.listSimulators()` 返回目标 ID、状态和兼容机型。实例处于 `off` 时，`getSimulator(id)` 会尝试启动并等待。切换机型需要 `deviceModels` 中的精确名称，`changeDevice(name)` 后重新读取状态。
 - `getAXState()` 默认返回增量。需要完整树时传 `{ disableDiffing: true }`。截图观察后，重新读完整树再使用元素索引。通过 `getScreenshot()` 或 `getAXStateAndScreenshot()` 核对视觉结果。
 - 优先用最新的元素索引调用 `tap()`、`touchHold()`、`scroll()` 和 `setValue()`。没有可用元素时，根据截图用坐标 `tap()` 或 `drag()`。`typeText()` 的换行会模拟 Return，可能触发表单提交。`pressKey("command+c")` 支持组合键。
-- `performAction()` 支持 `home`、`app_switcher`、`lock`、`siri`。`getSettings()` / `setSetting()` 可控制外观、方向、文字大小及部分辅助功能。
-- iPhone Duo 支持 `duo.getHingeState()` 和 `duo.setHingeState({ orientation: "portrait", angleDegrees: 120 })`。角度范围为 0–180°，读取结果反映最后请求的角度。核对实际显示时使用截图。
+- `performAction()` 支持 `home`、`app_switcher`、`lock`、`siri`。用 `getSettings()` 查看当前设置，并用 `setSetting("orientation", "landscape_right")` 等方式指定屏幕方向。外观、文字大小和部分辅助功能也可通过设置控制。
+- iPhone Duo 支持 `duo.getHingeState()` 和 `duo.setHingeState({ orientation: "portrait", angleDegrees: 120 })`。方向可选 `portrait`、`landscape_left`、`portrait_upside_down`、`landscape_right`。角度范围为 0–180°，0° 为合拢，180° 为完全展开，也可指定中间角度。读取结果反映最后请求的角度，用截图核对实际显示。
+- **Standing** 和 **Seated** 是桌面 3D 预览的姿态控件。要使用这两个姿态或桌面折叠预设，按 [3D 预览操作说明](../SKILL.md#操作-3d-预览) 操作 Bitrig 窗口。
 - `getRunLog({ glob, pattern })` 读取模拟器运行日志，允许省略任一筛选条件。
 
 如果工具明确要求访问权限，在单独的 `simulator_exec` 调用里运行 `simulator.requestAccess()`，并设置 `timeout_ms: 610000`。权限获准后再继续。
