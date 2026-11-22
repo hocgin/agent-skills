@@ -22,8 +22,8 @@ THEMES_DIR = Path(__file__).resolve().parent.parent / "themes"
 # 用途模式 → 背景/容器描述（单个, 成套）
 MODES = {
     "showcase": (
-        "Placed on a soft light-gray ({tile}) circle centered on a pure white background, like an icon specimen sheet.",
-        "Each icon sits on its own soft light-gray ({tile}) circle, all circles the same size, on a pure white background.",
+        "Placed on a {tile_desc} ({tile}) circle centered on a pure white background, like an icon specimen sheet.",
+        "Each icon sits on its own {tile_desc} ({tile}) circle, all circles the same size, on a pure white background.",
     ),
     "standalone": (
         "On a pure white background with no container, easy to cut out.",
@@ -65,6 +65,8 @@ def load_themes() -> dict:
 
 def build(theme: dict, subjects: list, mode: str) -> dict:
     tile = theme.get("tile_color", "#F5F5F5")
+    # 可选 front-matter：tile_desc（showcase 圆底的颜色描述，深色背景主题需覆盖）
+    tile_desc = theme.get("tile_desc", "soft light-gray")
     # 可选 front-matter：icon_type（渲染类型名词，默认平面矢量）、background（画布背景描述，默认纯白）
     icon_type = theme.get("icon_type", "flat vector icon")
     canvas = theme.get("background", "pure white background")
@@ -72,7 +74,7 @@ def build(theme: dict, subjects: list, mode: str) -> dict:
     n = len(subjects)
     if n == 1:
         head = f"A single {icon_type} of {subjects[0].rstrip('.')}."
-        background = single_bg.format(tile=tile)
+        background = single_bg.format(tile=tile, tile_desc=tile_desc)
         size = "1:1"
     else:
         cols = 2 if n <= 4 else 3
@@ -82,7 +84,7 @@ def build(theme: dict, subjects: list, mode: str) -> dict:
             f"A matching set of {n} {icon_type}s arranged in an evenly spaced {cols}x{rows} grid, "
             f"every icon drawn in exactly the same style, stroke weight, palette and scale: {items}."
         )
-        background = set_bg.format(tile=tile)
+        background = set_bg.format(tile=tile, tile_desc=tile_desc)
         size = "1:1" if cols == rows else f"{cols}:{rows}"
     style, negative = theme["style"], theme["negative"]
     if n > 1:
