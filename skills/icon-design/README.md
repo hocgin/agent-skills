@@ -2,7 +2,7 @@
 
 > 本文件由 `python3 scripts/build_prompt.py --catalog` 自动生成，请勿手动编辑。选择规则见 [themes/index.md](themes/index.md)。
 
-共 13 套主题。
+共 14 套主题。
 
 | 参考图 | 主题 | 风格 | 色板 |
 |---|---|---|---|
@@ -15,6 +15,7 @@
 | <a href="themes/glow-blob/reference.png"><img src="themes/glow-blob/reference.png" height="160" alt="glow-blob"></a> | **[晕染光斑](themes/glow-blob/theme.md)**<br>`glow-blob` | 粗黑断口线稿 + 独立圆点节点，背后一团边缘柔化的高饱和喷枪色晕溢出轮廓，线与色错位分离，潮酷有设计感。 | `#201414` `#F0C048` `#F89060` `#30B8D8` `#9850E0` `#C82818` `#F8F008` `#C8F880` |
 | <a href="themes/ink-block/reference.png"><img src="themes/ink-block/reference.png" height="160" alt="ink-block"></a> | **[墨块撞色](themes/ink-block/theme.md)**<br>`ink-block` | 明快的中高饱和实色块 + 纯黑实心部件撞色，无描边无光影，略带手工剪纸感的圆胖轮廓，醒目活泼的商业感。 | `#DC6A37` `#457EDD` `#72B96C` `#E9BB3F` `#DF8D88` `#000000` `#F5F5F5` |
 | <a href="themes/line-dot/reference.jpg"><img src="themes/line-dot/reference.jpg" height="160" alt="line-dot"></a> | **[线性点缀](themes/line-dot/theme.md)**<br>`line-dot` | 深灰等宽圆头单线 + 唯一一处暖黄点缀，几何对称、无填充，克制清爽的工具感。 | `#333333` `#FFD43B` `#F5F5F5` |
+| <a href="themes/mono-glass/reference.png"><img src="themes/mono-glass/reference.png" height="160" alt="mono-glass"></a> | **[灰阶玻璃](themes/mono-glass/theme.md)**<br>`mono-glass` | 无彩色的双层叠放图标：后层炭黑渐变实心块 + 前层浅银灰磨砂玻璃片，玻璃顶缘细亮高光，前层上用炭黑短横作符号，冷浅灰背景，沉稳高级的系统质感。 | `#4B4B4B` `#181818` `#DADADA` `#A0A0A0` `#FFFFFF` `#2A2A2A` `#EAE9EE` |
 | <a href="themes/mono-thin/reference.png"><img src="themes/mono-thin/reference.png" height="160" alt="mono-thin"></a> | **[极简细线](themes/mono-thin/theme.md)**<br>`mono-thin` | 单色中灰细线、24px 网格的系统级 UI 图标，无填充无点缀，小圆角、几何克制，像 Lucide / SF Symbols 的轻量线性风。 | `#505050` |
 | <a href="themes/pastel-layer/reference.png"><img src="themes/pastel-layer/reference.png" height="160" alt="pastel-layer"></a> | **[柔彩叠层](themes/pastel-layer/theme.md)**<br>`pastel-layer` | 无描边的柔和粉彩同色系双层叠片，前层浓、后层淡，用白色间隙分隔，圆胖可爱的温柔质感。 | `#F0AC57` `#F8DDB9` `#DBE3E2` `#87A59F` `#E2BDE2` `#FBE8FA` `#CB8CCA` `#9AA5E2` `#DDE1F9` `#CFD5F5` `#EC6D3E` `#F19E7C` `#A08EF2` `#D7D0FB` |
 | <a href="themes/pop-offset/reference.jpg"><img src="themes/pop-offset/reference.jpg" height="160" alt="pop-offset"></a> | **[波普错位](themes/pop-offset/theme.md)**<br>`pop-offset` | 粗炭黑描边 + 柠檬黄主填充 + 薄荷绿侧向错位色块，略带倾斜的几何造型，复古波普的活力感。 | `#222222` `#FFEE3A` `#78F2C2` `#F5F5F5` |
