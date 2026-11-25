@@ -160,6 +160,39 @@ npx skills add https://github.com/coreyhaines31/marketingskills --skill programm
 https://github.com/rshankras/claude-code-apple-skills
 ```
 
+
+#### Electron
+```shell
+npx modern-web-guidance@latest install
+
+npx skills add full-stack-skills/electron-skills
+
+npx ffmpeg-skill
+
+npx skills add vercel-labs/agent-skills
+
+npx skills add gitethanwoo/video-editing
+
+npx skills add https://github.com/bobmatnyc/claude-mpm-skills --skill drizzle-orm 
+
+npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
+
+npx skills add https://github.com/honojs/skills --skill hono -a codex -y
+
+npx skills add shadcn-ui/ui --skill shadcn
+
+# Gemini 多模态分析
+npx skills add google-gemini/gemini-skills --skill gemini-api-dev
+
+# MCP 开发
+npx skills add anthropics/skills --skill mcp-builder
+
+# 自定义 Skill 开发
+npx skills add anthropics/skills --skill skill-creator
+
+
+```
+
 #### 游戏开发
 ##### COCOS-3X
 ```shell
